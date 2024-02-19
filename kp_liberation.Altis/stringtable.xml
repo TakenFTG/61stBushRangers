@@ -1,48 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-    File: stringtable.xml
-    Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
-    Date: 2017-03-06
-    License: MIT License - http://www.opensource.org/licenses/MIT
-
-    Localization contributors:
-        English | Updated: 0.96.7a
-            KP Liberation Dev Team  - https://github.com/KillahPotatoes
-
-        Chinese Simplified | Updated: pre 0.96.7a
-            Nercon                  - https://github.com/nercon
-
-        Chinese Traditional | Updated: pre 0.96.7a
-            dustin902001            - https://github.com/dustin902001
-            John M. Rodriguez       - https://github.com/KOEI5113
-
-        French | Updated: pre 0.96.7a
-            zbug                    - https://github.com/GreuhZbug
-
-        German | Updated: 0.96.7a
-            Wyqer                   - https://github.com/Wyqer
-
-        Italian | Updated: pre 0.96.7a
-            k4s0                    - https://github.com/k4s0
-
-        Portuguese | Updated: pre 0.96.7a
-            NomadRomeo              - https://github.com/NomadRomeo
-            AngusDLX                - https://github.com/AngusDLX
-
-        Russian | Updated: pre 0.96.7a
-            _KOC_                   - Constantin.rogozin@ya.ru
-            Dj_Haski                - https://github.com/DjHaski
-
-        Spanish | Updated: pre 0.96.7a
-            amunoz20                - https://github.com/amunoz20
-            regiregi22              - https://github.com/regiregi22
-
-        Turkish | Updated: pre 0.96.7a
-            Carbneth                - https://github.com/Carbneth
-
-        Czech | Updated: 0.96.7a
-            MJVEVERUSKA             - https://github.com/MJVEVERUSKA
--->
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
