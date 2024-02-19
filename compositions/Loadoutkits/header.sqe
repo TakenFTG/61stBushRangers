@@ -1,0 +1,33 @@
+version=54;
+name="PlayerKits";
+author="TakenFTG";
+category="OPTRE_EditorSubcategory_Frigate_UNSC";
+requiredAddons[]=
+{
+	"OPTRE_UNSC_Units_Army",
+	"OPTRE_Weapons_AR",
+	"OPTRE_ACE_Compat",
+	"OPTRE_Weapons_Ammo",
+	"OPTRE_Weapons_Pistol",
+	"OPTRE_Weapons_Items",
+	"A3_Weapons_F",
+	"ace_parachute",
+	"tfar_handhelds",
+	"OPTRE_UNSC_Units_NVGs",
+	"ace_medical_treatment",
+	"ace_flashlights",
+	"ace_explosives",
+	"ace_hearing",
+	"ace_captives",
+	"ace_trenches",
+	"A3_Weapons_F_Orange",
+	"OPAEX_Sprays",
+	"OPTRE_Weapons_MG",
+	"OPTRE_Weapons_Rockets",
+	"dev_flood_rocket",
+	"OPTRE_Weapons_Sniper",
+	"OPTRE_Weapons_GL",
+	"OPTRE_Weapons_Charges",
+	"OPTRE_Weapons_Sticky",
+	"OPTRE_ACE_Compat_Medical"
+};

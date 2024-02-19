@@ -1,0 +1,123 @@
+version=54;
+center[]={14660.573,17.91,16790.109};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="Armory Tent";
+		class Entities
+		{
+			items=3;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.012695313,1.5897541,-0.029296875};
+					angles[]={0,3.141593,-0};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					disableSimulation=1;
+				};
+				id=156;
+				type="Land_OPTRE_hard_tent_urban";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.001953125,1.1096973,-1.546875};
+					angles[]={0,3.1491675,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="[this, true] call ace_arsenal_fnc_initBox;" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}] call ace_interact_menu_fnc_createAction; " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;";
+					disableSimulation=1;
+				};
+				id=175;
+				type="OPTRE_Furniture_Locker";
+				atlOffset=0.0002784729;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.013671875,1.1096973,1.5761719};
+					angles[]={0,3.1415927,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="[this, true] call ace_arsenal_fnc_initBox;" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}] call ace_interact_menu_fnc_createAction; " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;";
+					disableSimulation=1;
+				};
+				id=171;
+				type="OPTRE_Furniture_AmmoRack";
+				atlOffset=0.00028800964;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+		};
+		id=164;
+		atlOffset=0.04650116;
+	};
+};

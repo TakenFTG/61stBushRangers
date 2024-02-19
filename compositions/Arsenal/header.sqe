@@ -1,0 +1,10 @@
+version=54;
+name="Arsenal";
+author="TakenFTG";
+category="OPTRE_EditorSubcategory_Frigate_UNSC";
+requiredAddons[]=
+{
+	"OPTRE_UNSC_Structure_Military",
+	"OPTRE_BW_Locker",
+	"OPTRE_BW_WeaponRack"
+};

@@ -1,0 +1,2987 @@
+version=54;
+center[]={1456.6154,2.5760777,747.43304};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="61st ORBAT";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Layer";
+				name="61st ORBAT";
+				class Entities
+				{
+					items=12;
+					class Item0
+					{
+						dataType="Group";
+						side="West";
+						class Entities
+						{
+							items=2;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-5.4963379,0.0019869804,8.7099609};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									name="zeus1";
+									description="Zeus 1 @Zeus Team";
+									isPlayable=1;
+								};
+								id=5190;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.43499994;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-3.175415,0.0015540123,9.5219727};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									name="zeus2";
+									description="Zeus 2 @Zeus Team";
+									isPlayable=1;
+								};
+								id=5191;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.25199986;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male08ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.04;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+						};
+						class Attributes
+						{
+						};
+						id=5189;
+						atlOffset=0.43499994;
+					};
+					class Item1
+					{
+						dataType="Group";
+						side="West";
+						class Entities
+						{
+							items=5;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-7.168335,0.002177,5.1819458};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									rank="MAJOR";
+									name="CO";
+									description="Battalion CO @Battalion Staff";
+									isPlayable=1;
+								};
+								id=5193;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.47300005;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male01GRE";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.02;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-4.8353271,0.0017523766,6.0679321};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									rank="CAPTAIN";
+									name="XO";
+									description="Battalion XO @Battalion Staff";
+									isPlayable=1;
+								};
+								id=5194;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.43000031;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.04;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-3.0743408,0.0014388561,6.6489258};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									rank="SERGEANT";
+									description="Battalion First Sergeant @Battalion Staff";
+									isPlayable=1;
+								};
+								id=5195;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.29200006;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male01ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.03;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item3
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-1.2224121,0.0018539429,7.2709351};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									rank="CORPORAL";
+									description="Battalion Medic @Battalion Staff";
+									isPlayable=1;
+								};
+								id=5196;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.11899996;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male01ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.05;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item4
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={1.8856201,0.0021920204,8.9269409};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									rank="CORPORAL";
+									description="Battalion RTO @Battalion Staff";
+									isPlayable=1;
+								};
+								id=5197;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.43900013;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="face";
+										expression="_this setface _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male08ENG";
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+						};
+						class Attributes
+						{
+						};
+						id=5192;
+						atlOffset=0.47300005;
+					};
+					class Item2
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-7.9916992,1.3914819,12.647217};
+							angles[]={0,1.0536959,0};
+						};
+						id=5198;
+						type="ModuleCurator_F";
+						atlOffset=1.5537584;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCurator_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="zeus1";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCurator_F_Forced";
+								expression="_this setVariable ['Forced',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCurator_F_Name";
+								expression="_this setVariable ['Name',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCurator_F_Addons";
+								expression="_this setVariable ['Addons',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=3;
+									};
+								};
+							};
+							nAttributes=4;
+						};
+					};
+					class Item3
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-5.0982666,1.3914819,12.931091};
+							angles[]={0,1.0536959,0};
+						};
+						id=5199;
+						type="ModuleCurator_F";
+						atlOffset=1.6114497;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCurator_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="zeus2";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCurator_F_Forced";
+								expression="_this setVariable ['Forced',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCurator_F_Name";
+								expression="_this setVariable ['Name',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCurator_F_Addons";
+								expression="_this setVariable ['Addons',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=3;
+									};
+								};
+							};
+							nAttributes=4;
+						};
+					};
+					class Item4
+					{
+						dataType="Group";
+						side="West";
+						class Entities
+						{
+							items=5;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-5.4365234,0.0019192696,0.67266846};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									description="Platoon CO @Platoon Staff";
+									isPlayable=1;
+								};
+								id=5201;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.5082736;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male02ENG";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.03;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-2.8580322,0.0019192696,1.3334961};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									description="Platoon XO @Platoon Staff";
+									isPlayable=1;
+								};
+								id=5202;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.32607508;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male05GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.03;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.69238281,0.0019192696,2.2106934};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Platoon First Sergeant @Platoon Staff";
+									isPlayable=1;
+								};
+								id=5203;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.14552498;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.98000002;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item3
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={1.8674316,0.0019192696,3.1630859};
+									angles[]={0,1.0536942,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Platoon Medic @Platoon Staff";
+									isPlayable=1;
+								};
+								id=5204;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.12106729;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male01ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.97000003;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item4
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={4.9827881,0.0019192696,4.6859741};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Platoon RTO @Platoon Staff";
+									isPlayable=1;
+								};
+								id=5205;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.38463092;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male06GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.95999998;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+						};
+						class Attributes
+						{
+						};
+						id=5200;
+						atlOffset=0.5082736;
+					};
+					class Item5
+					{
+						dataType="Group";
+						side="West";
+						class Entities
+						{
+							items=8;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-13.539429,0.0019192696,-9.1729736};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									description="Squad Leader @1-1";
+									isPlayable=1;
+								};
+								id=5207;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.9261353;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.97000003;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-10.951294,0.0019192696,-8.40448};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									description="RTO @1-1";
+									isPlayable=1;
+								};
+								id=5208;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.70666707;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male05GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-6.7993164,0.0019192696,-5.993042};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									description="Trooper A1 @1-1 ";
+									isPlayable=1;
+								};
+								id=5209;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.48317337;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.97000003;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item3
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-4.0847168,0.0019192696,-4.7575684};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									description="Trooper A2 @1-1";
+									isPlayable=1;
+								};
+								id=5210;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.35376668;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item4
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-1.4243164,0.0017285347,-3.6500854};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Medic A @1-1";
+									isPlayable=1;
+								};
+								id=5211;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.204;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item5
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={1.7574463,0.0019192696,-2.2987671};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Trooper B1 @1-1";
+									isPlayable=1;
+								};
+								id=5212;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.023949623;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="face";
+										expression="_this setface _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male11ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item6
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={4.5076904,0.0019192696,-0.91973877};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Trooper B2 @1-1";
+									isPlayable=1;
+								};
+								id=5213;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.23829269;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04ENG";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.98000002;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item7
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={6.6782227,0.0019192696,0.39953613};
+									angles[]={0,1.0536942,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Medic B @1-1";
+									isPlayable=1;
+								};
+								id=5214;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.41496134;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male06GRE";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.02;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+						};
+						class Attributes
+						{
+						};
+						id=5206;
+						atlOffset=0.9261353;
+					};
+					class Item6
+					{
+						dataType="Group";
+						side="West";
+						class Entities
+						{
+							items=8;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-9.916748,0.0019154549,-13.8125};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									description="Squad Leader @1-2";
+									isPlayable=1;
+								};
+								id=5216;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.48397684;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="face";
+										expression="_this setface _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male02ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.05;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-6.6866455,0.0019154549,-12.590454};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									description="RTO @1-2";
+									isPlayable=1;
+								};
+								id=5217;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.34885025;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male05GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.04;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-4.3074951,0.0019192696,-11.538025};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=1;
+								class Attributes
+								{
+									description="Trooper A1 @1-2";
+									isPlayable=1;
+								};
+								id=5218;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.27679443;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male06GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.97000003;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item3
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-1.7457275,0.0019154549,-10.266418};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Trooper A2 @1-2";
+									isPlayable=1;
+								};
+								id=5219;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.18681884;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male06ENG";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.03;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item4
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={0.73864746,0.0019154549,-9.0646973};
+									angles[]={0,1.0536942,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Medic A @1-2";
+									isPlayable=1;
+								};
+								id=5220;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.064188242;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male10ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.98000002;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item5
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={4.3985596,0.0019154549,-7.4406738};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Trooper B1 @1-2";
+									isPlayable=1;
+								};
+								id=5221;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.16470027;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male07ENG";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.03;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item6
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.5285645,0.0019154549,-6.0437012};
+									angles[]={0,1.0536959,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Trooper B2 @1-2";
+									isPlayable=1;
+								};
+								id=5222;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.4236722;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male03GRE";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.04;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=3;
+								};
+							};
+							class Item7
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={10.258667,0.0016055107,-4.7470703};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Medic B @1-2";
+									isPlayable=1;
+								};
+								id=5223;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.64199996;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isMedic";
+										expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male10ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.05;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+						};
+						class Attributes
+						{
+						};
+						id=5215;
+						atlOffset=0.48397684;
+					};
+					class Item7
+					{
+						dataType="Group";
+						side="West";
+						class Entities
+						{
+							items=3;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={10.740601,0.0023412704,2.532959};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=7;
+								class Attributes
+								{
+									name="squadronCO";
+									description="Squadron CO @Squadron Staff";
+									isPlayable=1;
+								};
+								id=5225;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.61699963;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male02GRE";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="face";
+										expression="_this setface _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="";
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={13.095703,0.0017056465,3.1679688};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Squadron XO @Squadron Staff";
+									isPlayable=1;
+								};
+								id=5226;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.6900003;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.03;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={15.325684,0.0017132759,4.8129272};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Squadron WOFF @Squadron Staff";
+									isPlayable=1;
+								};
+								id=5227;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.69899964;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.98000002;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+						};
+						class Attributes
+						{
+						};
+						id=5224;
+						atlOffset=-0.61699963;
+					};
+					class Item8
+					{
+						dataType="Group";
+						side="West";
+						class Entities
+						{
+							items=3;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={13.080688,0.002291441,-3.3150635};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=7;
+								class Attributes
+								{
+									description="Pilot 1 @First Flight";
+									isPlayable=1;
+								};
+								id=5229;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.87100005;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1.01;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={15.321655,0.0017967224,-1.3000488};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="Pilot 2 @First Flight";
+									isPlayable=1;
+								};
+								id=5230;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-0.98799992;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male08ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={18.065674,0.0020318031,0.47991943};
+									angles[]={0,1.0536902,0};
+								};
+								side="West";
+								flags=5;
+								class Attributes
+								{
+									description="HMS @First Flight";
+									isPlayable=1;
+								};
+								id=5231;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=-1.0970001;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_isEngineer";
+										expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male04ENG";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+						};
+						class Attributes
+						{
+						};
+						id=5228;
+						atlOffset=-0.87100005;
+					};
+					class Item9
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-9.9158936,2.1124809,7.1015625};
+							angles[]={0,3.5235097,0};
+						};
+						id=5232;
+						type="ModuleCurator_F";
+						atlOffset=2.4299476;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCurator_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="CO";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCurator_F_Forced";
+								expression="_this setVariable ['Forced',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCurator_F_Name";
+								expression="_this setVariable ['Name',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCurator_F_Addons";
+								expression="_this setVariable ['Addons',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+							};
+							nAttributes=4;
+						};
+					};
+					class Item10
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-7.3963623,2.3354805,7.9796753};
+							angles[]={0,3.5235097,0};
+						};
+						id=5233;
+						type="ModuleCurator_F";
+						atlOffset=2.6976111;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCurator_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="XO";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCurator_F_Forced";
+								expression="_this setVariable ['Forced',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCurator_F_Name";
+								expression="_this setVariable ['Name',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCurator_F_Addons";
+								expression="_this setVariable ['Addons',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+							};
+							nAttributes=4;
+						};
+					};
+					class Item11
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={9.0328369,1.7474811,5.0749512};
+							angles[]={0,3.5235097,0};
+						};
+						id=5234;
+						type="ModuleCurator_F";
+						atlOffset=1.2147527;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCurator_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="squadronCO";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCurator_F_Forced";
+								expression="_this setVariable ['Forced',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCurator_F_Name";
+								expression="_this setVariable ['Name',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCurator_F_Addons";
+								expression="_this setVariable ['Addons',_value,true];";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+							};
+							nAttributes=4;
+						};
+					};
+				};
+				id=5188;
+				atlOffset=1.489269;
+			};
+		};
+		id=5235;
+		atlOffset=1.489269;
+	};
+};

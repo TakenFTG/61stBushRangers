@@ -1,0 +1,11 @@
+version=54;
+name="Drop Pods 2 Squads";
+author="TakenFTG";
+category="OPTRE_EditorSubcategory_Frigate_UNSC";
+requiredAddons[]=
+{
+	"OPTRE_BW_DoorConsole",
+	"OPTRE_Vehicles_HEV",
+	"OPTRE_ACE_Compat",
+	"A3_Modules_F"
+};

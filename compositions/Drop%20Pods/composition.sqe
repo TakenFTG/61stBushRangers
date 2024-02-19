@@ -1,0 +1,1193 @@
+version=54;
+center[]={14638.823,15.775967,16753.418};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="Drop Pods";
+		class Entities
+		{
+			items=2;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={43.548828,3.0550404,51.185547};
+					angles[]={5.8594599,2.2712903,0.40297347};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					init="" \n "		this addAction [""OPEN CONTROL MENU"",OPTRE_Fnc_Menu,[""UNSC_HEV""]]; " \n "		this setVariable [""OPTRE_PodsLaunchIn"",-1];" \n "	this setVariable [""OPTRE_PodsLinkedToConsole"",[DP1,DP2,DP3,DP4,DP5,DP6,DP7,DP8,DP9,DP10,DP11,DP12,DP13,DP14,DP15,DP16,DP17,DP18,DP19,DP20,DP21,DP22,DP23,DP24,DP25,DP26,DP27,DP28,DP29,DP30,DP31,DP32]];";
+					disableSimulation=1;
+				};
+				id=1372;
+				type="OPTRE_RS_ConsoleDoor";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item1
+			{
+				dataType="Layer";
+				name="Pods";
+				class Entities
+				{
+					items=32;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={62.061523,3.2003021,67.527344};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP1";
+						};
+						id=1366;
+						type="OPTRE_HEV";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={51.367188,3.6359634,50.533203};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP10";
+						};
+						id=1359;
+						type="OPTRE_HEV";
+						atlOffset=0.43566132;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item2
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={54.087891,3.7009659,53.287109};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP11";
+						};
+						id=1357;
+						type="OPTRE_HEV";
+						atlOffset=0.50066376;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item3
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={56.072266,3.7101212,55.158203};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP12";
+						};
+						id=1356;
+						type="OPTRE_HEV";
+						atlOffset=0.50981903;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item4
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={58.819336,3.8460464,57.996094};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP13";
+						};
+						id=1355;
+						type="OPTRE_HEV";
+						atlOffset=0.64574432;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item5
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={60.702148,3.8553238,59.828125};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP14";
+						};
+						id=1354;
+						type="OPTRE_HEV";
+						atlOffset=0.65502167;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item6
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={63.383789,4.0077896,62.582031};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP15";
+						};
+						id=1352;
+						type="OPTRE_HEV";
+						atlOffset=0.80748749;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item7
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={65.28125,4.017189,64.496094};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP16";
+						};
+						id=1353;
+						type="OPTRE_HEV";
+						atlOffset=0.8168869;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item8
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={44.210938,3.1910248,53.728516};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP17";
+						};
+						id=1350;
+						type="OPTRE_HEV";
+						atlOffset=-0.0092773438;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item9
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={46.051758,3.2003021,55.587891};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP18";
+						};
+						id=1351;
+						type="OPTRE_HEV";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item10
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={48.874023,3.3210297,58.326172};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP19";
+						};
+						id=1348;
+						type="OPTRE_HEV";
+						atlOffset=0.12072754;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item11
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={60.12793,3.2094574,65.720703};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP2";
+						};
+						id=1367;
+						type="OPTRE_HEV";
+						atlOffset=0.0091552734;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item12
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={50.854492,3.330307,60.208984};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP20";
+						};
+						id=1349;
+						type="OPTRE_HEV";
+						atlOffset=0.13000488;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item13
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={53.517578,3.4277191,63.041016};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP21";
+						};
+						id=1346;
+						type="OPTRE_HEV";
+						atlOffset=0.22741699;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item14
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={55.390625,3.4371185,64.884766};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP22";
+						};
+						id=1347;
+						type="OPTRE_HEV";
+						atlOffset=0.23681641;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item15
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={58.150391,3.6364594,67.798828};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP23";
+						};
+						id=1344;
+						type="OPTRE_HEV";
+						atlOffset=0.43615723;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item16
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={60.0625,3.6459198,69.662109};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP24";
+						};
+						id=1345;
+						type="OPTRE_HEV";
+						atlOffset=0.44561768;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item17
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={56.490234,3.6270714,73.347656};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP25";
+						};
+						id=1342;
+						type="OPTRE_HEV";
+						atlOffset=0.42676926;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item18
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={54.599609,3.6365929,71.498047};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP26";
+						};
+						id=1343;
+						type="OPTRE_HEV";
+						atlOffset=0.43629074;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item19
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={51.807617,3.701046,68.755859};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP27";
+						};
+						id=1341;
+						type="OPTRE_HEV";
+						atlOffset=0.50074387;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item20
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={49.930664,3.7105675,66.919922};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP28";
+						};
+						id=1340;
+						type="OPTRE_HEV";
+						atlOffset=0.51026535;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item21
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={47.148438,3.8459435,64.044922};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP29";
+						};
+						id=1339;
+						type="OPTRE_HEV";
+						atlOffset=0.64564133;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item22
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={57.331055,3.3306732,63.105469};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP3";
+						};
+						id=1364;
+						type="OPTRE_HEV";
+						atlOffset=0.13037109;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item23
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={45.259766,3.855587,62.263672};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP30";
+						};
+						id=1338;
+						type="OPTRE_HEV";
+						atlOffset=0.65528488;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item24
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={42.532227,4.0075645,59.433594};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP31";
+						};
+						id=1336;
+						type="OPTRE_HEV";
+						atlOffset=0.80726242;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item25
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={40.548828,4.0174522,57.476563};
+							angles[]={0,2.356195,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP32";
+						};
+						id=1337;
+						type="OPTRE_HEV";
+						atlOffset=0.81715012;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item26
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={55.300781,3.3394623,61.109375};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP4";
+						};
+						id=1365;
+						type="OPTRE_HEV";
+						atlOffset=0.13916016;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item27
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={52.84668,3.436264,58.330078};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP5";
+						};
+						id=1362;
+						type="OPTRE_HEV";
+						atlOffset=0.23596191;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item28
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={50.776367,3.4461517,56.423828};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP6";
+						};
+						id=1363;
+						type="OPTRE_HEV";
+						atlOffset=0.24584961;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item29
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={48.104492,3.6457367,53.525391};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP7";
+						};
+						id=1360;
+						type="OPTRE_HEV";
+						atlOffset=0.44543457;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item30
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={46.197266,3.654892,51.654297};
+							angles[]={0,2.3561947,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP8";
+						};
+						id=1361;
+						type="OPTRE_HEV";
+						atlOffset=0.45458984;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item31
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={49.366211,3.626564,48.695313};
+							angles[]={0,5.4977875,-0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							init="if (isServer) then {" \n "    this animate [""main_door_rotation"",1]; " \n "    this animate [""left_door_rotation"",1]; " \n "    this animate [""right_door_rotation"",1];" \n "   };";
+							name="DP9";
+						};
+						id=1358;
+						type="OPTRE_HEV";
+						atlOffset=0.4262619;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="allowDamage";
+								expression="_this allowdamage _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="BOOL";
+										value=0;
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+				};
+				id=1335;
+				atlOffset=0.41886902;
+			};
+		};
+		id=1373;
+		atlOffset=-10.445408;
+	};
+};
