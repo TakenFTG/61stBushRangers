@@ -1,6 +1,81 @@
 // Custom Arsenal Preset
 GRLIB_arsenal_weapons = [
-
+"OPTRE_M393S_DMR",
+"OPTRE_BR55HB",
+"OPTRE_BR55",
+"OPTRE_BR55_Grey",
+"OPTRE_BR55HB_Grey",
+"MA_BR55_HB",
+"OPTRE_BR37",
+"OPTRE_BR45",
+"OPTRE_Commando",
+"OPTRE_Commando_Black",
+"OPTRE_Commando_Police",
+"OPTRE_Commando_Red",
+"OPTRE_Commando_Snow",
+"OPTRE_Commando_Tan",
+"OPTRE_CQS48_Bulldog_Automatic",
+"OPTRE_CQS48_Bulldog_Desert",
+"OPTRE_CQS48_Bulldog_Green",
+"OPTRE_CQS48_Bulldog_Innie",
+"OPTRE_CQS48_Bulldog_Snow",
+"OPTRE_CQS48S_Chihuahua_Automatic",
+"OPTRE_CQS48S_Chihuahua_Automatic_Desert",
+"OPTRE_CQS48S_Chihuahua_Automatic_Green",
+"OPTRE_CQS48S_Chihuahua_Automatic_Innie",
+"OPTRE_CQS48S_Chihuahua_Automatic_Snow",
+"OPTRE_M12_SOC",
+"OPTRE_M7",
+"OPTRE_M7_Riot_Shield",
+"OPTRE_M7_Riot_Shield_Desert",
+"OPTRE_M7_Riot_Shield_Snow",
+"OPTRE_M7_Riot_Shield_Urban",
+"OPTRE_M247H_Etilka",
+"OPTRE_M247H_Shield_Etilka",
+"OPTRE_M392_DMR",
+"OPTRE_M393_DMR",
+"OPTRE_M295_BMR",
+"OPTRE_M295_BMR_Desrt",
+"OPTRE_M295_BMR_Snow",
+"OPTRE_M295_BMR_Woodland",
+"OPTRE_SRM77_S1",
+"OPTRE_SRM77_S2",
+"OPTRE_SRS99C",
+"OPTRE_SRS99D",
+"OPTRE_M99A2S3",
+"OPTRE_M319",
+"OPTRE_M319N",
+"OPTRE_M45",
+"OPTRE_M45TAC",
+"OPTRE_M45A",
+"OPTRE_M45ATAC",
+"OPTRE_M45E",
+"OPTRE_M90A",
+"OPTRE_M247",
+"OPTRE_M73",
+"OPTRE_MA5A",
+"OPTRE_MA5AGL",
+"OPTRE_MA5B",
+"OPTRE_MA5BGL",
+"OPTRE_MA5C",
+"OPTRE_MA5CGL",
+"OPTRE_MA5K",
+"OPTRE_MA32GL",
+"OPTRE_MA32",
+"OPTRE_MA32BGL",
+"OPTRE_MA32B",
+"OPTRE_MA37GL",
+"OPTRE_MA37",
+"OPTRE_MA37BGL",
+"OPTRE_MA37B",
+"OPTRE_MA37K",
+"OPTRE_HMG38",
+"OPTRE_M6B_Riot_Shield_Urban",
+"OPTRE_M6G_Riot_Shield_Urban",
+"OPTRE_M6C_Riot_Shield_Urban",
+"OPTRE_Bulldog_Riot_Shield_Urban",
+"OPTRE_Comet_Riot_Shield_Urban",
+"OPTRE_SAS10_Riot_Shield"
 ];
 
 GRLIB_arsenal_magazines = [
@@ -8,9 +83,9 @@ GRLIB_arsenal_magazines = [
 ];
 
 GRLIB_arsenal_items = [
-
+"OPTRE_M7_Sight"
 ];
 
 GRLIB_arsenal_backpacks = [
-
+"OPTRE_UNSC_Backpack"
 ];

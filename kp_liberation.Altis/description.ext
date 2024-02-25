@@ -114,7 +114,7 @@ corpseManagerMode = 1;
 corpseLimit = 50;
 
 // Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is reached.
-corpseRemovalMinTime = 600;
+corpseRemovalMinTime = 300;
 
 // Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
 corpseRemovalMaxTime = 3600;
