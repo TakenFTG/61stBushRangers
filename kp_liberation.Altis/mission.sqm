@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={27432.523,175.06801,5585.4648};
-		dir[]={0.90989435,-0.41426694,-0.026908487};
-		up[]={0.41423354,0.9100216,-0.012248451};
-		aside[]={-0.029565673,1.6332942e-006,-0.99965286};
+		pos[]={27680.033,367.5307,5603.0454};
+		dir[]={-0.93321663,-0.25809926,-0.24998298};
+		up[]={-0.24930952,0.9661184,-0.066783145};
+		aside[]={-0.25874984,3.7252903e-009,0.96594435};
 	};
 };
 binarizationWanted=0;
@@ -8748,7 +8748,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27443.439,170.67924,5585.208};
+				position[]={27443.439,170.72404,5585.208};
 			};
 			side="Empty";
 			class Attributes
@@ -8757,7 +8757,7 @@ class Mission
 			};
 			id=5818;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.61909485;
+			atlOffset=0.66389465;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14175,7 +14175,7 @@ class Mission
 										};
 									};
 									id=7230;
-									atlOffset=351.0972;
+									atlOffset=1.8121643;
 								};
 								class Item4
 								{
@@ -14430,7 +14430,7 @@ class Mission
 								};
 							};
 							id=7178;
-							atlOffset=0.73399353;
+							atlOffset=2.2572327;
 						};
 						class Item1
 						{
@@ -18285,7 +18285,7 @@ class Mission
 						};
 					};
 					id=7177;
-					atlOffset=3.9651184;
+					atlOffset=4.1400757;
 				};
 				class Item1
 				{
@@ -19084,7 +19084,7 @@ class Mission
 				};
 			};
 			id=7518;
-			atlOffset=0.28013611;
+			atlOffset=0.28015137;
 		};
 	};
 };
