@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=7521;
+		nextID=7528;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14496.268,14.654389,5923.1631};
-		dir[]={-0.60139298,-0.49798352,-0.62477106};
-		up[]={-0.3453511,0.86718649,-0.358776};
-		aside[]={-0.72045755,0,0.69349897};
+		pos[]={14517.242,15.257032,5913.4053};
+		dir[]={-0.81550413,-0.51396734,-0.26653045};
+		up[]={-0.48867115,0.85772252,-0.15971321};
+		aside[]={-0.31070951,-1.8349019e-006,0.95064843};
 	};
 };
 binarizationWanted=0;
@@ -89,7 +89,8 @@ addons[]=
 	"Lance",
 	"A3_Structures_F_Exp_Industrial_Port",
 	"OPTRE_Corvette_Interior",
-	"A3_Characters_F_Common"
+	"A3_Characters_F_Common",
+	"OPTRE_Misc_Crates"
 };
 class AddonsMetaData
 {
@@ -379,7 +380,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=505;
+		items=506;
 		class Item0
 		{
 			dataType="Marker";
@@ -19198,6 +19199,23 @@ class Mission
 			};
 			id=7518;
 			atlOffset=0.28015137;
+		};
+		class Item505
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14507.924,7.9586229,5908.5571};
+				angles[]={0.071875811,0,6.1993818};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=7527;
+			type="OPTRE_Ammo_SupplyPod_BR";
+			atlOffset=5.7220459e-006;
 		};
 	};
 };
