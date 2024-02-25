@@ -322,7 +322,12 @@ GRLIB_arsenal_magazines = [
 "OPTRE_3Rnd_MasterKey_Slugs",
 "OPAEX_M6GGNR_Battery",
 "C7_Remote_Mag",
-"C12_Remote_Mag"
+"C12_Remote_Mag",
+"MA_36Rnd_95x40_HPSAP_Mag",
+"MA_36Rnd_95x40_Subsonic_Mag",
+"Commando_20Rnd_65_Mag",
+"3Rnd_HE_Grenade_shell",
+"M319_HE_Grenade_Shell"
 ];
 
 GRLIB_arsenal_items = [
@@ -666,7 +671,9 @@ GRLIB_arsenal_items = [
 "ACE_WaterBottle",
 "ACE_UAVBattery",
 "ACE_wirecutter",
-"ACE_Tripod"
+"ACE_Tripod",
+"ACE_Kestrel4500",
+"ACE_ATragaMX"
 ];
 
 GRLIB_arsenal_backpacks = [
