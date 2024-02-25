@@ -193,13 +193,14 @@ opfor_troup_transports = [
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-	"O_Heli_Transport_04_bench_F",		// Mi-290 Taru (Bench)
-	"O_Heli_Light_02_dynamicLoadout_F", // Po-30 Orca (Armed)
-	"O_Heli_Attack_02_dynamicLoadout_F" // Mi-48 Kajman
+	"OPTRE_UNSC_hornet_ins",		// Mi-290 Taru (Bench)
+	"OPTRE_ins_falcon", // Po-30 Orca (Armed)
+	"OPTRE_UNSC_falcon_armed_S_ins", // Mi-48 Kajman
+	"OPTRE_Pelican_armed_ins"
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-	"O_Plane_CAS_02_dynamicLoadout_F", // To-199 Neophron (CAS)
-	"O_Plane_Fighter_02_F"			   // To-201 Shikra
+	"OPTRE_bayonet_02", // To-199 Neophron (CAS)
+	"OPTRE_gladius_02"			   // To-201 Shikra
 ];
