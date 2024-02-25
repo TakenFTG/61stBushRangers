@@ -670,6 +670,9 @@ GRLIB_arsenal_items = [
 ];
 
 GRLIB_arsenal_backpacks = [
-"OPTRE_UNSC_Backpack"
+"OPTRE_UNSC_Backpack",
+"OPTRE_ILCS_Rucksack_Black",
+"OPTRE_ILCS_Rucksack_Medical",
+"OPTRE_ILCS_Rucksack_Heavy"
 ];
 
