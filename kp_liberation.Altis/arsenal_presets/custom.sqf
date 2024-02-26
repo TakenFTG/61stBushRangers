@@ -327,7 +327,41 @@ GRLIB_arsenal_magazines = [
 "MA_36Rnd_95x40_Subsonic_Mag",
 "Commando_20Rnd_65_Mag",
 "3Rnd_HE_Grenade_shell",
-"M319_HE_Grenade_Shell"
+"M319_HE_Grenade_Shell",
+"Command_20Rnd_65_TracerR_Mag",
+"Commando_20Rnd_65_TracerY_Mag",
+"Commando_20Rnd_65_ReloadR_Mag",
+"Commando_20Rnd_65_ReloadY_Mag",
+"3Rnd_UGL_FlareGreen_F",
+"3Rnd_UGL_FlareCIR_F",
+"3Rnd_UGL_FlareRed_F",
+"3Rnd_UGL_FlareWhite_F",
+"3Rnd_UGL_FlareYellow_F",
+"FlareGreen_F",
+"FlareRed_F",
+"FlareWhite_F",
+"FlareYellow_F",
+"UGL_FlareGreen_F",
+"UGL_FlareCIR_F",
+"UGL_FlareRed_F",
+"UGL_FlareWhite_F",
+"UGL_FlareYellow_F",
+"OPTRE_signalSmokeB",
+"OPTRE_signalSmokeG",
+"OPTRE_signalSmokeO",
+"OPTRE_signalSmokeP",
+"OPTRE_signalSmokeY",
+"OPTRE_signalSmokeR",
+"ACE_40mm_Flare_white",
+"ACE_40mm_Flare_green",
+"ACE_40mm_Flare_red",
+"ACE_40mm_Flare_ir",
+"GRL45_6rnd_Flare_Blue",
+"GRL45_6rnd_Flare_Green",
+"GRL45_6rnd_Flare_CIR",
+"GRL45_6rnd_Flare_Red",
+"GRL45_6rnd_Flare_White",
+"GRL45_6rnd_Flare_Yellow"
 ];
 
 GRLIB_arsenal_items = [
@@ -673,7 +707,9 @@ GRLIB_arsenal_items = [
 "ACE_wirecutter",
 "ACE_Tripod",
 "ACE_Kestrel4500",
-"ACE_ATragaMX"
+"ACE_ATragaMX",
+"OPTRE_UNSC_Army_Uniform_BLK",
+"OPTRE_UNSC_Army_Uniform_BLKURB"
 ];
 
 GRLIB_arsenal_backpacks = [
