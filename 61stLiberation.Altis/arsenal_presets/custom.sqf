@@ -711,8 +711,8 @@ GRLIB_arsenal_items = [
 "OPTRE_UNSC_Army_Uniform_BLK",
 "OPTRE_UNSC_Army_Uniform_BLKURB",
 "OPTRE_UNSC_Army_Uniform_R_BLK_SlimLeg",
-"Laserbatteries"
-"bipod_03_F_blk"
+"Laserbatteries",
+"bipod_03_F_blk",
 "bipod_02_F_blk"
 ];
 
