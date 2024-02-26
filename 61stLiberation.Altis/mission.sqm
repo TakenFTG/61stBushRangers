@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1284;
+		nextID=1312;
 	};
 	class Camera
 	{
-		pos[]={21104.713,20.091494,5062.3579};
-		dir[]={0.19777536,-0.90074384,0.38673916};
-		up[]={0.4101491,0.43419668,0.80203044};
-		aside[]={0.89034456,7.035851e-008,-0.45531306};
+		pos[]={27459.018,179.14156,5586.3154};
+		dir[]={0.5460394,-0.83755785,0.024217185};
+		up[]={0.83662575,0.54645377,0.037106968};
+		aside[]={0.04431995,-6.4090027e-006,-0.99914151};
 	};
 };
 binarizationWanted=0;
-sourceName="Git_kp_liberation";
+sourceName="61stLiberation";
 addons[]=
 {
 	"A3_Ui_F",
@@ -423,7 +423,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -9636,14 +9636,14 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="face";
-													expression="_this setface _value;";
+													property="enableStamina";
+													expression="_this enablestamina _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="";
+															singleType="BOOL";
+															value=1;
 														};
 													};
 												};
@@ -9688,14 +9688,14 @@ class Mission
 												};
 												class Attribute5
 												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
+													property="face";
+													expression="_this setface _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="BOOL";
-															value=1;
+															singleType="STRING";
+															value="";
 														};
 													};
 												};
@@ -10543,14 +10543,14 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="face";
-													expression="_this setface _value;";
+													property="enableStamina";
+													expression="_this enablestamina _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="";
+															singleType="BOOL";
+															value=1;
 														};
 													};
 												};
@@ -10582,14 +10582,14 @@ class Mission
 												};
 												class Attribute3
 												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
+													property="face";
+													expression="_this setface _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="BOOL";
-															value=1;
+															singleType="STRING";
+															value="";
 														};
 													};
 												};
@@ -10767,14 +10767,14 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="face";
-													expression="_this setface _value;";
+													property="enableStamina";
+													expression="_this enablestamina _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="";
+															singleType="BOOL";
+															value=1;
 														};
 													};
 												};
@@ -10806,14 +10806,14 @@ class Mission
 												};
 												class Attribute3
 												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
+													property="face";
+													expression="_this setface _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="BOOL";
-															value=1;
+															singleType="STRING";
+															value="";
 														};
 													};
 												};
@@ -11325,14 +11325,14 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="enableStamina";
-													expression="_this enablestamina _value;";
+													property="face";
+													expression="_this setface _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="BOOL";
-															value=1;
+															singleType="STRING";
+															value="";
 														};
 													};
 												};
@@ -11377,14 +11377,14 @@ class Mission
 												};
 												class Attribute4
 												{
-													property="face";
-													expression="_this setface _value;";
+													property="enableStamina";
+													expression="_this enablestamina _value;";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="";
+															singleType="BOOL";
+															value=1;
 														};
 													};
 												};
@@ -13462,7 +13462,7 @@ class Mission
 									dataType="Layer";
 									name="Service Stations ";
 									id=7217;
-									atlOffset=1.7742767;
+									atlOffset=185.97;
 								};
 								class Item3
 								{
@@ -14569,11 +14569,11 @@ class Mission
 										};
 									};
 									id=7258;
-									atlOffset=0.064849854;
+									atlOffset=0.012008667;
 								};
 							};
 							id=7178;
-							atlOffset=2.2572327;
+							atlOffset=374.10315;
 						};
 						class Item1
 						{
@@ -15428,7 +15428,7 @@ class Mission
 									dataType="Layer";
 									name="Cryo Bay";
 									id=7318;
-									atlOffset=0.10144043;
+									atlOffset=185.97;
 								};
 								class Item9
 								{
@@ -15851,7 +15851,7 @@ class Mission
 								};
 							};
 							id=7273;
-							atlOffset=0.00010681152;
+							atlOffset=356.03015;
 						};
 						class Item2
 						{
@@ -17027,11 +17027,11 @@ class Mission
 										};
 									};
 									id=7418;
-									atlOffset=0.01914978;
+									atlOffset=0.033157349;
 								};
 							};
 							id=7393;
-							atlOffset=4.8598022;
+							atlOffset=4.8273926;
 						};
 						class Item3
 						{
@@ -17128,7 +17128,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={27447.881,186.19632,5652.3062};
+										position[]={27436.73,186.19632,5587.9858};
 										angles[]={0,6.2329268,0};
 									};
 									side="West";
@@ -17143,7 +17143,7 @@ class Mission
 									};
 									id=7459;
 									type="OPTRE_Scythe_AA";
-									atlOffset=367.62805;
+									atlOffset=11.596115;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -17390,7 +17390,7 @@ class Mission
 								};
 							};
 							id=7454;
-							atlOffset=25.020111;
+							atlOffset=2.0095367;
 						};
 						class Item5
 						{
@@ -18134,7 +18134,7 @@ class Mission
 						};
 					};
 					id=7177;
-					atlOffset=4.525238;
+					atlOffset=363.34595;
 				};
 				class Item1
 				{
@@ -18211,7 +18211,7 @@ class Mission
 							};
 							id=7497;
 							type="B_UAV_AI";
-							atlOffset=61.337273;
+							atlOffset=11.596115;
 						};
 					};
 					class Attributes
@@ -18240,7 +18240,7 @@ class Mission
 						};
 					};
 					id=7496;
-					atlOffset=367.62805;
+					atlOffset=11.596115;
 				};
 				class Item3
 				{
@@ -18350,7 +18350,7 @@ class Mission
 				};
 			};
 			id=7518;
-			atlOffset=0.30680847;
+			atlOffset=0.48983765;
 		};
 		class Item494
 		{
@@ -18465,61 +18465,51 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=11;
+													items=9;
 													class Item0
 													{
-														name="ACE_elasticBandage";
-														count=6;
+														name="ACE_fieldDressing";
+														count=16;
 													};
 													class Item1
 													{
-														name="ACE_fieldDressing";
-														count=6;
+														name="ACE_epinephrine";
+														count=8;
 													};
 													class Item2
-													{
-														name="ACE_packingBandage";
-														count=6;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=3;
-													};
-													class Item4
 													{
 														name="ACE_morphine";
 														count=2;
 													};
-													class Item5
+													class Item3
 													{
 														name="ACE_Flashlight_XL50";
 														count=1;
 													};
-													class Item6
+													class Item4
 													{
 														name="ACE_DefusalKit";
 														count=1;
 													};
-													class Item7
+													class Item5
 													{
 														name="ACE_tourniquet";
 														count=4;
 													};
-													class Item8
+													class Item6
 													{
 														name="ACE_EarPlugs";
 														count=1;
 													};
-													class Item9
+													class Item7
 													{
 														name="ACE_CableTie";
 														count=3;
 													};
-													class Item10
+													class Item8
 													{
 														name="ACE_adenosine";
-														count=1;
+														count=4;
 													};
 												};
 											};
@@ -18593,18 +18583,24 @@ class Mission
 												isBackpack=1;
 												class MagazineCargo
 												{
-													items=2;
+													items=3;
 													class Item0
-													{
-														name="OPTRE_60Rnd_762x51_Mag";
-														count=4;
-														ammoLeft=60;
-													};
-													class Item1
 													{
 														name="OPTRE_12Rnd_127x40_Mag";
 														count=2;
 														ammoLeft=12;
+													};
+													class Item1
+													{
+														name="OPTRE_60Rnd_762x51_Mag";
+														count=16;
+														ammoLeft=60;
+													};
+													class Item2
+													{
+														name="OPTRE_M9_Frag";
+														count=4;
+														ammoLeft=1;
 													};
 												};
 											};
@@ -18797,61 +18793,51 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=11;
+													items=9;
 													class Item0
 													{
-														name="ACE_elasticBandage";
-														count=6;
+														name="ACE_fieldDressing";
+														count=16;
 													};
 													class Item1
 													{
-														name="ACE_fieldDressing";
-														count=6;
+														name="ACE_epinephrine";
+														count=8;
 													};
 													class Item2
-													{
-														name="ACE_packingBandage";
-														count=6;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=3;
-													};
-													class Item4
-													{
-														name="ACE_morphine";
-														count=2;
-													};
-													class Item5
 													{
 														name="ACE_Flashlight_XL50";
 														count=1;
 													};
-													class Item6
+													class Item3
 													{
 														name="ACE_DefusalKit";
 														count=1;
 													};
-													class Item7
+													class Item4
 													{
 														name="ACE_tourniquet";
 														count=4;
 													};
-													class Item8
+													class Item5
 													{
 														name="ACE_EarPlugs";
 														count=1;
 													};
-													class Item9
+													class Item6
 													{
 														name="ACE_CableTie";
 														count=3;
 													};
-													class Item10
+													class Item7
 													{
 														name="ACE_adenosine";
-														count=1;
+														count=4;
+													};
+													class Item8
+													{
+														name="ACE_morphine";
+														count=2;
 													};
 												};
 											};
@@ -18925,7 +18911,7 @@ class Mission
 												isBackpack=1;
 												class MagazineCargo
 												{
-													items=2;
+													items=3;
 													class Item0
 													{
 														name="OPTRE_12Rnd_127x40_Mag";
@@ -18937,6 +18923,12 @@ class Mission
 														name="OPTRE_100Rnd_95x40_Box";
 														count=10;
 														ammoLeft=100;
+													};
+													class Item2
+													{
+														name="OPTRE_M9_Frag";
+														count=4;
+														ammoLeft=1;
 													};
 												};
 											};
@@ -19126,61 +19118,51 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=11;
+													items=9;
 													class Item0
 													{
-														name="ACE_elasticBandage";
-														count=6;
+														name="ACE_fieldDressing";
+														count=16;
 													};
 													class Item1
 													{
-														name="ACE_fieldDressing";
-														count=6;
+														name="ACE_epinephrine";
+														count=8;
 													};
 													class Item2
-													{
-														name="ACE_packingBandage";
-														count=6;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=3;
-													};
-													class Item4
 													{
 														name="ACE_morphine";
 														count=2;
 													};
-													class Item5
+													class Item3
 													{
 														name="ACE_Flashlight_XL50";
 														count=1;
 													};
-													class Item6
+													class Item4
 													{
 														name="ACE_DefusalKit";
 														count=1;
 													};
-													class Item7
+													class Item5
 													{
 														name="ACE_tourniquet";
 														count=4;
 													};
-													class Item8
+													class Item6
 													{
 														name="ACE_EarPlugs";
 														count=1;
 													};
-													class Item9
+													class Item7
 													{
 														name="ACE_CableTie";
 														count=3;
 													};
-													class Item10
+													class Item8
 													{
 														name="ACE_adenosine";
-														count=1;
+														count=4;
 													};
 												};
 											};
@@ -19193,39 +19175,39 @@ class Mission
 													items=6;
 													class Item0
 													{
-														name="OPTRE_12Rnd_127x40_Mag";
-														count=3;
-														ammoLeft=12;
-													};
-													class Item1
-													{
 														name="OPTRE_M2_Smoke_Purple";
 														count=1;
 														ammoLeft=1;
 													};
-													class Item2
+													class Item1
 													{
 														name="OPTRE_M2_Smoke_Orange";
 														count=1;
 														ammoLeft=1;
 													};
-													class Item3
+													class Item2
 													{
 														name="OPTRE_M2_Smoke";
 														count=4;
 														ammoLeft=1;
 													};
-													class Item4
+													class Item3
 													{
 														name="OPTRE_M9_Frag";
 														count=2;
 														ammoLeft=1;
 													};
-													class Item5
+													class Item4
 													{
 														name="OPTRE_M2_Smoke_Red";
 														count=1;
 														ammoLeft=1;
+													};
+													class Item5
+													{
+														name="OPTRE_60Rnd_762x51_Mag";
+														count=1;
+														ammoLeft=60;
 													};
 												};
 												class ItemCargo
@@ -19310,14 +19292,14 @@ class Mission
 										};
 										class Attribute1
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=0;
+													value=1;
 												};
 											};
 										};
@@ -19362,14 +19344,14 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -19445,61 +19427,51 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=11;
+													items=9;
 													class Item0
 													{
-														name="ACE_elasticBandage";
-														count=6;
+														name="ACE_fieldDressing";
+														count=16;
 													};
 													class Item1
 													{
-														name="ACE_fieldDressing";
-														count=6;
+														name="ACE_epinephrine";
+														count=8;
 													};
 													class Item2
-													{
-														name="ACE_packingBandage";
-														count=6;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=3;
-													};
-													class Item4
 													{
 														name="ACE_morphine";
 														count=2;
 													};
-													class Item5
+													class Item3
 													{
 														name="ACE_Flashlight_XL50";
 														count=1;
 													};
-													class Item6
+													class Item4
 													{
 														name="ACE_DefusalKit";
 														count=1;
 													};
-													class Item7
+													class Item5
 													{
 														name="ACE_tourniquet";
 														count=4;
 													};
-													class Item8
+													class Item6
 													{
 														name="ACE_EarPlugs";
 														count=1;
 													};
-													class Item9
+													class Item7
 													{
 														name="ACE_CableTie";
 														count=3;
 													};
-													class Item10
+													class Item8
 													{
 														name="ACE_adenosine";
-														count=1;
+														count=4;
 													};
 												};
 											};
@@ -19616,14 +19588,14 @@ class Mission
 										};
 										class Attribute1
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=0;
+													value=1;
 												};
 											};
 										};
@@ -19668,14 +19640,14 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -19944,14 +19916,14 @@ class Mission
 										};
 										class Attribute1
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=0;
+													value=1;
 												};
 											};
 										};
@@ -19996,14 +19968,14 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -20079,61 +20051,51 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=11;
+													items=9;
 													class Item0
 													{
-														name="ACE_elasticBandage";
-														count=6;
+														name="ACE_epinephrine";
+														count=8;
 													};
 													class Item1
-													{
-														name="ACE_fieldDressing";
-														count=6;
-													};
-													class Item2
-													{
-														name="ACE_packingBandage";
-														count=6;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=3;
-													};
-													class Item4
 													{
 														name="ACE_morphine";
 														count=2;
 													};
-													class Item5
+													class Item2
 													{
 														name="ACE_Flashlight_XL50";
 														count=1;
 													};
-													class Item6
+													class Item3
 													{
 														name="ACE_DefusalKit";
 														count=1;
 													};
-													class Item7
+													class Item4
 													{
 														name="ACE_tourniquet";
-														count=4;
+														count=12;
 													};
-													class Item8
+													class Item5
 													{
 														name="ACE_EarPlugs";
 														count=1;
 													};
-													class Item9
+													class Item6
 													{
 														name="ACE_CableTie";
 														count=3;
 													};
-													class Item10
+													class Item7
+													{
+														name="ACE_fieldDressing";
+														count=8;
+													};
+													class Item8
 													{
 														name="ACE_adenosine";
-														count=1;
+														count=4;
 													};
 												};
 											};
@@ -20170,14 +20132,14 @@ class Mission
 													};
 													class Item4
 													{
-														name="OPTRE_M9_Frag";
-														count=2;
+														name="OPTRE_M2_Smoke_Red";
+														count=1;
 														ammoLeft=1;
 													};
 													class Item5
 													{
-														name="OPTRE_M2_Smoke_Red";
-														count=1;
+														name="OPTRE_M9_Frag";
+														count=2;
 														ammoLeft=1;
 													};
 												};
@@ -20207,18 +20169,12 @@ class Mission
 												isBackpack=1;
 												class MagazineCargo
 												{
-													items=2;
+													items=1;
 													class Item0
 													{
 														name="OPTRE_60Rnd_762x51_Mag";
-														count=4;
+														count=5;
 														ammoLeft=60;
-													};
-													class Item1
-													{
-														name="OPTRE_12Rnd_127x40_Mag";
-														count=2;
-														ammoLeft=12;
 													};
 												};
 												class ItemCargo
@@ -20226,48 +20182,48 @@ class Mission
 													items=9;
 													class Item0
 													{
-														name="ACE_packingBandage";
-														count=20;
+														name="ACE_morphine";
+														count=6;
 													};
 													class Item1
 													{
-														name="ACE_elasticBandage";
-														count=20;
+														name="ACE_epinephrine";
+														count=22;
 													};
 													class Item2
 													{
-														name="ACE_fieldDressing";
-														count=20;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=20;
-													};
-													class Item4
-													{
 														name="ACE_adenosine";
-														count=20;
-													};
-													class Item5
-													{
-														name="ACE_morphine";
 														count=10;
 													};
-													class Item6
+													class Item3
 													{
 														name="ACE_bloodIV";
 														count=10;
 													};
-													class Item7
+													class Item4
+													{
+														name="OPTRE_Medigel";
+														count=6;
+													};
+													class Item5
 													{
 														name="ACE_bloodIV_500";
-														count=5;
+														count=10;
+													};
+													class Item6
+													{
+														name="ACE_fieldDressing";
+														count=22;
+													};
+													class Item7
+													{
+														name="ACE_elasticBandage";
+														count=22;
 													};
 													class Item8
 													{
-														name="OPTRE_Medigel";
-														count=5;
+														name="ACE_surgicalKit";
+														count=1;
 													};
 												};
 											};
@@ -20300,14 +20256,14 @@ class Mission
 										};
 										class Attribute1
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=0;
+													value=1;
 												};
 											};
 										};
@@ -20352,14 +20308,14 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -20435,61 +20391,51 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=11;
+													items=9;
 													class Item0
 													{
-														name="ACE_elasticBandage";
-														count=6;
+														name="ACE_fieldDressing";
+														count=16;
 													};
 													class Item1
 													{
-														name="ACE_fieldDressing";
-														count=6;
+														name="ACE_epinephrine";
+														count=8;
 													};
 													class Item2
-													{
-														name="ACE_packingBandage";
-														count=6;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=3;
-													};
-													class Item4
 													{
 														name="ACE_morphine";
 														count=2;
 													};
-													class Item5
+													class Item3
 													{
 														name="ACE_Flashlight_XL50";
 														count=1;
 													};
-													class Item6
+													class Item4
 													{
 														name="ACE_DefusalKit";
 														count=1;
 													};
-													class Item7
+													class Item5
 													{
 														name="ACE_tourniquet";
 														count=4;
 													};
-													class Item8
+													class Item6
 													{
 														name="ACE_EarPlugs";
 														count=1;
 													};
-													class Item9
+													class Item7
 													{
 														name="ACE_CableTie";
 														count=3;
 													};
-													class Item10
+													class Item8
 													{
 														name="ACE_adenosine";
-														count=1;
+														count=4;
 													};
 												};
 											};
@@ -20563,18 +20509,12 @@ class Mission
 												isBackpack=1;
 												class MagazineCargo
 												{
-													items=2;
+													items=1;
 													class Item0
 													{
 														name="OPTRE_60Rnd_762x51_Mag";
-														count=4;
+														count=8;
 														ammoLeft=60;
-													};
-													class Item1
-													{
-														name="OPTRE_12Rnd_127x40_Mag";
-														count=2;
-														ammoLeft=12;
 													};
 												};
 											};
@@ -20607,14 +20547,14 @@ class Mission
 										};
 										class Attribute1
 										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=0;
+													value=1;
 												};
 											};
 										};
@@ -20659,14 +20599,14 @@ class Mission
 										};
 										class Attribute5
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="enableStamina";
+											expression="_this enablestamina _value;";
 											class Value
 											{
 												class data
 												{
 													singleType="BOOL";
-													value=1;
+													value=0;
 												};
 											};
 										};

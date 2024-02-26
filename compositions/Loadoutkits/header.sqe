@@ -21,6 +21,7 @@ requiredAddons[]=
 	"ace_captives",
 	"ace_trenches",
 	"A3_Weapons_F_Orange",
+	"ace_arsenal",
 	"OPAEX_Sprays",
 	"OPTRE_Weapons_MG",
 	"OPTRE_Weapons_Rockets",
@@ -28,6 +29,7 @@ requiredAddons[]=
 	"OPTRE_Weapons_Sniper",
 	"OPTRE_Weapons_GL",
 	"OPTRE_Weapons_Charges",
+	"OPTRE_ACE_Compat_Explosives",
 	"OPTRE_Weapons_Sticky",
 	"OPTRE_ACE_Compat_Medical"
 };

@@ -1,2279 +1,2245 @@
 version=54;
-center[]={14621.517,17.91,16774.734};
+center[]={27463.992,170.06056,5586.0015};
 class items
 {
 	items=1;
 	class Item0
 	{
 		dataType="Layer";
-		name="Player Kits";
+		name="PlayerKits";
 		class Entities
 		{
-			items=7;
+			items=1;
 			class Item0
 			{
-				dataType="Group";
-				side="West";
+				dataType="Layer";
+				name="Player Kits";
 				class Entities
 				{
-					items=1;
+					items=7;
 					class Item0
 					{
-						dataType="Object";
-						class PositionInfo
-						{
-							position[]={-6.2353516,0.0014381409,-6.3105469};
-							angles[]={0,2.3561945,-0};
-						};
+						dataType="Group";
 						side="West";
-						flags=7;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.23632813,0.0014343262,4.2246094};
+									angles[]={0,4.682879,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									init="this addAction [""Equip Basic Rifleman Kit"", {player setUnitLoadout (getUnitLoadout basicRiflemanKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
+									name="basicRiflemanKit";
+									disableSimulation=1;
+									ignoreByDynSimulGrid=1;
+									class Inventory
+									{
+										class primaryWeapon
+										{
+											name="OPTRE_MA5B";
+											optics="OPTRE_MA5_SmartLink";
+											firemode="OPTRE_MA5B:FullAuto";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_60Rnd_762x51_Mag";
+												ammoLeft=60;
+											};
+										};
+										class handgun
+										{
+											name="OPTRE_M6C";
+											muzzle="OPTRE_M6C_compensator";
+											flashlight="OPTRE_M6C_Laser";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_8Rnd_127x40_Mag";
+												ammoLeft=8;
+											};
+										};
+										class binocular
+										{
+											name="OPTRE_Smartfinder";
+											class primaryMuzzleMag
+											{
+												name="Laserbatteries";
+												ammoLeft=1;
+											};
+										};
+										class uniform
+										{
+											typeName="OPTRE_UNSC_ODST_Uniform";
+											isBackpack=0;
+											class ItemCargo
+											{
+												items=9;
+												class Item0
+												{
+													name="ACE_fieldDressing";
+													count=16;
+												};
+												class Item1
+												{
+													name="ACE_epinephrine";
+													count=8;
+												};
+												class Item2
+												{
+													name="ACE_morphine";
+													count=2;
+												};
+												class Item3
+												{
+													name="ACE_Flashlight_XL50";
+													count=1;
+												};
+												class Item4
+												{
+													name="ACE_DefusalKit";
+													count=1;
+												};
+												class Item5
+												{
+													name="ACE_tourniquet";
+													count=4;
+												};
+												class Item6
+												{
+													name="ACE_EarPlugs";
+													count=1;
+												};
+												class Item7
+												{
+													name="ACE_CableTie";
+													count=3;
+												};
+												class Item8
+												{
+													name="ACE_adenosine";
+													count=4;
+												};
+											};
+										};
+										class vest
+										{
+											typeName="OPTRE_UNSC_M52D_Armor_Rifleman";
+											isBackpack=0;
+											class MagazineCargo
+											{
+												items=6;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=3;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_M2_Smoke_Purple";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="OPTRE_M2_Smoke_Orange";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item3
+												{
+													name="OPTRE_M2_Smoke";
+													count=4;
+													ammoLeft=1;
+												};
+												class Item4
+												{
+													name="OPTRE_M9_Frag";
+													count=2;
+													ammoLeft=1;
+												};
+												class Item5
+												{
+													name="OPTRE_M2_Smoke_Red";
+													count=1;
+													ammoLeft=1;
+												};
+											};
+											class ItemCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="ACE_EntrenchingTool";
+													count=1;
+												};
+												class Item1
+												{
+													name="MineDetector";
+													count=1;
+												};
+												class Item2
+												{
+													name="OPAEX_ODSTChadCan";
+													count=1;
+												};
+											};
+										};
+										class backpack
+										{
+											typeName="OPTRE_ILCS_Rucksack_Black";
+											isBackpack=1;
+											class MagazineCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=2;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_60Rnd_762x51_Mag";
+													count=16;
+													ammoLeft=60;
+												};
+												class Item2
+												{
+													name="OPTRE_M9_Frag";
+													count=4;
+													ammoLeft=1;
+												};
+											};
+										};
+										map="ItemMap";
+										compass="ItemCompass";
+										watch="ACE_Altimeter";
+										radio="TFAR_anprc152";
+										gps="ItemGPS";
+										hmd="OPTRE_NVGT_C";
+										headgear="OPTRE_UNSC_CH252D_Helmet";
+									};
+								};
+								id=7559;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=356.03058;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="TFAR_freq_lr";
+										expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="50";
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="unitName";
+										expression="_this setname _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Basic Rifleman";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="ENH_doStop";
+										expression="if (!is3DEN && _value) then {doStop _this}";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute6
+									{
+										property="TFAR_freq_sr";
+										expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="101.1";
+											};
+										};
+									};
+									class Attribute7
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=8;
+								};
+							};
+						};
 						class Attributes
 						{
-							init="this addAction [""Equip Basic Rifleman Kit"", {player setUnitLoadout (getUnitLoadout basicRiflemanKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
-							name="basicRiflemanKit";
-							disableSimulation=1;
-							ignoreByDynSimulGrid=1;
-							class Inventory
-							{
-								class primaryWeapon
-								{
-									name="OPTRE_MA5B";
-									optics="OPTRE_MA5_SmartLink";
-									firemode="OPTRE_MA5B:FullAuto";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_60Rnd_762x51_Mag";
-										ammoLeft=60;
-									};
-								};
-								class handgun
-								{
-									name="OPTRE_M6C";
-									muzzle="OPTRE_M6C_compensator";
-									flashlight="OPTRE_M6C_Laser";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_8Rnd_127x40_Mag";
-										ammoLeft=8;
-									};
-								};
-								class binocular
-								{
-									name="OPTRE_Smartfinder";
-									class primaryMuzzleMag
-									{
-										name="Laserbatteries";
-										ammoLeft=1;
-									};
-								};
-								class uniform
-								{
-									typeName="OPTRE_UNSC_ODST_Uniform";
-									isBackpack=0;
-									class ItemCargo
-									{
-										items=11;
-										class Item0
-										{
-											name="ACE_elasticBandage";
-											count=6;
-										};
-										class Item1
-										{
-											name="ACE_fieldDressing";
-											count=6;
-										};
-										class Item2
-										{
-											name="ACE_packingBandage";
-											count=6;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=3;
-										};
-										class Item4
-										{
-											name="ACE_morphine";
-											count=2;
-										};
-										class Item5
-										{
-											name="ACE_Flashlight_XL50";
-											count=1;
-										};
-										class Item6
-										{
-											name="ACE_DefusalKit";
-											count=1;
-										};
-										class Item7
-										{
-											name="ACE_tourniquet";
-											count=4;
-										};
-										class Item8
-										{
-											name="ACE_EarPlugs";
-											count=1;
-										};
-										class Item9
-										{
-											name="ACE_CableTie";
-											count=3;
-										};
-										class Item10
-										{
-											name="ACE_adenosine";
-											count=1;
-										};
-									};
-								};
-								class vest
-								{
-									typeName="OPTRE_UNSC_M52D_Armor_Rifleman";
-									isBackpack=0;
-									class MagazineCargo
-									{
-										items=6;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=3;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_M2_Smoke_Purple";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="OPTRE_M2_Smoke_Orange";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item3
-										{
-											name="OPTRE_M2_Smoke";
-											count=4;
-											ammoLeft=1;
-										};
-										class Item4
-										{
-											name="OPTRE_M9_Frag";
-											count=2;
-											ammoLeft=1;
-										};
-										class Item5
-										{
-											name="OPTRE_M2_Smoke_Red";
-											count=1;
-											ammoLeft=1;
-										};
-									};
-									class ItemCargo
-									{
-										items=3;
-										class Item0
-										{
-											name="ACE_EntrenchingTool";
-											count=1;
-										};
-										class Item1
-										{
-											name="MineDetector";
-											count=1;
-										};
-										class Item2
-										{
-											name="OPAEX_ODSTChadCan";
-											count=1;
-										};
-									};
-								};
-								class backpack
-								{
-									typeName="OPTRE_ILCS_Rucksack_Black";
-									isBackpack=1;
-									class MagazineCargo
-									{
-										items=2;
-										class Item0
-										{
-											name="OPTRE_60Rnd_762x51_Mag";
-											count=4;
-											ammoLeft=60;
-										};
-										class Item1
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=2;
-											ammoLeft=12;
-										};
-									};
-								};
-								map="ItemMap";
-								compass="ItemCompass";
-								watch="ACE_Altimeter";
-								radio="TFAR_anprc152";
-								gps="ItemGPS";
-								hmd="OPTRE_NVGT_C";
-								headgear="OPTRE_UNSC_CH252D_Helmet";
-							};
 						};
-						id=1380;
-						type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="TFAR_freq_lr";
-								expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="50";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="allowDamage";
-								expression="_this allowdamage _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="unitName";
-								expression="_this setname _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Basic Rifleman";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ENH_doStop";
-								expression="if (!is3DEN && _value) then {doStop _this}";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="pitch";
-								expression="_this setpitch _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0.99000001;
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="speaker";
-								expression="_this setspeaker _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Male09ENG";
-									};
-								};
-							};
-							class Attribute6
-							{
-								property="TFAR_freq_sr";
-								expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="101.1";
-									};
-								};
-							};
-							class Attribute7
-							{
-								property="enableStamina";
-								expression="_this enablestamina _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							nAttributes=8;
-						};
+						id=7558;
+						atlOffset=356.03058;
 					};
-				};
-				class Attributes
-				{
-				};
-				id=1379;
-			};
-			class Item1
-			{
-				dataType="Group";
-				side="West";
-				class Entities
-				{
-					items=1;
-					class Item0
+					class Item1
 					{
-						dataType="Object";
-						class PositionInfo
-						{
-							position[]={-4.0361328,0.0014381409,-4.1796875};
-							angles[]={0,2.3561945,-0};
-						};
+						dataType="Group";
 						side="West";
-						flags=7;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.24804688,0.0014343262,2.8173828};
+									angles[]={0,4.682879,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									init="this addAction [""Equip HMG/LMG Rifleman Kit"", {player setUnitLoadout (getUnitLoadout lmgRiflemanKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
+									name="lmgRiflemanKit";
+									disableSimulation=1;
+									ignoreByDynSimulGrid=1;
+									class Inventory
+									{
+										class primaryWeapon
+										{
+											name="OPTRE_M73";
+											firemode="OPTRE_M73:FullAuto";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_100Rnd_95x40_Box";
+												ammoLeft=100;
+											};
+										};
+										class handgun
+										{
+											name="OPTRE_M6C";
+											muzzle="OPTRE_M6C_compensator";
+											flashlight="OPTRE_M6C_Laser";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_8Rnd_127x40_Mag";
+												ammoLeft=8;
+											};
+										};
+										class binocular
+										{
+											name="OPTRE_Smartfinder";
+											class primaryMuzzleMag
+											{
+												name="Laserbatteries";
+												ammoLeft=1;
+											};
+										};
+										class uniform
+										{
+											typeName="OPTRE_UNSC_ODST_Uniform";
+											isBackpack=0;
+											class ItemCargo
+											{
+												items=9;
+												class Item0
+												{
+													name="ACE_fieldDressing";
+													count=16;
+												};
+												class Item1
+												{
+													name="ACE_epinephrine";
+													count=8;
+												};
+												class Item2
+												{
+													name="ACE_Flashlight_XL50";
+													count=1;
+												};
+												class Item3
+												{
+													name="ACE_DefusalKit";
+													count=1;
+												};
+												class Item4
+												{
+													name="ACE_tourniquet";
+													count=4;
+												};
+												class Item5
+												{
+													name="ACE_EarPlugs";
+													count=1;
+												};
+												class Item6
+												{
+													name="ACE_CableTie";
+													count=3;
+												};
+												class Item7
+												{
+													name="ACE_adenosine";
+													count=4;
+												};
+												class Item8
+												{
+													name="ACE_morphine";
+													count=2;
+												};
+											};
+										};
+										class vest
+										{
+											typeName="OPTRE_UNSC_M52D_Armor_Rifleman";
+											isBackpack=0;
+											class MagazineCargo
+											{
+												items=6;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=3;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_M2_Smoke_Purple";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="OPTRE_M2_Smoke_Orange";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item3
+												{
+													name="OPTRE_M2_Smoke";
+													count=4;
+													ammoLeft=1;
+												};
+												class Item4
+												{
+													name="OPTRE_M9_Frag";
+													count=2;
+													ammoLeft=1;
+												};
+												class Item5
+												{
+													name="OPTRE_M2_Smoke_Red";
+													count=1;
+													ammoLeft=1;
+												};
+											};
+											class ItemCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="ACE_EntrenchingTool";
+													count=1;
+												};
+												class Item1
+												{
+													name="MineDetector";
+													count=1;
+												};
+												class Item2
+												{
+													name="OPAEX_ODSTChadCan";
+													count=1;
+												};
+											};
+										};
+										class backpack
+										{
+											typeName="OPTRE_ILCS_Rucksack_Heavy";
+											isBackpack=1;
+											class MagazineCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=2;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_100Rnd_95x40_Box";
+													count=10;
+													ammoLeft=100;
+												};
+												class Item2
+												{
+													name="OPTRE_M9_Frag";
+													count=4;
+													ammoLeft=1;
+												};
+											};
+										};
+										map="ItemMap";
+										compass="ItemCompass";
+										watch="ACE_Altimeter";
+										radio="TFAR_anprc152";
+										gps="ItemGPS";
+										hmd="OPTRE_NVGT_C";
+										headgear="OPTRE_UNSC_CH252D_Helmet";
+									};
+								};
+								id=7561;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=356.03058;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="unitName";
+										expression="_this setname _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="LMG Rifleman";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="face";
+										expression="_this setface _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="ENH_doStop";
+										expression="if (!is3DEN && _value) then {doStop _this}";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute6
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=7;
+								};
+							};
+						};
 						class Attributes
 						{
-							init="this addAction [""Equip HMG/LMG Rifleman Kit"", {player setUnitLoadout (getUnitLoadout lmgRiflemanKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
-							name="lmgRiflemanKit";
-							disableSimulation=1;
-							ignoreByDynSimulGrid=1;
-							class Inventory
-							{
-								class primaryWeapon
-								{
-									name="OPTRE_M73";
-									firemode="OPTRE_M73:FullAuto";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_100Rnd_95x40_Box";
-										ammoLeft=100;
-									};
-								};
-								class handgun
-								{
-									name="OPTRE_M6C";
-									muzzle="OPTRE_M6C_compensator";
-									flashlight="OPTRE_M6C_Laser";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_8Rnd_127x40_Mag";
-										ammoLeft=8;
-									};
-								};
-								class binocular
-								{
-									name="OPTRE_Smartfinder";
-									class primaryMuzzleMag
-									{
-										name="Laserbatteries";
-										ammoLeft=1;
-									};
-								};
-								class uniform
-								{
-									typeName="OPTRE_UNSC_ODST_Uniform";
-									isBackpack=0;
-									class ItemCargo
-									{
-										items=11;
-										class Item0
-										{
-											name="ACE_elasticBandage";
-											count=6;
-										};
-										class Item1
-										{
-											name="ACE_fieldDressing";
-											count=6;
-										};
-										class Item2
-										{
-											name="ACE_packingBandage";
-											count=6;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=3;
-										};
-										class Item4
-										{
-											name="ACE_morphine";
-											count=2;
-										};
-										class Item5
-										{
-											name="ACE_Flashlight_XL50";
-											count=1;
-										};
-										class Item6
-										{
-											name="ACE_DefusalKit";
-											count=1;
-										};
-										class Item7
-										{
-											name="ACE_tourniquet";
-											count=4;
-										};
-										class Item8
-										{
-											name="ACE_EarPlugs";
-											count=1;
-										};
-										class Item9
-										{
-											name="ACE_CableTie";
-											count=3;
-										};
-										class Item10
-										{
-											name="ACE_adenosine";
-											count=1;
-										};
-									};
-								};
-								class vest
-								{
-									typeName="OPTRE_UNSC_M52D_Armor_Rifleman";
-									isBackpack=0;
-									class MagazineCargo
-									{
-										items=6;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=3;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_M2_Smoke_Purple";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="OPTRE_M2_Smoke_Orange";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item3
-										{
-											name="OPTRE_M2_Smoke";
-											count=4;
-											ammoLeft=1;
-										};
-										class Item4
-										{
-											name="OPTRE_M9_Frag";
-											count=2;
-											ammoLeft=1;
-										};
-										class Item5
-										{
-											name="OPTRE_M2_Smoke_Red";
-											count=1;
-											ammoLeft=1;
-										};
-									};
-									class ItemCargo
-									{
-										items=3;
-										class Item0
-										{
-											name="ACE_EntrenchingTool";
-											count=1;
-										};
-										class Item1
-										{
-											name="MineDetector";
-											count=1;
-										};
-										class Item2
-										{
-											name="OPAEX_ODSTChadCan";
-											count=1;
-										};
-									};
-								};
-								class backpack
-								{
-									typeName="OPTRE_ILCS_Rucksack_Heavy";
-									isBackpack=1;
-									class MagazineCargo
-									{
-										items=2;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=2;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_100Rnd_95x40_Box";
-											count=10;
-											ammoLeft=100;
-										};
-									};
-								};
-								map="ItemMap";
-								compass="ItemCompass";
-								watch="ACE_Altimeter";
-								radio="TFAR_anprc152";
-								gps="ItemGPS";
-								hmd="OPTRE_NVGT_C";
-								headgear="OPTRE_UNSC_CH252D_Helmet";
-							};
 						};
-						id=1382;
-						type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="allowDamage";
-								expression="_this allowdamage _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="unitName";
-								expression="_this setname _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="LMG Rifleman";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="face";
-								expression="_this setface _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ENH_doStop";
-								expression="if (!is3DEN && _value) then {doStop _this}";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="pitch";
-								expression="_this setpitch _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0.99000001;
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="speaker";
-								expression="_this setspeaker _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Male09ENG";
-									};
-								};
-							};
-							class Attribute6
-							{
-								property="enableStamina";
-								expression="_this enablestamina _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							nAttributes=7;
-						};
+						id=7560;
+						atlOffset=356.03058;
 					};
-				};
-				class Attributes
-				{
-				};
-				id=1381;
-			};
-			class Item2
-			{
-				dataType="Group";
-				side="West";
-				class Entities
-				{
-					items=1;
-					class Item0
+					class Item2
 					{
-						dataType="Object";
-						class PositionInfo
-						{
-							position[]={-2.1044922,0.0014381409,-2.1503906};
-							angles[]={0,2.3561945,-0};
-						};
+						dataType="Group";
 						side="West";
-						flags=7;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.125,0.0014343262,1.6777344};
+									angles[]={0,4.682879,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									init="this addAction [""Equip AT Kit"", {player setUnitLoadout (getUnitLoadout atKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
+									name="atKit";
+									disableSimulation=1;
+									ignoreByDynSimulGrid=1;
+									class Inventory
+									{
+										class primaryWeapon
+										{
+											name="OPTRE_MA5B";
+											optics="OPTRE_MA5_SmartLink";
+											firemode="OPTRE_MA5B:FullAuto";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_60Rnd_762x51_Mag";
+												ammoLeft=60;
+											};
+										};
+										class secondaryWeapon
+										{
+											name="OPTRE_M41_SSR";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_M41_Twin_AI";
+												ammoLeft=2;
+											};
+										};
+										class handgun
+										{
+											name="OPTRE_M6C";
+											muzzle="OPTRE_M6C_compensator";
+											flashlight="OPTRE_M6C_Laser";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_8Rnd_127x40_Mag";
+												ammoLeft=8;
+											};
+										};
+										class binocular
+										{
+											name="OPTRE_Smartfinder";
+											class primaryMuzzleMag
+											{
+												name="Laserbatteries";
+												ammoLeft=1;
+											};
+										};
+										class uniform
+										{
+											typeName="OPTRE_UNSC_ODST_Uniform";
+											isBackpack=0;
+											class ItemCargo
+											{
+												items=9;
+												class Item0
+												{
+													name="ACE_fieldDressing";
+													count=16;
+												};
+												class Item1
+												{
+													name="ACE_epinephrine";
+													count=8;
+												};
+												class Item2
+												{
+													name="ACE_morphine";
+													count=2;
+												};
+												class Item3
+												{
+													name="ACE_Flashlight_XL50";
+													count=1;
+												};
+												class Item4
+												{
+													name="ACE_DefusalKit";
+													count=1;
+												};
+												class Item5
+												{
+													name="ACE_tourniquet";
+													count=4;
+												};
+												class Item6
+												{
+													name="ACE_EarPlugs";
+													count=1;
+												};
+												class Item7
+												{
+													name="ACE_CableTie";
+													count=3;
+												};
+												class Item8
+												{
+													name="ACE_adenosine";
+													count=4;
+												};
+											};
+										};
+										class vest
+										{
+											typeName="OPTRE_UNSC_M52D_Armor_Demolitions";
+											isBackpack=0;
+											class MagazineCargo
+											{
+												items=6;
+												class Item0
+												{
+													name="OPTRE_M2_Smoke_Purple";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item1
+												{
+													name="OPTRE_M2_Smoke_Orange";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="OPTRE_M2_Smoke";
+													count=4;
+													ammoLeft=1;
+												};
+												class Item3
+												{
+													name="OPTRE_M9_Frag";
+													count=2;
+													ammoLeft=1;
+												};
+												class Item4
+												{
+													name="OPTRE_M2_Smoke_Red";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item5
+												{
+													name="OPTRE_60Rnd_762x51_Mag";
+													count=1;
+													ammoLeft=60;
+												};
+											};
+											class ItemCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="ACE_EntrenchingTool";
+													count=1;
+												};
+												class Item1
+												{
+													name="MineDetector";
+													count=1;
+												};
+												class Item2
+												{
+													name="OPAEX_ODSTChadCan";
+													count=1;
+												};
+											};
+										};
+										class backpack
+										{
+											typeName="OPTRE_ILCS_Rucksack_Black";
+											isBackpack=1;
+											class MagazineCargo
+											{
+												items=4;
+												class Item0
+												{
+													name="OPTRE_60Rnd_762x51_Mag";
+													count=3;
+													ammoLeft=60;
+												};
+												class Item1
+												{
+													name="OPTRE_M41_Twin_HEAP";
+													count=3;
+													ammoLeft=2;
+												};
+												class Item2
+												{
+													name="OPTRE_M41_Twin_Smoke_W";
+													count=1;
+													ammoLeft=2;
+												};
+												class Item3
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=2;
+													ammoLeft=12;
+												};
+											};
+										};
+										map="ItemMap";
+										compass="ItemCompass";
+										watch="ACE_Altimeter";
+										radio="TFAR_anprc152";
+										gps="ItemGPS";
+										hmd="OPTRE_NVGT_C";
+										headgear="OPTRE_UNSC_CH252D_Helmet";
+									};
+								};
+								id=7563;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=356.03058;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ENH_doStop";
+										expression="if (!is3DEN && _value) then {doStop _this}";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="unitName";
+										expression="_this setname _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="AT";
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+						};
 						class Attributes
 						{
-							init="this addAction [""Equip AT Kit"", {player setUnitLoadout (getUnitLoadout atKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
-							name="atKit";
-							disableSimulation=1;
-							ignoreByDynSimulGrid=1;
-							class Inventory
-							{
-								class primaryWeapon
-								{
-									name="OPTRE_MA5B";
-									optics="OPTRE_MA5_SmartLink";
-									firemode="OPTRE_MA5B:FullAuto";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_60Rnd_762x51_Mag";
-										ammoLeft=60;
-									};
-								};
-								class secondaryWeapon
-								{
-									name="OPTRE_M41_SSR";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_M41_Twin_AI";
-										ammoLeft=2;
-									};
-								};
-								class handgun
-								{
-									name="OPTRE_M6C";
-									muzzle="OPTRE_M6C_compensator";
-									flashlight="OPTRE_M6C_Laser";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_8Rnd_127x40_Mag";
-										ammoLeft=8;
-									};
-								};
-								class binocular
-								{
-									name="OPTRE_Smartfinder";
-									class primaryMuzzleMag
-									{
-										name="Laserbatteries";
-										ammoLeft=1;
-									};
-								};
-								class uniform
-								{
-									typeName="OPTRE_UNSC_ODST_Uniform";
-									isBackpack=0;
-									class ItemCargo
-									{
-										items=11;
-										class Item0
-										{
-											name="ACE_elasticBandage";
-											count=6;
-										};
-										class Item1
-										{
-											name="ACE_fieldDressing";
-											count=6;
-										};
-										class Item2
-										{
-											name="ACE_packingBandage";
-											count=6;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=3;
-										};
-										class Item4
-										{
-											name="ACE_morphine";
-											count=2;
-										};
-										class Item5
-										{
-											name="ACE_Flashlight_XL50";
-											count=1;
-										};
-										class Item6
-										{
-											name="ACE_DefusalKit";
-											count=1;
-										};
-										class Item7
-										{
-											name="ACE_tourniquet";
-											count=4;
-										};
-										class Item8
-										{
-											name="ACE_EarPlugs";
-											count=1;
-										};
-										class Item9
-										{
-											name="ACE_CableTie";
-											count=3;
-										};
-										class Item10
-										{
-											name="ACE_adenosine";
-											count=1;
-										};
-									};
-								};
-								class vest
-								{
-									typeName="OPTRE_UNSC_M52D_Armor_Demolitions";
-									isBackpack=0;
-									class MagazineCargo
-									{
-										items=6;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=3;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_M2_Smoke_Purple";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="OPTRE_M2_Smoke_Orange";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item3
-										{
-											name="OPTRE_M2_Smoke";
-											count=4;
-											ammoLeft=1;
-										};
-										class Item4
-										{
-											name="OPTRE_M9_Frag";
-											count=2;
-											ammoLeft=1;
-										};
-										class Item5
-										{
-											name="OPTRE_M2_Smoke_Red";
-											count=1;
-											ammoLeft=1;
-										};
-									};
-									class ItemCargo
-									{
-										items=3;
-										class Item0
-										{
-											name="ACE_EntrenchingTool";
-											count=1;
-										};
-										class Item1
-										{
-											name="MineDetector";
-											count=1;
-										};
-										class Item2
-										{
-											name="OPAEX_ODSTChadCan";
-											count=1;
-										};
-									};
-								};
-								class backpack
-								{
-									typeName="OPTRE_ILCS_Rucksack_Black";
-									isBackpack=1;
-									class MagazineCargo
-									{
-										items=4;
-										class Item0
-										{
-											name="OPTRE_60Rnd_762x51_Mag";
-											count=3;
-											ammoLeft=60;
-										};
-										class Item1
-										{
-											name="OPTRE_M41_Twin_HEAP";
-											count=3;
-											ammoLeft=2;
-										};
-										class Item2
-										{
-											name="OPTRE_M41_Twin_Smoke_W";
-											count=1;
-											ammoLeft=2;
-										};
-										class Item3
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=2;
-											ammoLeft=12;
-										};
-									};
-								};
-								map="ItemMap";
-								compass="ItemCompass";
-								watch="ACE_Altimeter";
-								radio="TFAR_anprc152";
-								gps="ItemGPS";
-								hmd="OPTRE_NVGT_C";
-								headgear="OPTRE_UNSC_CH252D_Helmet";
-							};
 						};
-						id=1384;
-						type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="allowDamage";
-								expression="_this allowdamage _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ENH_doStop";
-								expression="if (!is3DEN && _value) then {doStop _this}";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="speaker";
-								expression="_this setspeaker _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Male09ENG";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="pitch";
-								expression="_this setpitch _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0.99000001;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="unitName";
-								expression="_this setname _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="AT";
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="enableStamina";
-								expression="_this enablestamina _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							nAttributes=6;
-						};
+						id=7562;
+						atlOffset=356.03058;
 					};
-				};
-				class Attributes
-				{
-				};
-				id=1383;
-			};
-			class Item3
-			{
-				dataType="Group";
-				side="West";
-				class Entities
-				{
-					items=1;
-					class Item0
+					class Item3
 					{
-						dataType="Object";
-						class PositionInfo
-						{
-							position[]={-0.001953125,0.0014381409,0.11914063};
-							angles[]={0,2.3561945,-0};
-						};
+						dataType="Group";
 						side="West";
-						flags=7;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.001953125,0.0014343262,0.32568359};
+									angles[]={0,4.682879,0};
+								};
+								side="West";
+								flags=7;
+								class Attributes
+								{
+									init="this addAction [""Equip Sniper Kit"", {player setUnitLoadout (getUnitLoadout sniperKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
+									name="sniperKit";
+									disableSimulation=1;
+									ignoreByDynSimulGrid=1;
+									class Inventory
+									{
+										class primaryWeapon
+										{
+											name="OPTRE_SRS99C";
+											optics="OPTRE_SRS99C_Scope";
+											firemode="OPTRE_SRS99C:Single";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_4Rnd_145x114_APFSDS_Mag";
+												ammoLeft=4;
+											};
+										};
+										class handgun
+										{
+											name="OPTRE_M6C";
+											muzzle="OPTRE_M6C_compensator";
+											flashlight="OPTRE_M6C_Laser";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_8Rnd_127x40_Mag";
+												ammoLeft=8;
+											};
+										};
+										class binocular
+										{
+											name="OPTRE_Smartfinder";
+											class primaryMuzzleMag
+											{
+												name="Laserbatteries";
+												ammoLeft=1;
+											};
+										};
+										class uniform
+										{
+											typeName="OPTRE_UNSC_ODST_Uniform";
+											isBackpack=0;
+											class ItemCargo
+											{
+												items=9;
+												class Item0
+												{
+													name="ACE_fieldDressing";
+													count=16;
+												};
+												class Item1
+												{
+													name="ACE_epinephrine";
+													count=8;
+												};
+												class Item2
+												{
+													name="ACE_morphine";
+													count=2;
+												};
+												class Item3
+												{
+													name="ACE_Flashlight_XL50";
+													count=1;
+												};
+												class Item4
+												{
+													name="ACE_DefusalKit";
+													count=1;
+												};
+												class Item5
+												{
+													name="ACE_tourniquet";
+													count=4;
+												};
+												class Item6
+												{
+													name="ACE_EarPlugs";
+													count=1;
+												};
+												class Item7
+												{
+													name="ACE_CableTie";
+													count=3;
+												};
+												class Item8
+												{
+													name="ACE_adenosine";
+													count=4;
+												};
+											};
+										};
+										class vest
+										{
+											typeName="OPTRE_UNSC_M52D_Armor_Sniper";
+											isBackpack=0;
+											class MagazineCargo
+											{
+												items=6;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=3;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_M2_Smoke_Purple";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="OPTRE_M2_Smoke_Orange";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item3
+												{
+													name="OPTRE_M2_Smoke";
+													count=4;
+													ammoLeft=1;
+												};
+												class Item4
+												{
+													name="OPTRE_M9_Frag";
+													count=2;
+													ammoLeft=1;
+												};
+												class Item5
+												{
+													name="OPTRE_M2_Smoke_Red";
+													count=1;
+													ammoLeft=1;
+												};
+											};
+											class ItemCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="ACE_EntrenchingTool";
+													count=1;
+												};
+												class Item1
+												{
+													name="MineDetector";
+													count=1;
+												};
+												class Item2
+												{
+													name="OPAEX_ODSTChadCan";
+													count=1;
+												};
+											};
+										};
+										class backpack
+										{
+											typeName="OPTRE_ILCS_Rucksack_Black";
+											isBackpack=1;
+											class MagazineCargo
+											{
+												items=2;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=2;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_4Rnd_145x114_APFSDS_Mag";
+													count=22;
+													ammoLeft=4;
+												};
+											};
+										};
+										map="ItemMap";
+										compass="ItemCompass";
+										watch="ACE_Altimeter";
+										radio="TFAR_anprc152";
+										gps="ItemGPS";
+										headgear="OPTRE_UNSC_CH252D_Helmet";
+									};
+								};
+								id=7565;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=0.00044250488;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ENH_doStop";
+										expression="if (!is3DEN && _value) then {doStop _this}";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="unitName";
+										expression="_this setname _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Sniper";
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+						};
 						class Attributes
 						{
-							init="this addAction [""Equip Sniper Kit"", {player setUnitLoadout (getUnitLoadout sniperKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
-							name="sniperKit";
-							disableSimulation=1;
-							ignoreByDynSimulGrid=1;
-							class Inventory
-							{
-								class primaryWeapon
-								{
-									name="OPTRE_SRS99C";
-									optics="OPTRE_SRS99C_Scope";
-									firemode="OPTRE_SRS99C:Single";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_4Rnd_145x114_APFSDS_Mag";
-										ammoLeft=4;
-									};
-								};
-								class handgun
-								{
-									name="OPTRE_M6C";
-									muzzle="OPTRE_M6C_compensator";
-									flashlight="OPTRE_M6C_Laser";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_8Rnd_127x40_Mag";
-										ammoLeft=8;
-									};
-								};
-								class binocular
-								{
-									name="OPTRE_Smartfinder";
-									class primaryMuzzleMag
-									{
-										name="Laserbatteries";
-										ammoLeft=1;
-									};
-								};
-								class uniform
-								{
-									typeName="OPTRE_UNSC_ODST_Uniform";
-									isBackpack=0;
-									class ItemCargo
-									{
-										items=11;
-										class Item0
-										{
-											name="ACE_elasticBandage";
-											count=6;
-										};
-										class Item1
-										{
-											name="ACE_fieldDressing";
-											count=6;
-										};
-										class Item2
-										{
-											name="ACE_packingBandage";
-											count=6;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=3;
-										};
-										class Item4
-										{
-											name="ACE_morphine";
-											count=2;
-										};
-										class Item5
-										{
-											name="ACE_Flashlight_XL50";
-											count=1;
-										};
-										class Item6
-										{
-											name="ACE_DefusalKit";
-											count=1;
-										};
-										class Item7
-										{
-											name="ACE_tourniquet";
-											count=4;
-										};
-										class Item8
-										{
-											name="ACE_EarPlugs";
-											count=1;
-										};
-										class Item9
-										{
-											name="ACE_CableTie";
-											count=3;
-										};
-										class Item10
-										{
-											name="ACE_adenosine";
-											count=1;
-										};
-									};
-								};
-								class vest
-								{
-									typeName="OPTRE_UNSC_M52D_Armor_Sniper";
-									isBackpack=0;
-									class MagazineCargo
-									{
-										items=6;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=3;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_M2_Smoke_Purple";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="OPTRE_M2_Smoke_Orange";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item3
-										{
-											name="OPTRE_M2_Smoke";
-											count=4;
-											ammoLeft=1;
-										};
-										class Item4
-										{
-											name="OPTRE_M9_Frag";
-											count=2;
-											ammoLeft=1;
-										};
-										class Item5
-										{
-											name="OPTRE_M2_Smoke_Red";
-											count=1;
-											ammoLeft=1;
-										};
-									};
-									class ItemCargo
-									{
-										items=3;
-										class Item0
-										{
-											name="ACE_EntrenchingTool";
-											count=1;
-										};
-										class Item1
-										{
-											name="MineDetector";
-											count=1;
-										};
-										class Item2
-										{
-											name="OPAEX_ODSTChadCan";
-											count=1;
-										};
-									};
-								};
-								class backpack
-								{
-									typeName="OPTRE_ILCS_Rucksack_Black";
-									isBackpack=1;
-									class MagazineCargo
-									{
-										items=2;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=2;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_4Rnd_145x114_APFSDS_Mag";
-											count=22;
-											ammoLeft=4;
-										};
-									};
-								};
-								map="ItemMap";
-								compass="ItemCompass";
-								watch="ACE_Altimeter";
-								radio="TFAR_anprc152";
-								gps="ItemGPS";
-								headgear="OPTRE_UNSC_CH252D_Helmet";
-							};
 						};
-						id=1386;
-						type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="allowDamage";
-								expression="_this allowdamage _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ENH_doStop";
-								expression="if (!is3DEN && _value) then {doStop _this}";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="speaker";
-								expression="_this setspeaker _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Male09ENG";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="pitch";
-								expression="_this setpitch _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0.99000001;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="unitName";
-								expression="_this setname _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Sniper";
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="enableStamina";
-								expression="_this enablestamina _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							nAttributes=6;
-						};
+						id=7564;
+						atlOffset=0.00044250488;
 					};
-				};
-				class Attributes
-				{
-				};
-				id=1385;
-			};
-			class Item4
-			{
-				dataType="Group";
-				side="West";
-				class Entities
-				{
-					items=1;
-					class Item0
+					class Item4
 					{
-						dataType="Object";
-						class PositionInfo
-						{
-							position[]={2.0527344,0.0014381409,2.25};
-							angles[]={0,2.3561945,-0};
-						};
+						dataType="Group";
 						side="West";
-						flags=7;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={0.08203125,0.0014343262,-1.1669922};
+									angles[]={0,4.682879,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									init="this addAction [""Equip Demolitions Kit"", {player setUnitLoadout (getUnitLoadout demolitionsKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
+									name="demolitionsKit";
+									disableSimulation=1;
+									ignoreByDynSimulGrid=1;
+									class Inventory
+									{
+										class primaryWeapon
+										{
+											name="OPTRE_MA5B";
+											optics="OPTRE_MA5_SmartLink";
+											firemode="OPTRE_MA5B:FullAuto";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_60Rnd_762x51_Mag";
+												ammoLeft=60;
+											};
+										};
+										class handgun
+										{
+											name="OPTRE_M319M";
+											class primaryMuzzleMag
+											{
+												name="3Rnd_HE_Grenade_shell";
+												ammoLeft=3;
+											};
+										};
+										class binocular
+										{
+											name="OPTRE_Smartfinder";
+											class primaryMuzzleMag
+											{
+												name="Laserbatteries";
+												ammoLeft=1;
+											};
+										};
+										class uniform
+										{
+											typeName="OPTRE_UNSC_ODST_Uniform";
+											isBackpack=0;
+											class ItemCargo
+											{
+												items=11;
+												class Item0
+												{
+													name="ACE_elasticBandage";
+													count=6;
+												};
+												class Item1
+												{
+													name="ACE_fieldDressing";
+													count=6;
+												};
+												class Item2
+												{
+													name="ACE_packingBandage";
+													count=6;
+												};
+												class Item3
+												{
+													name="ACE_epinephrine";
+													count=3;
+												};
+												class Item4
+												{
+													name="ACE_morphine";
+													count=2;
+												};
+												class Item5
+												{
+													name="ACE_Flashlight_XL50";
+													count=1;
+												};
+												class Item6
+												{
+													name="ACE_DefusalKit";
+													count=1;
+												};
+												class Item7
+												{
+													name="ACE_tourniquet";
+													count=4;
+												};
+												class Item8
+												{
+													name="ACE_EarPlugs";
+													count=1;
+												};
+												class Item9
+												{
+													name="ACE_CableTie";
+													count=3;
+												};
+												class Item10
+												{
+													name="ACE_adenosine";
+													count=1;
+												};
+											};
+										};
+										class vest
+										{
+											typeName="OPTRE_UNSC_M52D_Armor_Demolitions";
+											isBackpack=0;
+											class MagazineCargo
+											{
+												items=6;
+												class Item0
+												{
+													name="OPTRE_M2_Smoke_Purple";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item1
+												{
+													name="OPTRE_M2_Smoke_Orange";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="OPTRE_M2_Smoke";
+													count=4;
+													ammoLeft=1;
+												};
+												class Item3
+												{
+													name="OPTRE_M9_Frag";
+													count=2;
+													ammoLeft=1;
+												};
+												class Item4
+												{
+													name="OPTRE_M2_Smoke_Red";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item5
+												{
+													name="3Rnd_HE_Grenade_shell";
+													count=1;
+													ammoLeft=3;
+												};
+											};
+											class ItemCargo
+											{
+												items=4;
+												class Item0
+												{
+													name="ACE_EntrenchingTool";
+													count=1;
+												};
+												class Item1
+												{
+													name="MineDetector";
+													count=1;
+												};
+												class Item2
+												{
+													name="OPAEX_ODSTChadCan";
+													count=1;
+												};
+												class Item3
+												{
+													name="ACE_Clacker";
+													count=1;
+												};
+											};
+										};
+										class backpack
+										{
+											typeName="OPTRE_ILCS_Rucksack_Black";
+											isBackpack=1;
+											class MagazineCargo
+											{
+												items=5;
+												class Item0
+												{
+													name="C7_Remote_Mag";
+													count=5;
+													ammoLeft=1;
+												};
+												class Item1
+												{
+													name="OPTRE_c7_remote_throwable_sticky_mag";
+													count=3;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="3Rnd_HE_Grenade_shell";
+													count=10;
+													ammoLeft=3;
+												};
+												class Item3
+												{
+													name="3Rnd_Smoke_Grenade_shell";
+													count=5;
+													ammoLeft=3;
+												};
+												class Item4
+												{
+													name="OPTRE_60Rnd_762x51_Mag";
+													count=4;
+													ammoLeft=60;
+												};
+											};
+										};
+										map="ItemMap";
+										compass="ItemCompass";
+										watch="ACE_Altimeter";
+										radio="TFAR_anprc152";
+										gps="ItemGPS";
+										hmd="OPTRE_NVGT_C";
+										headgear="OPTRE_UNSC_CH252D_Helmet";
+									};
+								};
+								id=7567;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=356.03058;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ENH_doStop";
+										expression="if (!is3DEN && _value) then {doStop _this}";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="unitName";
+										expression="_this setname _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Demolitions";
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+						};
 						class Attributes
 						{
-							init="this addAction [""Equip Demolitions Kit"", {player setUnitLoadout (getUnitLoadout demolitionsKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
-							name="demolitionsKit";
-							disableSimulation=1;
-							ignoreByDynSimulGrid=1;
-							class Inventory
-							{
-								class primaryWeapon
-								{
-									name="OPTRE_MA5B";
-									optics="OPTRE_MA5_SmartLink";
-									firemode="OPTRE_MA5B:FullAuto";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_60Rnd_762x51_Mag";
-										ammoLeft=60;
-									};
-								};
-								class handgun
-								{
-									name="OPTRE_M319M";
-									class primaryMuzzleMag
-									{
-										name="3Rnd_HE_Grenade_shell";
-										ammoLeft=3;
-									};
-								};
-								class binocular
-								{
-									name="OPTRE_Smartfinder";
-									class primaryMuzzleMag
-									{
-										name="Laserbatteries";
-										ammoLeft=1;
-									};
-								};
-								class uniform
-								{
-									typeName="OPTRE_UNSC_ODST_Uniform";
-									isBackpack=0;
-									class ItemCargo
-									{
-										items=11;
-										class Item0
-										{
-											name="ACE_elasticBandage";
-											count=6;
-										};
-										class Item1
-										{
-											name="ACE_fieldDressing";
-											count=6;
-										};
-										class Item2
-										{
-											name="ACE_packingBandage";
-											count=6;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=3;
-										};
-										class Item4
-										{
-											name="ACE_morphine";
-											count=2;
-										};
-										class Item5
-										{
-											name="ACE_Flashlight_XL50";
-											count=1;
-										};
-										class Item6
-										{
-											name="ACE_DefusalKit";
-											count=1;
-										};
-										class Item7
-										{
-											name="ACE_tourniquet";
-											count=4;
-										};
-										class Item8
-										{
-											name="ACE_EarPlugs";
-											count=1;
-										};
-										class Item9
-										{
-											name="ACE_CableTie";
-											count=3;
-										};
-										class Item10
-										{
-											name="ACE_adenosine";
-											count=1;
-										};
-									};
-								};
-								class vest
-								{
-									typeName="OPTRE_UNSC_M52D_Armor_Demolitions";
-									isBackpack=0;
-									class MagazineCargo
-									{
-										items=6;
-										class Item0
-										{
-											name="OPTRE_M2_Smoke_Purple";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item1
-										{
-											name="OPTRE_M2_Smoke_Orange";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="OPTRE_M2_Smoke";
-											count=4;
-											ammoLeft=1;
-										};
-										class Item3
-										{
-											name="OPTRE_M9_Frag";
-											count=2;
-											ammoLeft=1;
-										};
-										class Item4
-										{
-											name="OPTRE_M2_Smoke_Red";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item5
-										{
-											name="3Rnd_HE_Grenade_shell";
-											count=1;
-											ammoLeft=3;
-										};
-									};
-									class ItemCargo
-									{
-										items=4;
-										class Item0
-										{
-											name="ACE_EntrenchingTool";
-											count=1;
-										};
-										class Item1
-										{
-											name="MineDetector";
-											count=1;
-										};
-										class Item2
-										{
-											name="OPAEX_ODSTChadCan";
-											count=1;
-										};
-										class Item3
-										{
-											name="ACE_Clacker";
-											count=1;
-										};
-									};
-								};
-								class backpack
-								{
-									typeName="OPTRE_ILCS_Rucksack_Black";
-									isBackpack=1;
-									class MagazineCargo
-									{
-										items=5;
-										class Item0
-										{
-											name="C7_Remote_Mag";
-											count=5;
-											ammoLeft=1;
-										};
-										class Item1
-										{
-											name="OPTRE_c7_remote_throwable_sticky_mag";
-											count=3;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="3Rnd_HE_Grenade_shell";
-											count=10;
-											ammoLeft=3;
-										};
-										class Item3
-										{
-											name="3Rnd_Smoke_Grenade_shell";
-											count=5;
-											ammoLeft=3;
-										};
-										class Item4
-										{
-											name="OPTRE_60Rnd_762x51_Mag";
-											count=4;
-											ammoLeft=60;
-										};
-									};
-								};
-								map="ItemMap";
-								compass="ItemCompass";
-								watch="ACE_Altimeter";
-								radio="TFAR_anprc152";
-								gps="ItemGPS";
-								hmd="OPTRE_NVGT_C";
-								headgear="OPTRE_UNSC_CH252D_Helmet";
-							};
 						};
-						id=1388;
-						type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="allowDamage";
-								expression="_this allowdamage _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ENH_doStop";
-								expression="if (!is3DEN && _value) then {doStop _this}";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="speaker";
-								expression="_this setspeaker _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Male09ENG";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="pitch";
-								expression="_this setpitch _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0.99000001;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="unitName";
-								expression="_this setname _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Demolitions";
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="enableStamina";
-								expression="_this enablestamina _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							nAttributes=6;
-						};
+						id=7566;
+						atlOffset=356.03058;
 					};
-				};
-				class Attributes
-				{
-				};
-				id=1387;
-			};
-			class Item5
-			{
-				dataType="Group";
-				side="West";
-				class Entities
-				{
-					items=1;
-					class Item0
+					class Item5
 					{
-						dataType="Object";
-						class PositionInfo
-						{
-							position[]={4.0634766,0.0014381409,4.1953125};
-							angles[]={0,2.3561945,-0};
-						};
+						dataType="Group";
 						side="West";
-						flags=7;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={0.18945313,0.0014343262,-2.5336914};
+									angles[]={0,4.682879,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									init="this addAction [""Equip Medic Kit"", {player setUnitLoadout (getUnitLoadout medicKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
+									name="medicKit";
+									disableSimulation=1;
+									ignoreByDynSimulGrid=1;
+									class Inventory
+									{
+										class primaryWeapon
+										{
+											name="OPTRE_MA5B";
+											optics="OPTRE_MA5_SmartLink";
+											firemode="OPTRE_MA5B:FullAuto";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_60Rnd_762x51_Mag";
+												ammoLeft=60;
+											};
+										};
+										class handgun
+										{
+											name="OPTRE_M6C";
+											muzzle="OPTRE_M6C_compensator";
+											flashlight="OPTRE_M6C_Laser";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_8Rnd_127x40_Mag";
+												ammoLeft=8;
+											};
+										};
+										class binocular
+										{
+											name="OPTRE_Smartfinder";
+											class primaryMuzzleMag
+											{
+												name="Laserbatteries";
+												ammoLeft=1;
+											};
+										};
+										class uniform
+										{
+											typeName="OPTRE_UNSC_ODST_Uniform";
+											isBackpack=0;
+											class ItemCargo
+											{
+												items=9;
+												class Item0
+												{
+													name="ACE_epinephrine";
+													count=8;
+												};
+												class Item1
+												{
+													name="ACE_morphine";
+													count=2;
+												};
+												class Item2
+												{
+													name="ACE_Flashlight_XL50";
+													count=1;
+												};
+												class Item3
+												{
+													name="ACE_DefusalKit";
+													count=1;
+												};
+												class Item4
+												{
+													name="ACE_tourniquet";
+													count=12;
+												};
+												class Item5
+												{
+													name="ACE_EarPlugs";
+													count=1;
+												};
+												class Item6
+												{
+													name="ACE_CableTie";
+													count=3;
+												};
+												class Item7
+												{
+													name="ACE_fieldDressing";
+													count=8;
+												};
+												class Item8
+												{
+													name="ACE_adenosine";
+													count=4;
+												};
+											};
+										};
+										class vest
+										{
+											typeName="OPTRE_UNSC_M52D_Armor_Medic";
+											isBackpack=0;
+											class MagazineCargo
+											{
+												items=6;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=3;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_M2_Smoke_Purple";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="OPTRE_M2_Smoke_Orange";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item3
+												{
+													name="OPTRE_M2_Smoke";
+													count=4;
+													ammoLeft=1;
+												};
+												class Item4
+												{
+													name="OPTRE_M2_Smoke_Red";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item5
+												{
+													name="OPTRE_M9_Frag";
+													count=2;
+													ammoLeft=1;
+												};
+											};
+											class ItemCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="ACE_EntrenchingTool";
+													count=1;
+												};
+												class Item1
+												{
+													name="MineDetector";
+													count=1;
+												};
+												class Item2
+												{
+													name="OPAEX_ODSTChadCan";
+													count=1;
+												};
+											};
+										};
+										class backpack
+										{
+											typeName="OPTRE_ILCS_Rucksack_Medical";
+											isBackpack=1;
+											class MagazineCargo
+											{
+												items=1;
+												class Item0
+												{
+													name="OPTRE_60Rnd_762x51_Mag";
+													count=5;
+													ammoLeft=60;
+												};
+											};
+											class ItemCargo
+											{
+												items=9;
+												class Item0
+												{
+													name="ACE_morphine";
+													count=6;
+												};
+												class Item1
+												{
+													name="ACE_epinephrine";
+													count=22;
+												};
+												class Item2
+												{
+													name="ACE_adenosine";
+													count=10;
+												};
+												class Item3
+												{
+													name="ACE_bloodIV";
+													count=10;
+												};
+												class Item4
+												{
+													name="OPTRE_Medigel";
+													count=6;
+												};
+												class Item5
+												{
+													name="ACE_bloodIV_500";
+													count=10;
+												};
+												class Item6
+												{
+													name="ACE_fieldDressing";
+													count=22;
+												};
+												class Item7
+												{
+													name="ACE_elasticBandage";
+													count=22;
+												};
+												class Item8
+												{
+													name="ACE_surgicalKit";
+													count=1;
+												};
+											};
+										};
+										map="ItemMap";
+										compass="ItemCompass";
+										watch="ACE_Altimeter";
+										radio="TFAR_anprc152";
+										gps="ItemGPS";
+										hmd="OPTRE_NVGT_C";
+										headgear="OPTRE_UNSC_CH252D_Helmet";
+									};
+								};
+								id=7569;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=356.03058;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ENH_doStop";
+										expression="if (!is3DEN && _value) then {doStop _this}";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="unitName";
+										expression="_this setname _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Medic";
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+						};
 						class Attributes
 						{
-							init="this addAction [""Equip Medic Kit"", {player setUnitLoadout (getUnitLoadout medicKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
-							name="medicKit";
-							disableSimulation=1;
-							ignoreByDynSimulGrid=1;
-							class Inventory
-							{
-								class primaryWeapon
-								{
-									name="OPTRE_MA5B";
-									optics="OPTRE_MA5_SmartLink";
-									firemode="OPTRE_MA5B:FullAuto";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_60Rnd_762x51_Mag";
-										ammoLeft=60;
-									};
-								};
-								class handgun
-								{
-									name="OPTRE_M6C";
-									muzzle="OPTRE_M6C_compensator";
-									flashlight="OPTRE_M6C_Laser";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_8Rnd_127x40_Mag";
-										ammoLeft=8;
-									};
-								};
-								class binocular
-								{
-									name="OPTRE_Smartfinder";
-									class primaryMuzzleMag
-									{
-										name="Laserbatteries";
-										ammoLeft=1;
-									};
-								};
-								class uniform
-								{
-									typeName="OPTRE_UNSC_ODST_Uniform";
-									isBackpack=0;
-									class ItemCargo
-									{
-										items=11;
-										class Item0
-										{
-											name="ACE_elasticBandage";
-											count=6;
-										};
-										class Item1
-										{
-											name="ACE_fieldDressing";
-											count=6;
-										};
-										class Item2
-										{
-											name="ACE_packingBandage";
-											count=6;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=3;
-										};
-										class Item4
-										{
-											name="ACE_morphine";
-											count=2;
-										};
-										class Item5
-										{
-											name="ACE_Flashlight_XL50";
-											count=1;
-										};
-										class Item6
-										{
-											name="ACE_DefusalKit";
-											count=1;
-										};
-										class Item7
-										{
-											name="ACE_tourniquet";
-											count=4;
-										};
-										class Item8
-										{
-											name="ACE_EarPlugs";
-											count=1;
-										};
-										class Item9
-										{
-											name="ACE_CableTie";
-											count=3;
-										};
-										class Item10
-										{
-											name="ACE_adenosine";
-											count=1;
-										};
-									};
-								};
-								class vest
-								{
-									typeName="OPTRE_UNSC_M52D_Armor_Medic";
-									isBackpack=0;
-									class MagazineCargo
-									{
-										items=6;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=3;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_M2_Smoke_Purple";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="OPTRE_M2_Smoke_Orange";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item3
-										{
-											name="OPTRE_M2_Smoke";
-											count=4;
-											ammoLeft=1;
-										};
-										class Item4
-										{
-											name="OPTRE_M9_Frag";
-											count=2;
-											ammoLeft=1;
-										};
-										class Item5
-										{
-											name="OPTRE_M2_Smoke_Red";
-											count=1;
-											ammoLeft=1;
-										};
-									};
-									class ItemCargo
-									{
-										items=3;
-										class Item0
-										{
-											name="ACE_EntrenchingTool";
-											count=1;
-										};
-										class Item1
-										{
-											name="MineDetector";
-											count=1;
-										};
-										class Item2
-										{
-											name="OPAEX_ODSTChadCan";
-											count=1;
-										};
-									};
-								};
-								class backpack
-								{
-									typeName="OPTRE_ILCS_Rucksack_Medical";
-									isBackpack=1;
-									class MagazineCargo
-									{
-										items=2;
-										class Item0
-										{
-											name="OPTRE_60Rnd_762x51_Mag";
-											count=4;
-											ammoLeft=60;
-										};
-										class Item1
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=2;
-											ammoLeft=12;
-										};
-									};
-									class ItemCargo
-									{
-										items=9;
-										class Item0
-										{
-											name="ACE_packingBandage";
-											count=20;
-										};
-										class Item1
-										{
-											name="ACE_elasticBandage";
-											count=20;
-										};
-										class Item2
-										{
-											name="ACE_fieldDressing";
-											count=20;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=20;
-										};
-										class Item4
-										{
-											name="ACE_adenosine";
-											count=20;
-										};
-										class Item5
-										{
-											name="ACE_morphine";
-											count=10;
-										};
-										class Item6
-										{
-											name="ACE_bloodIV";
-											count=10;
-										};
-										class Item7
-										{
-											name="ACE_bloodIV_500";
-											count=5;
-										};
-										class Item8
-										{
-											name="OPTRE_Medigel";
-											count=5;
-										};
-									};
-								};
-								map="ItemMap";
-								compass="ItemCompass";
-								watch="ACE_Altimeter";
-								radio="TFAR_anprc152";
-								gps="ItemGPS";
-								hmd="OPTRE_NVGT_C";
-								headgear="OPTRE_UNSC_CH252D_Helmet";
-							};
 						};
-						id=1390;
-						type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="allowDamage";
-								expression="_this allowdamage _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ENH_doStop";
-								expression="if (!is3DEN && _value) then {doStop _this}";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="speaker";
-								expression="_this setspeaker _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Male09ENG";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="pitch";
-								expression="_this setpitch _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0.99000001;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="unitName";
-								expression="_this setname _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Medic";
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="enableStamina";
-								expression="_this enablestamina _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							nAttributes=6;
-						};
+						id=7568;
+						atlOffset=356.03058;
 					};
-				};
-				class Attributes
-				{
-				};
-				id=1389;
-			};
-			class Item6
-			{
-				dataType="Group";
-				side="West";
-				class Entities
-				{
-					items=1;
-					class Item0
+					class Item6
 					{
-						dataType="Object";
-						class PositionInfo
-						{
-							position[]={6.2568359,0.0014381409,6.4453125};
-							angles[]={0,2.3561945,-0};
-						};
+						dataType="Group";
 						side="West";
-						flags=7;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={0.26953125,0.0014343262,-3.7392578};
+									angles[]={0,4.682879,0};
+								};
+								side="West";
+								flags=3;
+								class Attributes
+								{
+									init="this addAction [""Equip RTO Kit"", {player setUnitLoadout (getUnitLoadout rtoKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
+									name="rtoKit";
+									disableSimulation=1;
+									ignoreByDynSimulGrid=1;
+									class Inventory
+									{
+										class primaryWeapon
+										{
+											name="OPTRE_MA5B";
+											optics="OPTRE_MA5_SmartLink";
+											firemode="OPTRE_MA5B:FullAuto";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_60Rnd_762x51_Mag";
+												ammoLeft=60;
+											};
+										};
+										class handgun
+										{
+											name="OPTRE_M6C";
+											muzzle="OPTRE_M6C_compensator";
+											flashlight="OPTRE_M6C_Laser";
+											class primaryMuzzleMag
+											{
+												name="OPTRE_8Rnd_127x40_Mag";
+												ammoLeft=8;
+											};
+										};
+										class binocular
+										{
+											name="OPTRE_Smartfinder";
+											class primaryMuzzleMag
+											{
+												name="Laserbatteries";
+												ammoLeft=1;
+											};
+										};
+										class uniform
+										{
+											typeName="OPTRE_UNSC_ODST_Uniform";
+											isBackpack=0;
+											class ItemCargo
+											{
+												items=9;
+												class Item0
+												{
+													name="ACE_fieldDressing";
+													count=16;
+												};
+												class Item1
+												{
+													name="ACE_epinephrine";
+													count=8;
+												};
+												class Item2
+												{
+													name="ACE_morphine";
+													count=2;
+												};
+												class Item3
+												{
+													name="ACE_Flashlight_XL50";
+													count=1;
+												};
+												class Item4
+												{
+													name="ACE_DefusalKit";
+													count=1;
+												};
+												class Item5
+												{
+													name="ACE_tourniquet";
+													count=4;
+												};
+												class Item6
+												{
+													name="ACE_EarPlugs";
+													count=1;
+												};
+												class Item7
+												{
+													name="ACE_CableTie";
+													count=3;
+												};
+												class Item8
+												{
+													name="ACE_adenosine";
+													count=4;
+												};
+											};
+										};
+										class vest
+										{
+											typeName="OPTRE_UNSC_M52D_Armor_Rifleman";
+											isBackpack=0;
+											class MagazineCargo
+											{
+												items=6;
+												class Item0
+												{
+													name="OPTRE_12Rnd_127x40_Mag";
+													count=3;
+													ammoLeft=12;
+												};
+												class Item1
+												{
+													name="OPTRE_M2_Smoke_Purple";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item2
+												{
+													name="OPTRE_M2_Smoke_Orange";
+													count=1;
+													ammoLeft=1;
+												};
+												class Item3
+												{
+													name="OPTRE_M2_Smoke";
+													count=4;
+													ammoLeft=1;
+												};
+												class Item4
+												{
+													name="OPTRE_M9_Frag";
+													count=2;
+													ammoLeft=1;
+												};
+												class Item5
+												{
+													name="OPTRE_M2_Smoke_Red";
+													count=1;
+													ammoLeft=1;
+												};
+											};
+											class ItemCargo
+											{
+												items=3;
+												class Item0
+												{
+													name="ACE_EntrenchingTool";
+													count=1;
+												};
+												class Item1
+												{
+													name="MineDetector";
+													count=1;
+												};
+												class Item2
+												{
+													name="OPAEX_ODSTChadCan";
+													count=1;
+												};
+											};
+										};
+										class backpack
+										{
+											typeName="OPTRE_ANPRC_521_Black";
+											isBackpack=1;
+											class MagazineCargo
+											{
+												items=1;
+												class Item0
+												{
+													name="OPTRE_60Rnd_762x51_Mag";
+													count=8;
+													ammoLeft=60;
+												};
+											};
+										};
+										map="ItemMap";
+										compass="ItemCompass";
+										watch="ACE_Altimeter";
+										radio="TFAR_anprc152";
+										gps="ItemGPS";
+										hmd="OPTRE_NVGT_C";
+										headgear="OPTRE_UNSC_CH252D_Helmet";
+									};
+								};
+								id=7571;
+								type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+								atlOffset=356.03058;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ENH_doStop";
+										expression="if (!is3DEN && _value) then {doStop _this}";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="speaker";
+										expression="_this setspeaker _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Male09ENG";
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="pitch";
+										expression="_this setpitch _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.99000001;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="unitName";
+										expression="_this setname _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="RTO";
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="enableStamina";
+										expression="_this enablestamina _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+						};
 						class Attributes
 						{
-							init="this addAction [""Equip RTO Kit"", {player setUnitLoadout (getUnitLoadout rtoKit)},nil,1,true,true,"""",""_this distance _target < 4""];" \n "" \n "[this, this] call ace_common_fnc_claim; " \n "private _action = [""myArsenal"", localize ""STR_A3_Arsenal"", """", { " \n "    params [""_target"", ""_player""]; " \n "    [_target, _player] call ace_arsenal_fnc_openBox; " \n "}, { " \n "    true " \n "}]";
-							name="rtoKit";
-							disableSimulation=1;
-							ignoreByDynSimulGrid=1;
-							class Inventory
-							{
-								class primaryWeapon
-								{
-									name="OPTRE_MA5B";
-									optics="OPTRE_MA5_SmartLink";
-									firemode="OPTRE_MA5B:FullAuto";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_60Rnd_762x51_Mag";
-										ammoLeft=60;
-									};
-								};
-								class handgun
-								{
-									name="OPTRE_M6C";
-									muzzle="OPTRE_M6C_compensator";
-									flashlight="OPTRE_M6C_Laser";
-									class primaryMuzzleMag
-									{
-										name="OPTRE_8Rnd_127x40_Mag";
-										ammoLeft=8;
-									};
-								};
-								class binocular
-								{
-									name="OPTRE_Smartfinder";
-									class primaryMuzzleMag
-									{
-										name="Laserbatteries";
-										ammoLeft=1;
-									};
-								};
-								class uniform
-								{
-									typeName="OPTRE_UNSC_ODST_Uniform";
-									isBackpack=0;
-									class ItemCargo
-									{
-										items=11;
-										class Item0
-										{
-											name="ACE_elasticBandage";
-											count=6;
-										};
-										class Item1
-										{
-											name="ACE_fieldDressing";
-											count=6;
-										};
-										class Item2
-										{
-											name="ACE_packingBandage";
-											count=6;
-										};
-										class Item3
-										{
-											name="ACE_epinephrine";
-											count=3;
-										};
-										class Item4
-										{
-											name="ACE_morphine";
-											count=2;
-										};
-										class Item5
-										{
-											name="ACE_Flashlight_XL50";
-											count=1;
-										};
-										class Item6
-										{
-											name="ACE_DefusalKit";
-											count=1;
-										};
-										class Item7
-										{
-											name="ACE_tourniquet";
-											count=4;
-										};
-										class Item8
-										{
-											name="ACE_EarPlugs";
-											count=1;
-										};
-										class Item9
-										{
-											name="ACE_CableTie";
-											count=3;
-										};
-										class Item10
-										{
-											name="ACE_adenosine";
-											count=1;
-										};
-									};
-								};
-								class vest
-								{
-									typeName="OPTRE_UNSC_M52D_Armor_Rifleman";
-									isBackpack=0;
-									class MagazineCargo
-									{
-										items=6;
-										class Item0
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=3;
-											ammoLeft=12;
-										};
-										class Item1
-										{
-											name="OPTRE_M2_Smoke_Purple";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item2
-										{
-											name="OPTRE_M2_Smoke_Orange";
-											count=1;
-											ammoLeft=1;
-										};
-										class Item3
-										{
-											name="OPTRE_M2_Smoke";
-											count=4;
-											ammoLeft=1;
-										};
-										class Item4
-										{
-											name="OPTRE_M9_Frag";
-											count=2;
-											ammoLeft=1;
-										};
-										class Item5
-										{
-											name="OPTRE_M2_Smoke_Red";
-											count=1;
-											ammoLeft=1;
-										};
-									};
-									class ItemCargo
-									{
-										items=3;
-										class Item0
-										{
-											name="ACE_EntrenchingTool";
-											count=1;
-										};
-										class Item1
-										{
-											name="MineDetector";
-											count=1;
-										};
-										class Item2
-										{
-											name="OPAEX_ODSTChadCan";
-											count=1;
-										};
-									};
-								};
-								class backpack
-								{
-									typeName="OPTRE_ANPRC_521_Black";
-									isBackpack=1;
-									class MagazineCargo
-									{
-										items=2;
-										class Item0
-										{
-											name="OPTRE_60Rnd_762x51_Mag";
-											count=4;
-											ammoLeft=60;
-										};
-										class Item1
-										{
-											name="OPTRE_12Rnd_127x40_Mag";
-											count=2;
-											ammoLeft=12;
-										};
-									};
-								};
-								map="ItemMap";
-								compass="ItemCompass";
-								watch="ACE_Altimeter";
-								radio="TFAR_anprc152";
-								gps="ItemGPS";
-								hmd="OPTRE_NVGT_C";
-								headgear="OPTRE_UNSC_CH252D_Helmet";
-							};
 						};
-						id=1392;
-						type="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="allowDamage";
-								expression="_this allowdamage _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ENH_doStop";
-								expression="if (!is3DEN && _value) then {doStop _this}";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=1;
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="speaker";
-								expression="_this setspeaker _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="Male09ENG";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="pitch";
-								expression="_this setpitch _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0.99000001;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="unitName";
-								expression="_this setname _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="STRING";
-										value="RTO";
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="enableStamina";
-								expression="_this enablestamina _value;";
-								class Value
-								{
-									class data
-									{
-										singleType="BOOL";
-										value=0;
-									};
-								};
-							};
-							nAttributes=6;
-						};
+						id=7570;
+						atlOffset=356.03058;
 					};
 				};
-				class Attributes
-				{
-				};
-				id=1391;
+				id=7557;
+				atlOffset=356.03058;
 			};
 		};
-		id=1394;
+		id=7572;
+		atlOffset=356.03058;
 	};
 };
