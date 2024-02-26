@@ -710,7 +710,8 @@ GRLIB_arsenal_items = [
 "ACE_ATragaMX",
 "OPTRE_UNSC_Army_Uniform_BLK",
 "OPTRE_UNSC_Army_Uniform_BLKURB",
-"OPTRE_UNSC_Army_Uniform_R_BLK_SlimLeg"
+"OPTRE_UNSC_Army_Uniform_R_BLK_SlimLeg",
+"Laserbatteries"
 ];
 
 GRLIB_arsenal_backpacks = [
