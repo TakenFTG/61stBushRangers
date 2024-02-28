@@ -15,7 +15,7 @@ class XtdGearModels
 				alwaysSelectable=1;
 				changeingame=0;
 				changedelay=0;
-				label="Custom";
+				label="Colour";
 				values[]=
 				{
 					"Base",
@@ -36,6 +36,72 @@ class XtdGearModels
 				changeingame=0;
 				changedelay=0;
 				label="Visor";
+				values[]=
+				{
+					"None"
+//					"Blue",
+//					"Gold",
+//					"Silver"
+				};
+				class None
+				{
+					label="Base";
+				};
+/*
+				class Blue
+				{
+					label="Blue";
+				};
+				class Gold
+				{
+					label="Gold";
+				};
+				class Silver
+				{
+					label="Silver";
+				};
+*/
+			};
+		};
+		class BR_ICLS_BACKPACK
+		{
+			options[]=
+			{
+				"Colour",
+				"Custom"
+			};
+			label="[61st] ILCS Backpack";
+			class Custom
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Custom";
+				values[]=
+				{
+					"Basic",
+					"Medic",
+					"Heavy"
+				};
+				class Basic
+				{
+					label="Basic";
+				};
+				class Medic
+				{
+					label="Medic";
+				};
+				class Heavy
+				{
+					label="Heavy";
+				}
+			};
+			class Colour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
 				values[]=
 				{
 					"None",
@@ -74,35 +140,35 @@ class XtdGearModels
 				alwaysSelectable=1;
 				changeingame=0;
 				changedelay=0;
-				label="Custom";
+				label="Colour";
 				values[]=
 				{
 					"Base",
-					"Hiruko",
-					"Phoenix",
-					"Reaper",
-					"Warhound"
+//					"Hiruko",
+//					"Phoenix",
+					"Reaper"
+//					"Warhound"
 				};
 				class Base
 				{
 					label="Base";
 				};
-				class Hiruko
-				{
-					label="Hiruko";
-				};
-				class Phoenix
-				{
-					label="Phoenix";
-				};
+//				class Hiruko
+//				{
+//					label="Hiruko";
+//				};
+//				class Phoenix
+//				{
+//					label="Phoenix";
+//				};
 				class Reaper
 				{
 					label="Reaper";
 				};
-				class Warhound
-				{
-					label="Warhound";
-				};
+//				class Warhound
+//				{
+//					label="Warhound";
+//				};
 			};
 			class Variant
 			{
@@ -152,7 +218,7 @@ class XtdGearInfos
 			model="BR_CH252D";
 			Visor="None";
 			Custom="Base";
-		};
+		};	
 		class BR_CH252D_B
 		{
 			model="BR_CH252D";
@@ -175,6 +241,11 @@ class XtdGearInfos
 		{
 			model="BR_CH252D";
 			Custom="Reaper";
+		};
+		class BR_ILCS_B
+		{
+			model="BR_ILCS_Pack";
+			Custom="Basic";
 		};
 		class BR_M52D_Rifleman
 		{
@@ -1000,13 +1071,13 @@ class CfgWeapons
 class CfgVehicles
 {
 	class Weapon_Bag_Base;
-	class BR_MQ49_Pack: Weapon_Bag_Base
+	class BR_ILCS_Pack: Weapon_Bag_Base
 	{
 		dlc="61st";
 		scope=2;
 		scopeCurator=2;
 		author="TakenFTG";
-		displayName="ILCS Rucksack [MQ-49A]";
+		displayName="[61st] ILCS Backpack";
 		picture="\OPTRE_weapons\backpacks\icons\rucksack_black";
 		model="\OPTRE_weapons\backpacks\ODST_ruck";
 		hiddenSelections[]=
@@ -1017,126 +1088,14 @@ class CfgVehicles
 		hiddenSelectionsMaterials[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"61st_Armor\Data\Backpacks\V_ILCS_UAV_CO"
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK"
 		};
 		class assembleInfo
 		{
 			primary=1;
 			base="";
-			assembleTo="BR_MQ49_SD";
-			displayName="MQ-49 Support Drone";
-			dissasembleTo[]={};
-		};
-	};
-	class BR_MQ49R_Pack: BR_MQ49_Pack
-	{
-		dlc="61st";
-		scope=2;
-		scopeCurator=2;
-		author="TakenFTG";
-		displayName="ILCS Rucksack [MQ-49R]";
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="BR_MQ49_RD";
-			displayName="MQ-49 Recon Drone";
-			dissasembleTo[]={};
-		};
-	};
-	class B_Respawn_TentDome_F;
-	class BR_DomeTent_Pack: B_Respawn_TentDome_F
-	{
-		dlc="61st";
-		scope=2;
-		scopeCurator=2;
-		author="TakenFTG";
-		displayName="UNSC Rucksack (Dome Tent)";
-		picture="\OPTRE_weapons\backpacks\icons\rucksack_black";
-		model="\OPTRE_unsc_units\army\rucksack";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"B_Medic",
-			"B_Radio"
-		};
-		hiddenSelectionsMaterials[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"optre_unsc_units\army\data\soft_backpack_co",
-			""
-		};
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="BR_Tent_Dome";
-			displayName="Standard Issue UNSC Dome Tent";
-			dissasembleTo[]={};
-		};
-	};
-	class B_Respawn_TentA_F;
-	class BR_Tent_Pack: B_Respawn_TentA_F
-	{
-		dlc="61st";
-		scope=2;
-		scopeCurator=2;
-		author="TakenFTG";
-		displayName="UNSC Rucksack (Tent)";
-		picture="\OPTRE_weapons\backpacks\icons\rucksack_black";
-		model="\OPTRE_unsc_units\army\rucksack";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"B_Medic",
-			"B_Radio"
-		};
-		hiddenSelectionsMaterials[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"optre_unsc_units\army\data\soft_backpack_co",
-			""
-		};
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="BR_Tent";
-			displayName="Standard Issue UNSC Tent";
-			dissasembleTo[]={};
-		};
-	};
-	class B_Respawn_Sleeping_bag_F;
-	class BR_Bag_Pack: B_Respawn_Sleeping_bag_F
-	{
-		dlc="61st";
-		scope=2;
-		scopeCurator=2;
-		author="TakenFTG";
-		displayName="UNSC Rucksack (Sleeping Bag)";
-		picture="\OPTRE_weapons\backpacks\icons\rucksack_black";
-		model="\OPTRE_unsc_units\army\rucksack";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"B_Medic",
-			"B_Radio"
-		};
-		hiddenSelectionsMaterials[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"optre_unsc_units\army\data\soft_backpack_co",
-			""
-		};
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="BR_SleepingBag";
-			displayName="Standard Issue UNSC Sleeping Bag";
+			assembleTo="BR_RUCK_BLK";
+			displayName="[61st] ILCS Backpack";
 			dissasembleTo[]={};
 		};
 	};
