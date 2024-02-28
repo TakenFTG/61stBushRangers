@@ -362,6 +362,7 @@ class CfgAddons
 };
 class CfgWeapons
 {
+	class HeadgearItem;
 	class OPTRE_UNSC_CH252D_Helmet;
 	class BR_CH252D: OPTRE_UNSC_CH252D_Helmet
 	{
@@ -995,8 +996,10 @@ class CfgWeapons
 			"61st_Armor\Data\Vests\V_M52_O_KIS_CO"
 		};
 	};
+};
 class CfgVehicles
 {
+	class Weapon_Bag_Base;
 	class BR_MQ49_Pack: Weapon_Bag_Base
 	{
 		dlc="61st";
