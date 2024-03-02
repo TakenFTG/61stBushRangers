@@ -63,7 +63,7 @@ class XtdGearModels
 */
 			};
 		};
-		class BR_ICLS_BACKPACK
+/*		class BR_ICLS_BACKPACK
 		{
 			options[]=
 			{
@@ -127,6 +127,7 @@ class XtdGearModels
 				};
 			};
 		};
+*/
 		class BR_M52D_Rifleman
 		{
 			options[]=
@@ -242,11 +243,12 @@ class XtdGearInfos
 			model="BR_CH252D";
 			Custom="Reaper";
 		};
-		class BR_ILCS_B
+/*		class BR_ILCS_B
 		{
 			model="BR_ILCS_Pack";
 			Custom="Basic";
 		};
+*/
 		class BR_M52D_Rifleman
 		{
 			Model="BR_M52D_Rifleman";
@@ -1068,7 +1070,7 @@ class CfgWeapons
 		};
 	};
 };
-class CfgVehicles
+/*class CfgVehicles
 {
 	class Weapon_Bag_Base;
 	class BR_ILCS_Pack: Weapon_Bag_Base
@@ -1100,3 +1102,4 @@ class CfgVehicles
 		};
 	};
 };
+*/

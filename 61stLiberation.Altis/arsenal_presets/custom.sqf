@@ -714,7 +714,8 @@ GRLIB_arsenal_items = [
 "OPTRE_UNSC_Army_Uniform_R_BLK_SlimLeg",
 "Laserbatteries",
 "bipod_03_F_blk",
-"bipod_02_F_blk"
+"bipod_02_F_blk",
+"BR_M52D_Rifleman"
 ];
 
 GRLIB_arsenal_backpacks = [
