@@ -37,7 +37,7 @@ _box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; dele
 sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
-{_box addItemCargoGlobal _x} forEach [["OPTRE_M41_Twin_AI",20],["OPTRE_M41_Twin_Smoke_W",12],["OPTRE_M41_Twin_HEAP",20],["OPTRE_M41_Twin_HEAP",20]];
+{_box addItemCargoGlobal _x} forEach [["OPTRE_M41_Twin_AI",10],["OPTRE_M41_Twin_HEAT_SACLOS",16],["OPTRE_M41_Twin_HEAP",20],["OPTRE_M41_Twin_Smoke_W",20]];
 }]};
 
 call{_this addAction["Spawn Medic Pod",{

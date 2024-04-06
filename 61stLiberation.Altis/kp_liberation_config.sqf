@@ -52,8 +52,8 @@ KP_liberation_medical_vehicles = [
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
     "uns_uh1D_med",
-    "OPTRE_M12_FAV_APC_MED",
-    "OPTRE_Pelican_unarmed"
+    "OPTRE_Pelican_unarmed",
+    "OPTRE_M12_FAV_APC_MED"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -262,8 +262,8 @@ KP_liberation_battlegroup_clearance = [
 The Steam UIDs entered in this array will allow corresponding players to access the commander actions (rights, production, etc.),
 even if they are not in the commander slot. */
 KP_liberation_commander_actions = [
-   "76561198098438969"
-   "76561198161104486"
+    "STEAM_0:1:69086620",
+    "STEAM_0:0:100419379"
 ];
 
 /* Whitelist for BI support framework access.
