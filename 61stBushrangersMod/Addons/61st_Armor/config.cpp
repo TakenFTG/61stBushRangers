@@ -403,7 +403,7 @@ class XtdGearInfos
 };
 class CfgPatches
 {
-class 61st_Armour
+	class 61st_Armor
 	{
 		author="61st Bushrangers";
 		name="[61st]: Custom Assets";
@@ -465,53 +465,6 @@ class CfgWeapons
 			"61st_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"
 		};
 		CBRN_protection=1;
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet";
-			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"61st_Armor\Data\Helmets\Materials\V_CH252D.rvmat",
-				"61st_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor=25;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
-				class Head
-				{
-					armor=25;
-					hitPointName="HitHead";
-					passThrough=0.1;
-				};
-				class Neck
-				{
-					armor=20;
-					hitpointName="HitNeck";
-					passThrough=0.1;
-				};
-			};
-		};
 		allowedFacewear[]={};
 	};
 	class BR_CH252D_B: BR_CH252D
@@ -524,16 +477,6 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_BLU_V_CO",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-		};
 	};
 	class BR_CH252D_S: BR_CH252D
 	{
@@ -544,16 +487,6 @@ class CfgWeapons
 			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
 		};
 	};
 	class BR_CH252D_G: BR_CH252D
@@ -566,16 +499,6 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_GLD_V_CO",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-		};
 	};
 	class BR_CH252D_RPR: BR_CH252D
 	{
@@ -586,16 +509,6 @@ class CfgWeapons
 			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
 		};
 	};
 	class OPTRE_UNSC_CH252D_Helmet_dp;
@@ -829,66 +742,6 @@ class CfgWeapons
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
 	};
-	class BR_M52D_SFP_Rifleman: BR_M52D_Rifleman
-	{
-		displayName="[61st] M52D (Rifleman) Phoenix";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_SFP_CO"
-		};
-	};
-	class BR_M52D_SFP_Demolitions: BR_M52D_Demolitions
-	{
-		displayName="[61st] M52D (Demolitions) Phoenix";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_SFP_CO"
-		};
-	};
-	class BR_M52D_SFP_Marksman: BR_M52D_Marksman
-	{
-		displayName="[61st] M52D (Marksman) Phoenix";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_SFP_CO"
-		};
-	};
-	class BR_M52D_SFP_Scout: BR_M52D_Scout
-	{
-		displayName="[61st] M52D (Scout) Phoenix";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_SFP_CO"
-		};
-	};
-	class BR_M52D_SFP_Sniper: BR_M52D_Sniper
-	{
-		displayName="[61st] M52D (Sniper) Phoenix";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_SFP_CO"
-		};
-	};
 	class BR_M52D_RPR_Rifleman: BR_M52D_Rifleman
 	{
 		displayName="[61st] M52D (Rifleman) Reaper";
@@ -947,126 +800,6 @@ class CfgWeapons
 			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"61st_Armor\Data\Vests\V_M52_O_RPR_CO"
-		};
-	};
-	class BR_M52D_WRH_Rifleman: BR_M52D_Rifleman
-	{
-		displayName="[61st] M52D (Rifleman) Warhound";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_WRH_CO"
-		};
-	};
-	class BR_M52D_WRH_Demolitions: BR_M52D_Demolitions
-	{
-		displayName="[61st] M52D (Demolitions) Warhound";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_WRH_CO"
-		};
-	};
-	class BR_M52D_WRH_Marksman: BR_M52D_Marksman
-	{
-		displayName="[61st] M52D (Marksman) Warhound";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_WRH_CO"
-		};
-	};
-	class BR_M52D_WRH_Scout: BR_M52D_Scout
-	{
-		displayName="[61st] M52D (Scout) Warhound";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_WRH_CO"
-		};
-	};
-	class BR_M52D_WRH_Sniper: BR_M52D_Sniper
-	{
-		displayName="[61st] M52D (Sniper) Warhound";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_WRH_CO"
-		};
-	};
-	class BR_M52D_KIS_Rifleman: BR_M52D_Rifleman
-	{
-		displayName="[61st] M52D (Rifleman) Hiruko";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_KIS_CO"
-		};
-	};
-	class BR_M52D_KIS_Demolitions: BR_M52D_Demolitions
-	{
-		displayName="[61st] M52D (Demolitions) Hiruko";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_KIS_CO"
-		};
-	};
-	class BR_M52D_KIS_Marksman: BR_M52D_Marksman
-	{
-		displayName="[61st] M52D (Marksman) Hiruko";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_KIS_CO"
-		};
-	};
-	class BR_M52D_KIS_Scout: BR_M52D_Scout
-	{
-		displayName="[61st] M52D (Scout) Hiruko";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_KIS_CO"
-		};
-	};
-	class BR_M52D_KIS_Sniper: BR_M52D_Sniper
-	{
-		displayName="[61st] M52D (Sniper) Hiruko";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_URB_CO",
-			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"61st_Armor\Data\Vests\V_M52_O_KIS_CO"
 		};
 	};
 };
