@@ -25,9 +25,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={21064.227,68.875252,7193.2559};
-		dir[]={0.59125584,-0.70431304,-0.39318255};
-		up[]={0.58652049,0.7097885,-0.39003709};
-		aside[]={-0.55379802,-8.5488864e-008,-0.83279729};
+		dir[]={0.71279806,-0.68043393,-0.17077835};
+		up[]={0.66177118,0.73270541,-0.15855604};
+		aside[]={-0.23301572,1.7695129e-008,-0.97260058};
 	};
 };
 binarizationWanted=0;
@@ -17030,18 +17030,18 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={21120.965,24.753958,7173.834};
-												angles[]={0,4.9870458,-0};
+												position[]={21120.965,24.754425,7173.834};
+												angles[]={0,4.9870515,0};
 											};
 											side="Empty";
 											flags=5;
 											class Attributes
 											{
-												init="this execVM ""spawnpodssc.sqf"";";
+												init="this execVM ""spawnpodsfoba.sqf"";";
 											};
 											id=7580;
 											type="OPTRE_RS_ConsoleCorvette_SysGreen";
-											atlOffset=-0.049467087;
+											atlOffset=-0.048999786;
 										};
 										class Item26
 										{
@@ -17063,11 +17063,11 @@ class Mission
 										};
 									};
 									id=7418;
-									atlOffset=61.770809;
+									atlOffset=61.770927;
 								};
 							};
 							id=7393;
-							atlOffset=292.98535;
+							atlOffset=292.98541;
 						};
 						class Item3
 						{
