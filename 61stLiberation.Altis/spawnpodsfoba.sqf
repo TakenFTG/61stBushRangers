@@ -1,4 +1,4 @@
-call{_this addAction["Remove Vehicle", {_box = nearestObjects [FOBAPOS, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;}]};
+call{_this addAction["Remove Pod", {_box = nearestObjects [FOBAPOS, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;}]};
 
 call{_this addAction["Spawn Ammo Pod",{
 _box = nearestObjects [FOBAPOS, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
