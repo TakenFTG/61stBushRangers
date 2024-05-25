@@ -442,7 +442,6 @@ class CfgWeapons
 		dlc="61st";
 		author="TakenFTG";
 		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0.60000002;
 		displayName="[61st] CH252D Helmet";
 		hiddenSelections[]=
 		{
@@ -517,7 +516,6 @@ class CfgWeapons
 		dlc="61st";
 		author="TakenFTG";
 		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0.1;
 		displayName="[61st] CH252D Helmet";
 		hiddenSelections[]=
 		{

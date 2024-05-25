@@ -1,4 +1,4 @@
-call{_this addAction["Remove Pod", {_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;}]};
+call{_this addAction["Remove Vehicle", {_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;}]};
 
 call{_this addAction["Spawn Ammo Pod",{
 _box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
@@ -22,6 +22,13 @@ sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
 {_box addItemCargoGlobal _x} forEach [["ACE_packingBandage",60],["ACE_elasticBandage",40],["ACE_fieldDressing",40],["ACE_epinephrine",20],["ACE_bloodIV_500",20],["ACE_bloodIV",20],["ACE_adenosine",20],["ACE_morphine",20],["ACE_tourniquet",10]];
+}]};
+
+call{_this addAction["Spawn Empty Pod",{
+_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
+sleep 0.2;
+_pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
+_box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
 }]};
 
 call{_this addAction["Spawn Arsenal Pod",{
