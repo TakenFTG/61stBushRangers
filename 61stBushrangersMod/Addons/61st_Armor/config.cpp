@@ -63,71 +63,7 @@ class XtdGearModels
 */
 			};
 		};
-/*		class BR_ICLS_BACKPACK
-		{
-			options[]=
-			{
-				"Colour",
-				"Custom"
-			};
-			label="[61st] ILCS Backpack";
-			class Custom
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-				label="Custom";
-				values[]=
-				{
-					"Basic",
-					"Medic",
-					"Heavy"
-				};
-				class Basic
-				{
-					label="Basic";
-				};
-				class Medic
-				{
-					label="Medic";
-				};
-				class Heavy
-				{
-					label="Heavy";
-				}
-			};
-			class Colour
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-				label="Colour";
-				values[]=
-				{
-					"None",
-					"Blue",
-					"Gold",
-					"Silver"
-				};
-				class None
-				{
-					label="Base";
-				};
-				class Blue
-				{
-					label="Blue";
-				};
-				class Gold
-				{
-					label="Gold";
-				};
-				class Silver
-				{
-					label="Silver";
-				};
-			};
-		};
-*/
+		
 		class BR_M52D_Rifleman
 		{
 			options[]=
@@ -207,7 +143,73 @@ class XtdGearModels
 				};
 			};
 		};
-		
+	};
+	class CfgVehicles
+	{	
+		class BR_ICLS_BACKPACK
+		{
+			options[]=
+			{
+				"Type",
+				"Colour"
+			};
+			label="[61st] ILCS Backpack";
+			class Type
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Custom";
+				values[]=
+				{
+					"Basic",
+					"Medic",
+					"Heavy"
+				};
+				class Basic
+				{
+					label="Basic";
+				};
+				class Medic
+				{
+					label="Medic";
+				};
+				class Heavy
+				{
+					label="Heavy";
+				}
+			};
+			class Colour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{
+					"Black",
+					"Red",
+					"Blue",
+					"Silver"
+				};
+				class Black
+				{
+					label="Black";
+				};
+				class Red
+				{
+					label="Red";
+				};
+				class Blue
+				{
+					label="Blue";
+				};
+				class Silver
+				{
+					label="Silver";
+				};
+			};
+		};
 	};
 };
 class XtdGearInfos
@@ -243,12 +245,11 @@ class XtdGearInfos
 			model="BR_CH252D";
 			Custom="Reaper";
 		};
-/*		class BR_ILCS_B
+		class BR_ILCS_B
 		{
 			model="BR_ILCS_Pack";
 			Custom="Basic";
 		};
-*/
 		class BR_M52D_Rifleman
 		{
 			Model="BR_M52D_Rifleman";
@@ -393,11 +394,80 @@ class XtdGearInfos
 			Custom="Reaper";
 			Variant="Marksman";
 		};
-		class BR_M52D_WRH_Marksman
+	};
+	class CfgVehicles
+	{
+		class BR_ILCS_Rucksack_Basic
 		{
-			Model="BR_M52D_Rifleman";
-			Custom="Warhound";
-			Variant="Marksman";
+			Model="BR_ICLS_BACKPACK";
+			Type="Basic";
+			Colour="Black";
+		};
+		class BR_ILCS_Rucksack_Medic
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Medic";
+			Colour="Black";
+		};
+		class BR_ILCS_Rucksack_Heavy
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Heavy";
+			Colour="Black";
+		};
+		class BR_ILCS_Rucksack_Basic_Red
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Basic";
+			Colour="Red";
+		};
+		class BR_ILCS_Rucksack_Medic_Red
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Medic";
+			Colour="Red";
+		};
+		class BR_ILCS_Rucksack_Heavy_Red
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Heavy";
+			Colour="Red";
+		};
+		class BR_ILCS_Rucksack_Basic_Blue
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Basic";
+			Colour="Blue";
+		};
+		class BR_ILCS_Rucksack_Medic_Blue
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Medic";
+			Colour="Blue";
+		};
+		class BR_ILCS_Rucksack_Heavy_Blue
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Heavy";
+			Colour="Blue";
+		};
+		class BR_ILCS_Rucksack_Basic_Silver
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Basic";
+			Colour="Silver";
+		};
+		class BR_ILCS_Rucksack_Medic_Silver
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Medic";
+			Colour="Silver";
+		};
+		class BR_ILCS_Rucksack_Heavy_Silver
+		{
+			Model="BR_ICLS_BACKPACK";
+			Type="Heavy";
+			Colour="Silver";
 		};
 	};
 };
@@ -464,6 +534,53 @@ class CfgWeapons
 			"61st_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"
 		};
 		CBRN_protection=1;
+		class ItemInfo: HeadgearItem
+		{
+			mass=30;
+			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet_dp";
+			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
+				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\soft_packs_co.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"61st_Armor\Data\Helmets\Materials\V_CH252D.rvmat",
+				""
+			};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor=200;
+					hitpointName="HitFace";
+					passThrough=0.08;
+				};
+				class Head
+				{
+					armor=200;
+					hitPointName="HitHead";
+					passThrough=0.08;
+				};
+				class Neck
+				{
+					armor=200;
+					hitpointName="HitNeck";
+					passThrough=0.08;
+				};
+			};
+		};
 		allowedFacewear[]={};
 	};
 	class BR_CH252D_B: BR_CH252D
@@ -567,21 +684,21 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor=25;
+					armor=200;
 					hitpointName="HitFace";
-					passThrough=0.1;
+					passThrough=0.08;
 				};
 				class Head
 				{
-					armor=25;
+					armor=200;
 					hitPointName="HitHead";
-					passThrough=0.1;
+					passThrough=0.08;
 				};
 				class Neck
 				{
-					armor=20;
+					armor=200;
 					hitpointName="HitNeck";
-					passThrough=0.1;
+					passThrough=0.08;
 				};
 			};
 		};
@@ -801,36 +918,163 @@ class CfgWeapons
 		};
 	};
 };
-/*class CfgVehicles
+class CfgVehicles
 {
-	class Weapon_Bag_Base;
-	class BR_ILCS_Pack: Weapon_Bag_Base
+	class ContainerSupply;
+	class OPTRE_ILCS_Rucksack_Black;
+	class OPTRE_ILCS_Rucksack_Heavy;
+	class OPTRE_ILCS_Rucksack_Medical;
+	class OPTRE_ANPRC_521_Black;
+	class BR_ILCS_Rucksack_Basic: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="61st";
-		scope=2;
-		scopeCurator=2;
 		author="TakenFTG";
-		displayName="[61st] ILCS Backpack";
-		picture="\OPTRE_weapons\backpacks\icons\rucksack_black";
-		model="\OPTRE_weapons\backpacks\ODST_ruck";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"biofoam"
-		};
-		hiddenSelectionsMaterials[]={};
+		displayName="[61st] ILCS Backpack (Basic)";
+		maximumLoad=400;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK"
 		};
-		class assembleInfo
+	};
+	class BR_ILCS_Rucksack_Medic: OPTRE_ILCS_Rucksack_Medical
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Medic)";
+		maximumLoad=400;
+		hiddenSelectionsTextures[]=
 		{
-			primary=1;
-			base="";
-			assembleTo="BR_RUCK_BLK";
-			displayName="[61st] ILCS Backpack";
-			dissasembleTo[]={};
+			"61st_Armor\Data\Backpacks\V_RUCK_MED",
+			"optre_weapons\items\data\biofoam_co.paa"
+		};
+	
+	};
+	class BR_ILCS_Rucksack_Heavy: OPTRE_ILCS_Rucksack_Heavy
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Heavy)";
+		maximumLoad=600;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK"
+		};
+	
+	};
+	class BR_ILCS_Rucksack_Basic_Red: OPTRE_ILCS_Rucksack_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Basic) Red";
+		maximumLoad=400;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK_R"
 		};
 	};
+	class BR_ILCS_Rucksack_Medic_Red: OPTRE_ILCS_Rucksack_Medical
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Medic) Red";
+		maximumLoad=400;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_MED_R",
+			"optre_weapons\items\data\biofoam_co.paa"
+		};
+	
+	};
+	class BR_ILCS_Rucksack_Heavy_Red: OPTRE_ILCS_Rucksack_Heavy
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Heavy) Red";
+		maximumLoad=600;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK_R"
+		};
+	
+	};
+	class BR_ILCS_Rucksack_Basic_Blue: OPTRE_ILCS_Rucksack_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Basic) Blue";
+		maximumLoad=400;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK_B"
+		};
+	};
+	class BR_ILCS_Rucksack_Medic_Blue: OPTRE_ILCS_Rucksack_Medical
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Medic) Blue";
+		maximumLoad=400;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_MED_B",
+			"optre_weapons\items\data\biofoam_co.paa"
+		};
+	
+	};
+	class BR_ILCS_Rucksack_Heavy_Blue: OPTRE_ILCS_Rucksack_Heavy
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Heavy) Blue";
+		maximumLoad=600;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK_B"
+		};
+	
+	};
+	class BR_ILCS_Rucksack_Basic_Silver: OPTRE_ILCS_Rucksack_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Basic) Silver";
+		maximumLoad=400;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK_S"
+		};
+	};
+	class BR_ILCS_Rucksack_Medic_Silver: OPTRE_ILCS_Rucksack_Medical
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Medic) Silver";
+		maximumLoad=400;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_MED_S",
+			"optre_weapons\items\data\biofoam_co.paa"
+		};
+	
+	};
+	class BR_ILCS_Rucksack_Heavy_Silver: OPTRE_ILCS_Rucksack_Heavy
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] ILCS Backpack (Heavy) Silver";
+		maximumLoad=600;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\V_RUCK_BLK_S"
+		};
+	
+	};
+	class BR_ANPRC_521: OPTRE_ANPRC_521_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-521";
+		maximumLoad=400;
+	};
+
 };
-*/
