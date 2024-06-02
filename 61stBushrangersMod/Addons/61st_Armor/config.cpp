@@ -378,6 +378,7 @@ class CfgAddons
 class CfgWeapons
 {
 	class HeadgearItem;
+	class VestItem;
 	class OPTRE_UNSC_CH252D_Helmet;
 	class BR_CH252D: OPTRE_UNSC_CH252D_Helmet
 	{
@@ -578,6 +579,7 @@ class CfgWeapons
 				"optre_unsc_units\army\data\soft_packs_co.paa"
 			};
 		};
+		
 	};
 	class OPTRE_UNSC_M52D_Armor_Rifleman;
 	class BR_M52D_Rifleman: OPTRE_UNSC_M52D_Armor_Rifleman
@@ -602,61 +604,67 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
-		class HitpointsProtectionInfo
+		class ItemInfo: VestItem
 		{
-			class Neck
+			containerClass = "Supply200";
+			mass = 80;
+			modelSides[] = {6};
+			class HitpointsProtectionInfo
 			{
-				hitpointName = "HitNeck";
-				armor = 140;
-				passThrough	= 0.1;
-			};
-			class Legs
-			{
-				hitpointName = "HitLegs";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Arms
-			{
-				hitpointName = "HitArms";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Hands
-			{
-				hitpointName = "HitHands";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Chest
-			{
-				hitpointName = "HitChest";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Diaphragm
-			{
-				hitpointName = "HitDiaphragm";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Abdomen
-			{
-				hitpointName = "HitAbdomen";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Pelvis
-			{
-				hitpointName = "HitPelvis";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Body
-			{
-				hitpointName = "HitBody";
-				armor = 140;
-				passThrough = 0.1;
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 140;
+					passThrough	= 0.1;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 140;
+					passThrough = 0.1;
+				};
 			};
 		};
 	};
@@ -683,61 +691,67 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
-		class HitpointsProtectionInfo
+		class ItemInfo: VestItem
 		{
-			class Neck
+			containerClass = "Supply200";
+			mass = 80;
+			modelSides[] = {6};
+			class HitpointsProtectionInfo
 			{
-				hitpointName = "HitNeck";
-				armor = 140;
-				passThrough	= 0.1;
-			};
-			class Legs
-			{
-				hitpointName = "HitLegs";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Arms
-			{
-				hitpointName = "HitArms";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Hands
-			{
-				hitpointName = "HitHands";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Chest
-			{
-				hitpointName = "HitChest";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Diaphragm
-			{
-				hitpointName = "HitDiaphragm";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Abdomen
-			{
-				hitpointName = "HitAbdomen";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Pelvis
-			{
-				hitpointName = "HitPelvis";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Body
-			{
-				hitpointName = "HitBody";
-				armor = 140;
-				passThrough = 0.1;
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 140;
+					passThrough	= 0.1;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 140;
+					passThrough = 0.1;
+				};
 			};
 		};
 	};
@@ -764,61 +778,67 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
-		class HitpointsProtectionInfo
+		class ItemInfo: VestItem
 		{
-			class Neck
+			containerClass = "Supply200";
+			mass = 80;
+			modelSides[] = {6};
+			class HitpointsProtectionInfo
 			{
-				hitpointName = "HitNeck";
-				armor = 140;
-				passThrough	= 0.1;
-			};
-			class Legs
-			{
-				hitpointName = "HitLegs";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Arms
-			{
-				hitpointName = "HitArms";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Hands
-			{
-				hitpointName = "HitHands";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Chest
-			{
-				hitpointName = "HitChest";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Diaphragm
-			{
-				hitpointName = "HitDiaphragm";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Abdomen
-			{
-				hitpointName = "HitAbdomen";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Pelvis
-			{
-				hitpointName = "HitPelvis";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Body
-			{
-				hitpointName = "HitBody";
-				armor = 140;
-				passThrough = 0.1;
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 140;
+					passThrough	= 0.1;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 140;
+					passThrough = 0.1;
+				};
 			};
 		};
 	};
@@ -845,61 +865,67 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
-		class HitpointsProtectionInfo
+		class ItemInfo: VestItem
 		{
-			class Neck
+			containerClass = "Supply200";
+			mass = 80;
+			modelSides[] = {6};
+			class HitpointsProtectionInfo
 			{
-				hitpointName = "HitNeck";
-				armor = 140;
-				passThrough	= 0.1;
-			};
-			class Legs
-			{
-				hitpointName = "HitLegs";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Arms
-			{
-				hitpointName = "HitArms";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Hands
-			{
-				hitpointName = "HitHands";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Chest
-			{
-				hitpointName = "HitChest";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Diaphragm
-			{
-				hitpointName = "HitDiaphragm";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Abdomen
-			{
-				hitpointName = "HitAbdomen";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Pelvis
-			{
-				hitpointName = "HitPelvis";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Body
-			{
-				hitpointName = "HitBody";
-				armor = 140;
-				passThrough = 0.1;
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 140;
+					passThrough	= 0.1;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 140;
+					passThrough = 0.1;
+				};
 			};
 		};
 	};
@@ -926,61 +952,67 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
-		class HitpointsProtectionInfo
+		class ItemInfo: VestItem
 		{
-			class Neck
+			containerClass = "Supply200";
+			mass = 80;
+			modelSides[] = {6};
+			class HitpointsProtectionInfo
 			{
-				hitpointName = "HitNeck";
-				armor = 140;
-				passThrough	= 0.1;
-			};
-			class Legs
-			{
-				hitpointName = "HitLegs";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Arms
-			{
-				hitpointName = "HitArms";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Hands
-			{
-				hitpointName = "HitHands";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Chest
-			{
-				hitpointName = "HitChest";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Diaphragm
-			{
-				hitpointName = "HitDiaphragm";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Abdomen
-			{
-				hitpointName = "HitAbdomen";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Pelvis
-			{
-				hitpointName = "HitPelvis";
-				armor = 140;
-				passThrough = 0.1;
-			};
-			class Body
-			{
-				hitpointName = "HitBody";
-				armor = 140;
-				passThrough = 0.1;
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 140;
+					passThrough	= 0.1;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 140;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 140;
+					passThrough = 0.1;
+				};
 			};
 		};
 	};
