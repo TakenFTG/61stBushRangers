@@ -2,6 +2,8 @@
 execVM "AceSetRadios.sqf";
 */
 
+sleep 5;
+
 _action = ["RadioPresets", "Radio Presets","",{},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], _action] call ace_interact_menu_fnc_addActionToObject;
 _action = ["1-1", "1-1 Presets","",{},{true}] call ace_interact_menu_fnc_createAction;
