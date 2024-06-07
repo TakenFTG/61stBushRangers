@@ -19,7 +19,8 @@ class XtdGearModels
 				values[]=
 				{
 					"Base",
-					"Reaper"
+					"Reaper",
+					"BatS"
 				};
 				class Base
 				{
@@ -28,6 +29,10 @@ class XtdGearModels
 				class Reaper
 				{
 					label="Reaper";
+				};
+				class BatS
+				{
+					label="Battalion Staff";
 				};
 			};
 			class Visor
@@ -199,13 +204,15 @@ class XtdGearInfos
 		class BR_CH252D_RPR
 		{
 			model="BR_CH252D";
+			Visor="None";
 			Custom="Reaper";
 		};
-		class BR_ILCS_B
+		class BR_CH252D_BatS
 		{
-			model="BR_ILCS_Pack";
-			Custom="Basic";
-		};
+			model="BR_CH252D"
+			Visor="None";
+			Custom="BatS";
+		}
 		class BR_M52D_Rifleman
 		{
 			Model="BR_M52D_Rifleman";
@@ -466,6 +473,17 @@ class CfgWeapons
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
 	};
+	class BR_CH252D_BatS: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Battalion Staff)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
 	class BR_CH252D_RPR: BR_CH252D
 	{
 		displayName="[61st] CH252D Helmet (Reaper)";
@@ -557,6 +575,27 @@ class CfgWeapons
 	class BR_CH252D_B_dp: BR_CH252D_dp
 	{
 		displayName="[61st] CH252D Helmet (Blue)";
+	};
+	class BR_CH252D_BatS_dp: BR_CH252D_dp
+	{
+		displayName="[61st] CH252D Helmet (Battalion Staff)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[]=
+			{
+				"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
+				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\soft_packs_co.paa"
+			};
+		};
 	};
 	class BR_CH252D_RPR_dp: BR_CH252D_dp
 	{
@@ -772,7 +811,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Basic)";
-		maximumLoad=400;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK"
@@ -783,7 +822,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Medic)";
-		maximumLoad=400;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_MED",
@@ -796,7 +835,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Heavy)";
-		maximumLoad=600;
+		maximumLoad=450;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK"
@@ -808,7 +847,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Basic) Red";
-		maximumLoad=400;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK_R"
@@ -819,7 +858,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Medic) Red";
-		maximumLoad=400;
+		maximumLoad=e00;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_MED_R",
@@ -832,7 +871,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Heavy) Red";
-		maximumLoad=600;
+		maximumLoad=450;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK_R"
@@ -844,7 +883,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Basic) Blue";
-		maximumLoad=400;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK_B"
@@ -855,7 +894,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Medic) Blue";
-		maximumLoad=400;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_MED_B",
@@ -868,7 +907,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Heavy) Blue";
-		maximumLoad=600;
+		maximumLoad=450;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK_B"
@@ -880,7 +919,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Basic) Silver";
-		maximumLoad=400;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK_S"
@@ -891,7 +930,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Medic) Silver";
-		maximumLoad=400;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_MED_S",
@@ -904,7 +943,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Heavy) Silver";
-		maximumLoad=600;
+		maximumLoad=450;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_BLK_S"
@@ -916,7 +955,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] AN/PRC-521";
-		maximumLoad=400;
+		maximumLoad=300;
 	};
 
 };
