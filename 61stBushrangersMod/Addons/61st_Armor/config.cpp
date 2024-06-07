@@ -39,28 +39,11 @@ class XtdGearModels
 				values[]=
 				{
 					"None"
-//					"Blue",
-//					"Gold",
-//					"Silver"
 				};
 				class None
 				{
 					label="Base";
 				};
-/*
-				class Blue
-				{
-					label="Blue";
-				};
-				class Gold
-				{
-					label="Gold";
-				};
-				class Silver
-				{
-					label="Silver";
-				};
-*/
 			};
 		};
 		
@@ -81,31 +64,16 @@ class XtdGearModels
 				values[]=
 				{
 					"Base",
-//					"Hiruko",
-//					"Phoenix",
 					"Reaper"
-//					"Warhound"
 				};
 				class Base
 				{
 					label="Base";
 				};
-//				class Hiruko
-//				{
-//					label="Hiruko";
-//				};
-//				class Phoenix
-//				{
-//					label="Phoenix";
-//				};
 				class Reaper
 				{
 					label="Reaper";
 				};
-//				class Warhound
-//				{
-//					label="Warhound";
-//				};
 			};
 			class Variant
 			{
@@ -228,18 +196,6 @@ class XtdGearInfos
 			Visor="Blue";
 			Custom="Base";
 		};
-		class BR_CH252D_S
-		{
-			model="BR_CH252D";
-			Visor="Silver";
-			Custom="Base";
-		};
-		class BR_CH252D_G
-		{
-			model="BR_CH252D";
-			Visor="Gold";
-			Custom="Base";
-		};
 		class BR_CH252D_RPR
 		{
 			model="BR_CH252D";
@@ -256,28 +212,10 @@ class XtdGearInfos
 			Custom="Base";
 			Variant="Rifleman";
 		};
-		class BR_M52D_KIS_Rifleman
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Hiruko";
-			Variant="Rifleman";
-		};
-		class BR_M52D_SFP_Rifleman
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Phoenix";
-			Variant="Rifleman";
-		};
 		class BR_M52D_RPR_Rifleman
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
-			Variant="Rifleman";
-		};
-		class BR_M52D_WRH_Rifleman
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Warhound";
 			Variant="Rifleman";
 		};
 		class BR_M52D_Demolitions
@@ -286,28 +224,10 @@ class XtdGearInfos
 			Custom="Base";
 			Variant="Demolitions";
 		};
-		class BR_M52D_KIS_Demolitions
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Hiruko";
-			Variant="Demolitions";
-		};
-		class BR_M52D_SFP_Demolitions
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Phoenix";
-			Variant="Demolitions";
-		};
 		class BR_M52D_RPR_Demolitions
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
-			Variant="Demolitions";
-		};
-		class BR_M52D_WRH_Demolitions
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Warhound";
 			Variant="Demolitions";
 		};
 		class BR_M52D_Scout
@@ -316,28 +236,10 @@ class XtdGearInfos
 			Custom="Base";
 			Variant="Scout";
 		};
-		class BR_M52D_KIS_Scout
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Hiruko";
-			Variant="Scout";
-		};
-		class BR_M52D_SFP_Scout
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Phoenix";
-			Variant="Scout";
-		};
 		class BR_M52D_RPR_Scout
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
-			Variant="Scout";
-		};
-		class BR_M52D_WRH_Scout
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Warhound";
 			Variant="Scout";
 		};
 		class BR_M52D_Sniper
@@ -346,46 +248,16 @@ class XtdGearInfos
 			Custom="Base";
 			Variant="Sniper";
 		};
-		class BR_M52D_KIS_Sniper
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Hiruko";
-			Variant="Sniper";
-		};
-		class BR_M52D_SFP_Sniper
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Phoenix";
-			Variant="Sniper";
-		};
 		class BR_M52D_RPR_Sniper
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
 			Variant="Sniper";
 		};
-		class BR_M52D_WRH_Sniper
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Warhound";
-			Variant="Sniper";
-		};
 		class BR_M52D_Marksman
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Base";
-			Variant="Marksman";
-		};
-		class BR_M52D_KIS_Marksman
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Hiruko";
-			Variant="Marksman";
-		};
-		class BR_M52D_SFP_Marksman
-		{
-			Model="BR_M52D_Rifleman";
-			Custom="Phoenix";
 			Variant="Marksman";
 		};
 		class BR_M52D_RPR_Marksman
@@ -563,19 +435,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor=200;
+					armor=180;
 					hitpointName="HitFace";
 					passThrough=0.08;
 				};
 				class Head
 				{
-					armor=200;
+					armor=180;
 					hitPointName="HitHead";
 					passThrough=0.08;
 				};
 				class Neck
 				{
-					armor=200;
+					armor=180;
 					hitpointName="HitNeck";
 					passThrough=0.08;
 				};
@@ -590,28 +462,6 @@ class CfgWeapons
 		{
 			"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
 			"61st_Armor\Data\Helmets\V_CH252D_BLU_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-	};
-	class BR_CH252D_S: BR_CH252D
-	{
-		displayName="[61st] CH252D Helmet (Silver)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-	};
-	class BR_CH252D_G: BR_CH252D
-	{
-		displayName="[61st] CH252D Helmet (Gold)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_GLD_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
@@ -708,14 +558,6 @@ class CfgWeapons
 	{
 		displayName="[61st] CH252D Helmet (Blue)";
 	};
-	class BR_CH252D_S_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Silver)";
-	};
-	class BR_CH252D_G_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Gold)";
-	};
 	class BR_CH252D_RPR_dp: BR_CH252D_dp
 	{
 		displayName="[61st] CH252D Helmet (Reaper)";
@@ -760,6 +602,63 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
+		class HitpointsProtectionInfo
+		{
+			class Neck
+			{
+				hitpointName = "HitNeck";
+				armor = 140;
+				passThrough	= 0.1;
+			};
+			class Legs
+			{
+				hitpointName = "HitLegs";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Arms
+			{
+				hitpointName = "HitArms";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Hands
+			{
+				hitpointName = "HitHands";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Chest
+			{
+				hitpointName = "HitChest";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Diaphragm
+			{
+				hitpointName = "HitDiaphragm";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Abdomen
+			{
+				hitpointName = "HitAbdomen";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Pelvis
+			{
+				hitpointName = "HitPelvis";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Body
+			{
+				hitpointName = "HitBody";
+				armor = 140;
+				passThrough = 0.1;
+			};
+		};
 	};
 	class OPTRE_UNSC_M52D_Armor_Demolitions;
 	class BR_M52D_Demolitions: OPTRE_UNSC_M52D_Armor_Demolitions
@@ -783,6 +682,63 @@ class CfgWeapons
 			"61st_Armor\Data\Vests\Materials\V_M52_L.rvmat",
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
+		};
+		class HitpointsProtectionInfo
+		{
+			class Neck
+			{
+				hitpointName = "HitNeck";
+				armor = 140;
+				passThrough	= 0.1;
+			};
+			class Legs
+			{
+				hitpointName = "HitLegs";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Arms
+			{
+				hitpointName = "HitArms";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Hands
+			{
+				hitpointName = "HitHands";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Chest
+			{
+				hitpointName = "HitChest";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Diaphragm
+			{
+				hitpointName = "HitDiaphragm";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Abdomen
+			{
+				hitpointName = "HitAbdomen";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Pelvis
+			{
+				hitpointName = "HitPelvis";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Body
+			{
+				hitpointName = "HitBody";
+				armor = 140;
+				passThrough = 0.1;
+			};
 		};
 	};
 	class OPTRE_UNSC_M52D_Armor_Marksman;
@@ -808,6 +764,63 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
+		class HitpointsProtectionInfo
+		{
+			class Neck
+			{
+				hitpointName = "HitNeck";
+				armor = 140;
+				passThrough	= 0.1;
+			};
+			class Legs
+			{
+				hitpointName = "HitLegs";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Arms
+			{
+				hitpointName = "HitArms";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Hands
+			{
+				hitpointName = "HitHands";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Chest
+			{
+				hitpointName = "HitChest";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Diaphragm
+			{
+				hitpointName = "HitDiaphragm";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Abdomen
+			{
+				hitpointName = "HitAbdomen";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Pelvis
+			{
+				hitpointName = "HitPelvis";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Body
+			{
+				hitpointName = "HitBody";
+				armor = 140;
+				passThrough = 0.1;
+			};
+		};
 	};
 	class OPTRE_UNSC_M52D_Armor_Scout;
 	class BR_M52D_Scout: OPTRE_UNSC_M52D_Armor_Scout
@@ -832,6 +845,63 @@ class CfgWeapons
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
 		};
+		class HitpointsProtectionInfo
+		{
+			class Neck
+			{
+				hitpointName = "HitNeck";
+				armor = 140;
+				passThrough	= 0.1;
+			};
+			class Legs
+			{
+				hitpointName = "HitLegs";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Arms
+			{
+				hitpointName = "HitArms";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Hands
+			{
+				hitpointName = "HitHands";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Chest
+			{
+				hitpointName = "HitChest";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Diaphragm
+			{
+				hitpointName = "HitDiaphragm";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Abdomen
+			{
+				hitpointName = "HitAbdomen";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Pelvis
+			{
+				hitpointName = "HitPelvis";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Body
+			{
+				hitpointName = "HitBody";
+				armor = 140;
+				passThrough = 0.1;
+			};
+		};
 	};
 	class OPTRE_UNSC_M52D_Armor_Sniper;
 	class BR_M52D_Sniper: OPTRE_UNSC_M52D_Armor_Sniper
@@ -855,6 +925,63 @@ class CfgWeapons
 			"61st_Armor\Data\Vests\Materials\V_M52_L.rvmat",
 			"",
 			"61st_Armor\Data\Vests\Materials\V_M52_O.rvmat"
+		};
+		class HitpointsProtectionInfo
+		{
+			class Neck
+			{
+				hitpointName = "HitNeck";
+				armor = 140;
+				passThrough	= 0.1;
+			};
+			class Legs
+			{
+				hitpointName = "HitLegs";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Arms
+			{
+				hitpointName = "HitArms";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Hands
+			{
+				hitpointName = "HitHands";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Chest
+			{
+				hitpointName = "HitChest";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Diaphragm
+			{
+				hitpointName = "HitDiaphragm";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Abdomen
+			{
+				hitpointName = "HitAbdomen";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Pelvis
+			{
+				hitpointName = "HitPelvis";
+				armor = 140;
+				passThrough = 0.1;
+			};
+			class Body
+			{
+				hitpointName = "HitBody";
+				armor = 140;
+				passThrough = 0.1;
+			};
 		};
 	};
 	class BR_M52D_RPR_Rifleman: BR_M52D_Rifleman
