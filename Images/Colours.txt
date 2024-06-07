@@ -1,2 +1,2 @@
 Silver: AAAEAE
-Brone: C77B30
+Bronze: C77B30, H30 S70 L27

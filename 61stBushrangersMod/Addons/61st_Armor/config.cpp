@@ -69,7 +69,8 @@ class XtdGearModels
 				values[]=
 				{
 					"Base",
-					"Reaper"
+					"Reaper",
+					"BatS"
 				};
 				class Base
 				{
@@ -79,6 +80,10 @@ class XtdGearModels
 				{
 					label="Reaper";
 				};
+				class BatS
+				{
+					label="Battalion Staff"
+				}
 			};
 			class Variant
 			{
@@ -225,6 +230,12 @@ class XtdGearInfos
 			Custom="Reaper";
 			Variant="Rifleman";
 		};
+		class BR_M52D_BatS_Rifleman
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
+			Variant="Rifleman";
+		};
 		class BR_M52D_Demolitions
 		{
 			Model="BR_M52D_Rifleman";
@@ -235,6 +246,12 @@ class XtdGearInfos
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
+			Variant="Demolitions";
+		};
+		class BR_M52D_BatS_Demolitions
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
 			Variant="Demolitions";
 		};
 		class BR_M52D_Scout
@@ -249,6 +266,12 @@ class XtdGearInfos
 			Custom="Reaper";
 			Variant="Scout";
 		};
+		class BR_M52D_BatS_Scout
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
+			Variant="Scout";
+		};
 		class BR_M52D_Sniper
 		{
 			Model="BR_M52D_Rifleman";
@@ -261,6 +284,12 @@ class XtdGearInfos
 			Custom="Reaper";
 			Variant="Sniper";
 		};
+		class BR_M52D_BatS_Sniper
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
+			Variant="Sniper";
+		};
 		class BR_M52D_Marksman
 		{
 			Model="BR_M52D_Rifleman";
@@ -271,6 +300,12 @@ class XtdGearInfos
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
+			Variant="Marksman";
+		};
+		class BR_M52D_BatS_Marksman
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
 			Variant="Marksman";
 		};
 	};
@@ -796,6 +831,66 @@ class CfgWeapons
 			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"61st_Armor\Data\Vests\V_M52_O_RPR_CO"
+		};
+	};
+	class BR_M52D_BatS_Rifleman: BR_M52D_Rifleman
+	{
+		displayName="[61st] M52D (Rifleman) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Demolitions: BR_M52D_Demolitions
+	{
+		displayName="[61st] M52D (Demolitions) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Marksman: BR_M52D_Marksman
+	{
+		displayName="[61st] M52D (Marksman) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Scout: BR_M52D_Scout
+	{
+		displayName="[61st] M52D (Scout) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Sniper: BR_M52D_Sniper
+	{
+		displayName="[61st] M52D (Sniper) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
 		};
 	};
 };
