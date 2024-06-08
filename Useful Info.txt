@@ -1,32 +1,34 @@
-        class BR_CH252D
-		class BR_CH252D_B
-		class BR_CH252D_RPR
-		class BR_CH252D_BatS
-		class BR_M52D_Rifleman
-		class BR_M52D_RPR_Rifleman
-		class BR_M52D_BatS_Rifleman
-		class BR_M52D_Demolitions
-		class BR_M52D_RPR_Demolitions
-		class BR_M52D_BatS_Demolitions
-		class BR_M52D_Scout
-		class BR_M52D_RPR_Scout
-		class BR_M52D_BatS_Scout
-		class BR_M52D_Sniper
-		class BR_M52D_RPR_Sniper
-		class BR_M52D_BatS_Sniper
-		class BR_M52D_Marksman
-		class BR_M52D_RPR_Marksman
-		class BR_M52D_BatS_Marksman
-        class BR_ILCS_Rucksack_Basic
-		class BR_ILCS_Rucksack_Medic
-		class BR_ILCS_Rucksack_Heavy
-		class BR_ILCS_Rucksack_Basic_Red
-		class BR_ILCS_Rucksack_Medic_Red
-		class BR_ILCS_Rucksack_Heavy_Red
-		class BR_ILCS_Rucksack_Basic_Blue
-		class BR_ILCS_Rucksack_Medic_Blue
-		class BR_ILCS_Rucksack_Heavy_Blue
-		class BR_ILCS_Rucksack_Basic_Silver
-		class BR_ILCS_Rucksack_Medic_Silver
-		class BR_ILCS_Rucksack_Heavy_Silver
-	    class BR_ANPRC_521
+class BR_CH252D
+class BR_CH252D_B
+class BR_CH252D_RPR
+class BR_CH252D_BatS
+class BR_M52D_Rifleman
+class BR_M52D_RPR_Rifleman
+class BR_M52D_BatS_Rifleman
+class BR_M52D_Demolitions
+class BR_M52D_RPR_Demolitions
+class BR_M52D_BatS_Demolitions
+class BR_M52D_Scout
+class BR_M52D_RPR_Scout
+class BR_M52D_BatS_Scout
+class BR_M52D_Sniper
+class BR_M52D_RPR_Sniper
+class BR_M52D_BatS_Sniper
+class BR_M52D_Marksman
+class BR_M52D_RPR_Marksman
+class BR_M52D_BatS_Marksman
+class BR_ILCS_Rucksack_Basic
+class BR_ILCS_Rucksack_Medic
+class BR_ILCS_Rucksack_Heavy
+class BR_ILCS_Rucksack_Basic_Red
+class BR_ILCS_Rucksack_Medic_Red
+class BR_ILCS_Rucksack_Heavy_Red
+class BR_ILCS_Rucksack_Basic_Blue
+class BR_ILCS_Rucksack_Medic_Blue
+class BR_ILCS_Rucksack_Heavy_Blue
+class BR_ILCS_Rucksack_Basic_Silver
+class BR_ILCS_Rucksack_Medic_Silver
+class BR_ILCS_Rucksack_Heavy_Silver
+BR_ANPRC_521_BLK
+BR_ANPRC_521_BatS
+BR_ANPRC_521_Red

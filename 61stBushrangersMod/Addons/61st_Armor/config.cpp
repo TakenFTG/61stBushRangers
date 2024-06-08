@@ -188,6 +188,39 @@ class XtdGearModels
 				};
 			};
 		};
+		class BR_ANPRC_521
+		{
+			options[]=
+			{
+				"Colour"
+			};
+			label="[61st] AN/PRC-521";
+			class Colour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{
+					"Black",
+					"Red",
+					"BatS"
+				};
+				class Black
+				{
+					label="Black";
+				};
+				class Red
+				{
+					label="Red";
+				};
+				class BatS
+				{
+					label="Battalion Staff";
+				};
+			};
+		};
 	};
 };
 class XtdGearInfos
@@ -383,6 +416,21 @@ class XtdGearInfos
 			Type="Heavy";
 			Colour="Silver";
 		};
+		BR_ANPRC_521_BLK
+		{
+			Model="BR_ANPRC_521";
+			Colour="Black";
+		}
+		BR_ANPRC_521_BatS
+		{
+			Model="BR_ANPRC_521";
+			Colour="BatS";
+		}
+		BR_ANPRC_521_Red
+		{
+			Model="BR_ANPRC_521";
+			Colour="Red";
+		}
 	};
 };
 class CfgPatches
@@ -1045,12 +1093,41 @@ class CfgVehicles
 		};
 	
 	};
-	class BR_ANPRC_521: OPTRE_ANPRC_521_Black
+	class BR_ANPRC_521_BLK: OPTRE_ANPRC_521_Black
 	{
 		dlc="61st";
 		author="TakenFTG";
-		displayName="[61st] AN/PRC-521";
+		displayName="[61st] AN/PRC-521 (Black)";
 		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\soft_backpack_co.paa",
+			"61st_Armor\Data\Backpacks\commopack_blk_co.paa"
+		};
+	};
+	class BR_ANPRC_521_BatS: OPTRE_ANPRC_521_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-521 (Battalion)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\soft_backpack_co.paa",
+			"61st_Armor\Data\Backpacks\commopack_BatS_co.paa"
+		};
+	};
+	class BR_ANPRC_521_Red: OPTRE_ANPRC_521_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-521 (Red)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\soft_backpack_co.paa",
+			"61st_Armor\Data\Backpacks\commopack_Red_co.paa"
+		};
 	};
 
 };
