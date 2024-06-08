@@ -416,21 +416,21 @@ class XtdGearInfos
 			Type="Heavy";
 			Colour="Silver";
 		};
-		BR_ANPRC_521_BLK
+		class BR_ANPRC_521_BLK
 		{
 			Model="BR_ANPRC_521";
 			Colour="Black";
-		}
-		BR_ANPRC_521_BatS
+		};
+		class BR_ANPRC_521_BatS
 		{
 			Model="BR_ANPRC_521";
 			Colour="BatS";
-		}
-		BR_ANPRC_521_Red
+		};
+		class BR_ANPRC_521_Red
 		{
 			Model="BR_ANPRC_521";
 			Colour="Red";
-		}
+		};
 	};
 };
 class CfgPatches
