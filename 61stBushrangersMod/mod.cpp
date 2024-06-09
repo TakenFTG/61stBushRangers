@@ -1,4 +1,4 @@
-name="[61st] Assests";
+name="[61st] Bushranger Assets";
 
 picture="\61st_Core\data\UI\61st_Logo_CA.paa";
 
