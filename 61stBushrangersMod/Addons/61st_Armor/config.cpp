@@ -16,23 +16,13 @@ class XtdGearModels
 				changedelay=0;
 				label="Colour";
 				values[]=
-				{
-					"Blue",
-					"Reaper",
-					"BatS"
-				};
+				{"Blue","Reaper","BatS"};
 				class Blue
-				{
-					label="Blue";
-				};
+				{label="Blue";};
 				class Reaper
-				{
-					label="Reaper";
-				};
+				{label="Reaper";};
 				class BatS
-				{
-					label="Battalion Staff";
-				};
+				{label="Battalion Staff";};
 			};
 		};
 		
