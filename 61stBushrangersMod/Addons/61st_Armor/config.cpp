@@ -404,37 +404,37 @@ class XtdGearInfos
 		};
 		class BR_ANPRC_521_BLK
 		{
-			Model="BR_ANPRC_521";
+			Model="BR_ANPRC";
 			Colour="Black";
 			Radio="ANPRC521";
 		};
 		class BR_ANPRC_521_BatS
 		{
-			Model="BR_ANPRC_521";
+			Model="BR_ANPRC";
 			Colour="BatS";
 			Radio="ANPRC521";
 		};
 		class BR_ANPRC_521_Red
 		{
-			Model="BR_ANPRC_521";
+			Model="BR_ANPRC";
 			Colour="Red";
 			Radio="ANPRC521";
 		};
 		class BR_ANPRC_515_BLK
 		{
-			Model="BR_ANPRC_515";
+			Model="BR_ANPRC";
 			Colour="Black";
 			Radio="ANPRC515";
 		};
 		class BR_ANPRC_515_BatS
 		{
-			Model="BR_ANPRC_515";
+			Model="BR_ANPRC";
 			Colour="BatS";
 			Radio="ANPRC515";
 		};
 		class BR_ANPRC_515_Red
 		{
-			Model="BR_ANPRC_515";
+			Model="BR_ANPRC";
 			Colour="Red";
 			Radio="ANPRC515";
 		};
@@ -941,7 +941,7 @@ class CfgVehicles
 	class OPTRE_ILCS_Rucksack_Heavy;
 	class OPTRE_ILCS_Rucksack_Medical;
 	class OPTRE_ANPRC_521_Black;
-	class OPTRE_ANPRC_515_Black;
+	class OPTRE_ANPRC_515;
 	class BR_ILCS_Rucksack_Basic: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="61st";
@@ -1122,7 +1122,7 @@ class CfgVehicles
 			"61st_Armor\Data\Backpacks\commopack_Red_co.paa"
 		};
 	};
-		class BR_ANPRC_515_BLK: OPTRE_ANPRC_515_Black
+		class BR_ANPRC_515_BLK: OPTRE_ANPRC_515
 	{
 		dlc="61st";
 		author="TakenFTG";
@@ -1133,7 +1133,7 @@ class CfgVehicles
 			"61st_Armor\Data\Backpacks\commopack515_blk_co.paa"
 		};
 	};
-	class BR_ANPRC_515_BatS: OPTRE_ANPRC_515_Black
+	class BR_ANPRC_515_BatS: OPTRE_ANPRC_515
 	{
 		dlc="61st";
 		author="TakenFTG";
@@ -1144,7 +1144,7 @@ class CfgVehicles
 			"61st_Armor\Data\Backpacks\commopack515_BatS_co.paa"
 		};
 	};
-	class BR_ANPRC_515_Red: OPTRE_ANPRC_515_Black
+	class BR_ANPRC_515_Red: OPTRE_ANPRC_515
 	{
 		dlc="61st";
 		author="TakenFTG";
