@@ -6,10 +6,10 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"Colour"
+				"HColour"
 			};
 			label="[61st] CH252D";
-			class Colour
+			class HColour
 			{
 				alwaysSelectable=1;
 				changeingame=0;
@@ -17,7 +17,7 @@ class XtdGearModels
 				label="Colour";
 				values[]=
 				{
-					"Base",
+					"Blue",
 					"Reaper",
 					"BatS"
 				};
@@ -35,7 +35,6 @@ class XtdGearModels
 				};
 			};
 		};
-	};
 		
 		class BR_M52D_Rifleman
 		{
@@ -206,6 +205,7 @@ class XtdGearModels
 				};
 			};
 		};
+	};	
 };
 class XtdGearInfos
 {
@@ -214,17 +214,17 @@ class XtdGearInfos
 		class BR_CH252D
 		{
 			model="BR_CH252D";
-			Colour="Blue";
+			HColour="Blue";
 		};	
 		class BR_CH252D_RPR
 		{
 			model="BR_CH252D";
-			Colour="Reaper";
+			HColour="Reaper";
 		};
 		class BR_CH252D_BatS
 		{
 			model="BR_CH252D"
-			Colour="BatS";
+			HColour="BatS";
 		}
 		class BR_M52D_Rifleman
 		{
@@ -542,7 +542,6 @@ class CfgWeapons
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
 	};
-	/*
 	class OPTRE_UNSC_CH252D_Helmet_dp;
 	class BR_CH252D_dp: OPTRE_UNSC_CH252D_Helmet_dp
 	{
@@ -620,10 +619,6 @@ class CfgWeapons
 		};
 		allowedFacewear[]={};
 	};
-	class BR_CH252D_B_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Blue)";
-	};
 	class BR_CH252D_BatS_dp: BR_CH252D_dp
 	{
 		displayName="[61st] CH252D Helmet (Battalion Staff)";
@@ -666,7 +661,6 @@ class CfgWeapons
 			};
 		};
 	};
-	*/
 	class OPTRE_UNSC_M52D_Armor_Rifleman;
 	class BR_M52D_Rifleman: OPTRE_UNSC_M52D_Armor_Rifleman
 	{
@@ -1095,5 +1089,4 @@ class CfgVehicles
 			"61st_Armor\Data\Backpacks\commopack_Red_co.paa"
 		};
 	};
-
 };
