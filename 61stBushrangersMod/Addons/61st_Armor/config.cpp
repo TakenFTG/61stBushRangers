@@ -236,7 +236,7 @@ class XtdGearInfos
 		class BR_CH252D_B
 		{
 			model="BR_CH252D";
-			Visor="Blue";
+			Visor="None";
 			Custom="Base";
 		};
 		class BR_CH252D_RPR
@@ -562,7 +562,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
@@ -573,7 +573,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
@@ -664,8 +664,8 @@ class CfgWeapons
 		displayName="[61st] CH252D Helmet (Battalion Staff)";
 		hiddenSelectionsTextures[]=
 		{
-			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_BatS_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
