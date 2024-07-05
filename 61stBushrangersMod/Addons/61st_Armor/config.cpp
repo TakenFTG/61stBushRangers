@@ -206,7 +206,6 @@ class XtdGearModels
 				};
 			};
 		};
-	};
 };
 class XtdGearInfos
 {
