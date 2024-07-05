@@ -578,6 +578,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
 	};
+	/*
 	class OPTRE_UNSC_CH252D_Helmet_dp;
 	class BR_CH252D_dp: OPTRE_UNSC_CH252D_Helmet_dp
 	{
@@ -701,6 +702,7 @@ class CfgWeapons
 			};
 		};
 	};
+	*/
 	class OPTRE_UNSC_M52D_Armor_Rifleman;
 	class BR_M52D_Rifleman: OPTRE_UNSC_M52D_Armor_Rifleman
 	{
