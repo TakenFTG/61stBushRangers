@@ -6,11 +6,10 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"Visor",
-				"Custom"
+				"Colour"
 			};
 			label="[61st] CH252D";
-			class Custom
+			class Colour
 			{
 				alwaysSelectable=1;
 				changeingame=0;
@@ -22,9 +21,9 @@ class XtdGearModels
 					"Reaper",
 					"BatS"
 				};
-				class Base
+				class Blue
 				{
-					label="Base";
+					label="Blue";
 				};
 				class Reaper
 				{
@@ -35,22 +34,8 @@ class XtdGearModels
 					label="Battalion Staff";
 				};
 			};
-			class Visor
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-				label="Visor";
-				values[]=
-				{
-					"None"
-				};
-				class None
-				{
-					label="Base";
-				};
-			};
 		};
+	};
 		
 		class BR_M52D_Rifleman
 		{
@@ -230,26 +215,17 @@ class XtdGearInfos
 		class BR_CH252D
 		{
 			model="BR_CH252D";
-			Visor="None";
-			Custom="Base";
+			Colour="Blue";
 		};	
-		class BR_CH252D_B
-		{
-			model="BR_CH252D";
-			Visor="None";
-			Custom="Base";
-		};
 		class BR_CH252D_RPR
 		{
 			model="BR_CH252D";
-			Visor="None";
-			Custom="Reaper";
+			Colour="Reaper";
 		};
 		class BR_CH252D_BatS
 		{
 			model="BR_CH252D"
-			Visor="None";
-			Custom="BatS";
+			Colour="BatS";
 		}
 		class BR_M52D_Rifleman
 		{
@@ -474,7 +450,7 @@ class CfgWeapons
 		dlc="61st";
 		author="TakenFTG";
 		ace_hearing_protection=1;
-		displayName="[61st] CH252D Helmet";
+		displayName="[61st] CH252D Helmet (Blue)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -544,17 +520,6 @@ class CfgWeapons
 			};
 		};
 		allowedFacewear[]={};
-	};
-	class BR_CH252D_B: BR_CH252D
-	{
-		displayName="[61st] CH252D Helmet (Blue)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_BLU_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
 	};
 	class BR_CH252D_BatS: BR_CH252D
 	{
