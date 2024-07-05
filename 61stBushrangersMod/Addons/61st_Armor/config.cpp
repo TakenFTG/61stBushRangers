@@ -172,13 +172,14 @@ class XtdGearModels
 				};
 			};
 		};
-		class BR_ANPRC_521
+		class BR_ANPRC
 		{
 			options[]=
 			{
-				"Colour"
+				"Colour",
+				"Radio"
 			};
-			label="[61st] AN/PRC-521";
+			label="[61st] AN/PRC";
 			class Colour
 			{
 				alwaysSelectable=1;
@@ -202,6 +203,26 @@ class XtdGearModels
 				class BatS
 				{
 					label="Battalion Staff";
+				};
+			};
+			class Radio
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Model";
+				values[]=
+				{
+					"ANPRC521",
+					"ANPRC515"
+				};
+				class ANPRC521
+				{
+					label="AN/PRC-521";
+				};
+				class ANPRC515
+				{
+					label="AN/PRC-515";
 				};
 			};
 		};
@@ -395,16 +416,37 @@ class XtdGearInfos
 		{
 			Model="BR_ANPRC_521";
 			Colour="Black";
+			Radio="ANPRC521";
 		};
 		class BR_ANPRC_521_BatS
 		{
 			Model="BR_ANPRC_521";
 			Colour="BatS";
+			Radio="ANPRC521";
 		};
 		class BR_ANPRC_521_Red
 		{
 			Model="BR_ANPRC_521";
 			Colour="Red";
+			Radio="ANPRC521";
+		};
+		class BR_ANPRC_515_BLK
+		{
+			Model="BR_ANPRC_515";
+			Colour="Black";
+			Radio="ANPRC515";
+		};
+		class BR_ANPRC_515_BatS
+		{
+			Model="BR_ANPRC_515";
+			Colour="BatS";
+			Radio="ANPRC515";
+		};
+		class BR_ANPRC_515_Red
+		{
+			Model="BR_ANPRC_515";
+			Colour="Red";
+			Radio="ANPRC515";
 		};
 	};
 };
@@ -909,6 +951,7 @@ class CfgVehicles
 	class OPTRE_ILCS_Rucksack_Heavy;
 	class OPTRE_ILCS_Rucksack_Medical;
 	class OPTRE_ANPRC_521_Black;
+	class OPTRE_ANPRC_515_Black;
 	class BR_ILCS_Rucksack_Basic: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="61st";
@@ -1087,6 +1130,39 @@ class CfgVehicles
 		{
 			"61st_Armor\Data\Backpacks\soft_backpack_co.paa",
 			"61st_Armor\Data\Backpacks\commopack_Red_co.paa"
+		};
+	};
+		class BR_ANPRC_515_BLK: OPTRE_ANPRC_515_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-515 (Black)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\commopack515_blk_co.paa"
+		};
+	};
+	class BR_ANPRC_515_BatS: OPTRE_ANPRC_515_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-515 (Battalion)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\commopack515_BatS_co.paa"
+		};
+	};
+	class BR_ANPRC_515_Red: OPTRE_ANPRC_515_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-515 (Red)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\commopack515_Red_co.paa"
 		};
 	};
 };
