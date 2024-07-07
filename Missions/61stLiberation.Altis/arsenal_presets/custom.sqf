@@ -451,6 +451,8 @@ GRLIB_arsenal_items = [
 "BR_M52D_Marksman",
 "BR_M52D_RPR_Marksman",
 "BR_M52D_BatS_Marksman",
+"BR_Love",
+"IHEARTMILLS",
 "bipod_01_F_blk",
 "OPTRE_M12_Suppressor",
 "OPTRE_M393_Suppressor",
@@ -785,6 +787,9 @@ GRLIB_arsenal_backpacks = [
 "BR_ILCS_Rucksack_Heavy_Silver",
 "BR_ANPRC_521_BLK",
 "BR_ANPRC_521_BatS",
-"BR_ANPRC_521_Red"
+"BR_ANPRC_521_Red",
+"BR_ANPRC_515_BLK",
+"BR_ANPRC_515_BatS",
+"BR_ANPRC_515_Red"
 ];
 
