@@ -1,58 +1,84 @@
 from cogs.MissionSubmission import MissionSubmission
 import discord
+import discord.app_commands
 from discord.ext import commands
+from Token import *
+from discord.ext.commands import Context as context
 
-intents = discord.Intents.default()
+
+intents = discord.Intents.all()
 intents.message_content = True
 contexts = discord.app_commands.AppCommandContext()
 contexts.guild = True
 contexts.private_channel = True
 
-bot = commands.Bot(command_prefix="-",allowed_contexts=contexts, description= 'Test', intents = intents)
-
-#allowed_contexts = 
+bot = commands.Bot(command_prefix="/",allowed_contexts=contexts, intents = intents)
 
 @bot.event
 async def on_ready():
-	message = "Commands are as follows:\n"
-	for command in bot.commands :
+	
+	message = "Tree Commands are as follows:\n"
+	for command in bot.tree.get_commands():
 		message += "-> " + str(command.name) + "\n"
-	message += "Cogs are as follows:\n"
-	for cog in bot.cogs:
-		message += "-> " + str(cog.title) + "\n"
-	print("Bot is live\n" + message)
+	
+	message += "Bot commands are as follows:\n"
+	for command in bot.commands:
+		message += "-> " + str(command) + "\n"
+
+	print("Bot is live\n" + message + "\n\n")
 
 @bot.event
-async def on_message(message):
-	if message.author == bot.user:
+async def on_message(ctx):
+	if ctx.author == bot.user:
+		return
+	
+	if not ctx.content.startswith(bot.command_prefix):
 		return
 
-	if message.content.startswith('$hello'):
-		await message.channel.send('Hello!')
-		
-@bot.command(name="list")
-async def _List(ctx):
-	print("Recieved message")
-	message = "Commands are as follows:\n"
-	for command in bot.commands :
-		message += "-> " + command + "\n"
-	message += "Cogs are as follows:\n"
-	for cog in bot.cogs:
-		message += "-> " + cog + "\n"
-	await ctx.channel.send(message)
+	command = ctx.content[1:].lower()
+	args = command.split(" ")
 
-@bot.command(name="test")
-async def _test(ctx):
-	message = "Commands are as follows:\n"
-	for command in bot.commands :
-		message += "-> " + str(command.name) + "\n"
-	message += "Cogs are as follows:\n"
-	for cog in bot.cogs:
-		message += "-> " + str(cog.title) + "\n"
-	await ctx.channel.send(message)
+	if args[0] in commandList:
+		await commandList[args[0]](ctx)
 
+@bot.tree.command()
+async def updateorbat(ctx : context):
+	# if 1202540346970472478 not in ctx.user.roles:
+	# 	await ctx.channel.send('You have no power here, ' + str(ctx.user.roles))
+	# else:
+	await ctx.channel.send('Update Orbat triggered')
+	worked = await getOrbatUsernames(ctx)
 
-bot.add_cog(MissionSubmission(bot))
-# bot.add_command(_UniqueName)
+	if(worked):
+		await ctx.response.send_message("worked")
+	else:
+		await ctx.response.send_message("didn't worked")
 
-bot.run('MTI1NjQ0MzU2NDIxMzI3MjU5Nw.GSBdmq.rLJkQj0Ojis_rH6khIYQkH6gxiNWOeyh0X-gd0')
+async def helpFunc(ctx):
+	await ctx.channel.send('-> test: function i am working on currently\n-> help: this command, good luck finding it')
+
+async def getOrbatUsernames(ctx : context):
+	await ctx.channel.send('Downloading names')
+
+	MemberNicknames = {}
+
+	for member in ctx.guild.members:
+		if member.nick is not None:
+			MemberNicknames.update({member.nick : member.id})
+		else:
+			MemberNicknames.update({member.name : member.id})
+
+	file = open("Files/name-id-mappings.txt", "w")
+
+	for mem in MemberNicknames.keys():
+		file.write(str(mem) + ":" + str(MemberNicknames[mem]) + "\n")
+
+	file.close()
+	await ctx.channel.send('Names downloaded')
+	return True
+
+	
+
+commandList = {"test" : getOrbatUsernames, "help" : helpFunc} 
+
+bot.run(TOKEN)
