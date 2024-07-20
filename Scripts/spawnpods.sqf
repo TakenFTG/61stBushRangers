@@ -1,7 +1,7 @@
-call{_this addAction["Remove Vehicle", {_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;}]};
+call{_this addAction["Remove Vehicle", {_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 3] select 0; deleteVehicle _box;}]};
 
 call{_this addAction["Spawn Ammo Pod",{
-_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
+_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 3] select 0; deleteVehicle _box;
 sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
@@ -9,7 +9,7 @@ _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
 }]};
 
 call{_this addAction["Spawn Explosives Pod",{
-_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
+_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 3] select 0; deleteVehicle _box;
 sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
@@ -17,7 +17,7 @@ _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
 }]};
 
 call{_this addAction["Spawn Medic Pod",{
-_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
+_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 3] select 0; deleteVehicle _box;
 sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
@@ -25,14 +25,14 @@ _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
 }]};
 
 call{_this addAction["Spawn Empty Pod",{
-_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
+_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 3] select 0; deleteVehicle _box;
 sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
 }]};
 
 call{_this addAction["Spawn Arsenal Pod",{
-_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
+_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 3] select 0; deleteVehicle _box;
 sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
@@ -40,7 +40,7 @@ _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
 }]};
 
 call{_this addAction["Spawn Limited Pod",{
-_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 10] select 0; deleteVehicle _box;
+_box = nearestObjects [HPOS3, ["OPTRE_Ammo_SupplyPod_Empty"], 3] select 0; deleteVehicle _box;
 sleep 0.2;
 _pos = [(getPosATL HPOS3) # 0, (getPosATL HPOS3) # 1, (getPosATL HPOS3) #2 + 0.5];
 _box = createVehicle["OPTRE_Ammo_SupplyPod_Empty", _pos,[],0,"CAN_COLLIDE"];
