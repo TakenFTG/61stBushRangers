@@ -1,19 +1,23 @@
 import google.auth
 from googleapiclient.discovery import build
+from google.oauth2.credentials import Credentials
+from google.oauth2 import service_account
 from googleapiclient.errors import HttpError
 
 import Token
 
+# Function to load credentials
+def load_credentials():
+    SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+    SERVICE_ACCOUNT_FILE = 'GoogleAPI.json'
+
+    creds = service_account.Credentials.from_service_account_file(
+            SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    return creds
 
 def get_values(spreadsheet_id, range_name):
-  """
-  Creates the batch_update the user has access to.
-  Load pre-authorized user credentials from the environment.
-  TODO(developer) - See https://developers.google.com/identity
-  for guides on implementing OAuth2 for the application.
-  """
-  creds, _ = Token.GOOGLE_API_KEY
-  # pylint: disable=maybe-no-member
+  creds = load_credentials()
+
   try:
     service = build("sheets", "v4", credentials=creds)
 
@@ -28,6 +32,7 @@ def get_values(spreadsheet_id, range_name):
     for row in rows:
       print( str(row))
     return result
+  
   except HttpError as error:
     print(f"An error occurred: {error}")
     return error
