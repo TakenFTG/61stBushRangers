@@ -6,10 +6,34 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"Visor",
-				"Custom"
+				"HColour"
 			};
 			label="[61st] CH252D";
+			class HColour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{"Blue","Reaper","BatS"};
+				class Blue
+				{label="Blue";};
+				class Reaper
+				{label="Reaper";};
+				class BatS
+				{label="Battalion Staff";};
+			};
+		};
+		
+		class BR_M52D_Rifleman
+		{
+			options[]=
+			{
+				"Custom",
+				"Variant"
+			};
+			label="[61st] M52D Body Armour";
 			class Custom
 			{
 				alwaysSelectable=1;
@@ -32,53 +56,8 @@ class XtdGearModels
 				};
 				class BatS
 				{
-					label="Battalion Staff";
-				};
-			};
-			class Visor
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-				label="Visor";
-				values[]=
-				{
-					"None"
-				};
-				class None
-				{
-					label="Base";
-				};
-			};
-		};
-		
-		class BR_M52D_Rifleman
-		{
-			options[]=
-			{
-				"Custom",
-				"Variant"
-			};
-			label="[61st] M52D Body Armour";
-			class Custom
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-				label="Colour";
-				values[]=
-				{
-					"Base",
-					"Reaper"
-				};
-				class Base
-				{
-					label="Base";
-				};
-				class Reaper
-				{
-					label="Reaper";
-				};
+					label="Battalion Staff"
+				}
 			};
 			class Variant
 			{
@@ -183,7 +162,61 @@ class XtdGearModels
 				};
 			};
 		};
-	};
+		class BR_ANPRC
+		{
+			options[]=
+			{
+				"Colour",
+				"Radio"
+			};
+			label="[61st] AN/PRC";
+			class Colour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{
+					"Black",
+					"Red",
+					"BatS"
+				};
+				class Black
+				{
+					label="Black";
+				};
+				class Red
+				{
+					label="Red";
+				};
+				class BatS
+				{
+					label="Battalion Staff";
+				};
+			};
+			class Radio
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Model";
+				values[]=
+				{
+					"ANPRC521",
+					"ANPRC515"
+				};
+				class ANPRC521
+				{
+					label="AN/PRC-521";
+				};
+				class ANPRC515
+				{
+					label="AN/PRC-515";
+				};
+			};
+		};
+	};	
 };
 class XtdGearInfos
 {
@@ -192,26 +225,17 @@ class XtdGearInfos
 		class BR_CH252D
 		{
 			model="BR_CH252D";
-			Visor="None";
-			Custom="Base";
+			HColour="Blue";
 		};	
-		class BR_CH252D_B
-		{
-			model="BR_CH252D";
-			Visor="Blue";
-			Custom="Base";
-		};
 		class BR_CH252D_RPR
 		{
 			model="BR_CH252D";
-			Visor="None";
-			Custom="Reaper";
+			HColour="Reaper";
 		};
 		class BR_CH252D_BatS
 		{
 			model="BR_CH252D"
-			Visor="None";
-			Custom="BatS";
+			HColour="BatS";
 		}
 		class BR_M52D_Rifleman
 		{
@@ -223,6 +247,12 @@ class XtdGearInfos
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
+			Variant="Rifleman";
+		};
+		class BR_M52D_BatS_Rifleman
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
 			Variant="Rifleman";
 		};
 		class BR_M52D_Demolitions
@@ -237,6 +267,12 @@ class XtdGearInfos
 			Custom="Reaper";
 			Variant="Demolitions";
 		};
+		class BR_M52D_BatS_Demolitions
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
+			Variant="Demolitions";
+		};
 		class BR_M52D_Scout
 		{
 			Model="BR_M52D_Rifleman";
@@ -247,6 +283,12 @@ class XtdGearInfos
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
+			Variant="Scout";
+		};
+		class BR_M52D_BatS_Scout
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
 			Variant="Scout";
 		};
 		class BR_M52D_Sniper
@@ -261,6 +303,12 @@ class XtdGearInfos
 			Custom="Reaper";
 			Variant="Sniper";
 		};
+		class BR_M52D_BatS_Sniper
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
+			Variant="Sniper";
+		};
 		class BR_M52D_Marksman
 		{
 			Model="BR_M52D_Rifleman";
@@ -271,6 +319,12 @@ class XtdGearInfos
 		{
 			Model="BR_M52D_Rifleman";
 			Custom="Reaper";
+			Variant="Marksman";
+		};
+		class BR_M52D_BatS_Marksman
+		{
+			Model="BR_M52D_Rifleman";
+			Custom="BatS";
 			Variant="Marksman";
 		};
 	};
@@ -348,6 +402,42 @@ class XtdGearInfos
 			Type="Heavy";
 			Colour="Silver";
 		};
+		class BR_ANPRC_521_BLK
+		{
+			Model="BR_ANPRC";
+			Colour="Black";
+			Radio="ANPRC521";
+		};
+		class BR_ANPRC_521_BatS
+		{
+			Model="BR_ANPRC";
+			Colour="BatS";
+			Radio="ANPRC521";
+		};
+		class BR_ANPRC_521_Red
+		{
+			Model="BR_ANPRC";
+			Colour="Red";
+			Radio="ANPRC521";
+		};
+		class BR_ANPRC_515_BLK
+		{
+			Model="BR_ANPRC";
+			Colour="Black";
+			Radio="ANPRC515";
+		};
+		class BR_ANPRC_515_BatS
+		{
+			Model="BR_ANPRC";
+			Colour="BatS";
+			Radio="ANPRC515";
+		};
+		class BR_ANPRC_515_Red
+		{
+			Model="BR_ANPRC";
+			Colour="Red";
+			Radio="ANPRC515";
+		};
 	};
 };
 class CfgPatches
@@ -386,12 +476,14 @@ class CfgWeapons
 {
 	class HeadgearItem;
 	class OPTRE_UNSC_CH252D_Helmet;
+	class Uniform_Base;
+	class UniformItem;
 	class BR_CH252D: OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc="61st";
 		author="TakenFTG";
 		ace_hearing_protection=1;
-		displayName="[61st] CH252D Helmet";
+		displayName="[61st] CH252D Helmet (Blue)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -462,24 +554,13 @@ class CfgWeapons
 		};
 		allowedFacewear[]={};
 	};
-	class BR_CH252D_B: BR_CH252D
-	{
-		displayName="[61st] CH252D Helmet (Blue)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_BLU_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-	};
 	class BR_CH252D_BatS: BR_CH252D
 	{
 		displayName="[61st] CH252D Helmet (Battalion Staff)";
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
@@ -490,7 +571,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
@@ -572,17 +653,13 @@ class CfgWeapons
 		};
 		allowedFacewear[]={};
 	};
-	class BR_CH252D_B_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Blue)";
-	};
 	class BR_CH252D_BatS_dp: BR_CH252D_dp
 	{
 		displayName="[61st] CH252D Helmet (Battalion Staff)";
 		hiddenSelectionsTextures[]=
 		{
-			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_SLV_V_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_BatS_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
@@ -798,6 +875,89 @@ class CfgWeapons
 			"61st_Armor\Data\Vests\V_M52_O_RPR_CO"
 		};
 	};
+	class BR_M52D_BatS_Rifleman: BR_M52D_Rifleman
+	{
+		displayName="[61st] M52D (Rifleman) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Demolitions: BR_M52D_Demolitions
+	{
+		displayName="[61st] M52D (Demolitions) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Marksman: BR_M52D_Marksman
+	{
+		displayName="[61st] M52D (Marksman) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Scout: BR_M52D_Scout
+	{
+		displayName="[61st] M52D (Scout) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_M52D_BatS_Sniper: BR_M52D_Sniper
+	{
+		displayName="[61st] M52D (Sniper) Battalion";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Vests\V_M52_V_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_URB_CO",
+			"61st_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"61st_Armor\Data\Vests\V_M52_O_BatS_CO"
+		};
+	};
+	class BR_Love: Uniform_Base
+	{
+		author="TakenFTG";
+		scope=2;
+		displayName="[61st] I Heart Mills";
+		picture="\A3\characters_f_kart\data\ui\icon_U_Marshall_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_driver_F.p3d";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Characters_F_Kart\Civil\Data\c_poloshirtpants_2_co.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="IHEARTMILLS";
+			containerClass="Supply50";
+			mass=60;
+		};
+	};
 };
 class CfgVehicles
 {
@@ -806,6 +966,7 @@ class CfgVehicles
 	class OPTRE_ILCS_Rucksack_Heavy;
 	class OPTRE_ILCS_Rucksack_Medical;
 	class OPTRE_ANPRC_521_Black;
+	class OPTRE_ANPRC_515;
 	class BR_ILCS_Rucksack_Basic: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="61st";
@@ -858,7 +1019,7 @@ class CfgVehicles
 		dlc="61st";
 		author="TakenFTG";
 		displayName="[61st] ILCS Backpack (Medic) Red";
-		maximumLoad=e00;
+		maximumLoad=300;
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Backpacks\V_RUCK_MED_R",
@@ -950,12 +1111,83 @@ class CfgVehicles
 		};
 	
 	};
-	class BR_ANPRC_521: OPTRE_ANPRC_521_Black
+	class BR_ANPRC_521_BLK: OPTRE_ANPRC_521_Black
 	{
 		dlc="61st";
 		author="TakenFTG";
-		displayName="[61st] AN/PRC-521";
+		displayName="[61st] AN/PRC-521 (Black)";
 		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\soft_backpack_co.paa",
+			"61st_Armor\Data\Backpacks\commopack_blk_co.paa"
+		};
 	};
-
+	class BR_ANPRC_521_BatS: OPTRE_ANPRC_521_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-521 (Battalion)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\soft_backpack_co.paa",
+			"61st_Armor\Data\Backpacks\commopack_BatS_co.paa"
+		};
+	};
+	class BR_ANPRC_521_Red: OPTRE_ANPRC_521_Black
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-521 (Red)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\soft_backpack_co.paa",
+			"61st_Armor\Data\Backpacks\commopack_Red_co.paa"
+		};
+	};
+		class BR_ANPRC_515_BLK: OPTRE_ANPRC_515
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-515 (Black)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\commopack515_blk_co.paa"
+		};
+	};
+	class BR_ANPRC_515_BatS: OPTRE_ANPRC_515
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-515 (Battalion)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\commopack515_BatS_co.paa"
+		};
+	};
+	class BR_ANPRC_515_Red: OPTRE_ANPRC_515
+	{
+		dlc="61st";
+		author="TakenFTG";
+		displayName="[61st] AN/PRC-515 (Red)";
+		maximumLoad=300;
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Backpacks\commopack515_Red_co.paa"
+		};
+	};
+	class B_RangeMaster_F;
+	class IHEARTMILLS : B_RangeMaster_F
+    {
+        scope = 2;
+        displayName = "I <3 Mills";
+        uniformClass = "IHEARTMILLS";
+        model = "\A3\Characters_F\Civil\c_poloshirtpants.p3d";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"61st_Armor\Data\Vests\IHEARTMILLS"};
+    };
 };
