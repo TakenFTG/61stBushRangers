@@ -19,7 +19,7 @@ _vehicle = createVehicle ["OPTRE_UNSC_hornet_CAP", _pos,[],0,"CAN_COLLIDE"];
 _vehicle setDir (getDir HPOS1); 
 }]}; 
 
-call{_this addAction ["Faclon",{ 
+call{_this addAction ["Falcon",{ 
 _vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
 sleep 0.2;
 _pos = [(getPosATL HPOS1) # 0, (getPosATL HPOS1) # 1, (getPosATL HPOS1) #2 + 0.5]; 
