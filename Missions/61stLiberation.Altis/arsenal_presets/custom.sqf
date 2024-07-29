@@ -362,7 +362,13 @@ GRLIB_arsenal_magazines = [
 "GRL45_6rnd_Flare_Red",
 "GRL45_6rnd_Flare_White",
 "GRL45_6rnd_Flare_Yellow",
-"3Rnd_Smoke_Grenade_shell"
+"3Rnd_Smoke_Grenade_shell",
+"3Rnd_Smoke_Grenade_shell",
+"3Rnd_SmokeRed_Grenade_shell",
+"3Rnd_SmokeOrange_Grenade_shell",
+"3Rnd_SmokePurple_Grenade_shell",
+"3Rnd_UGL_FlareRed_F",
+"3Rnd_UGL_FlareGreen_F"
 ];
 
 GRLIB_arsenal_items = [

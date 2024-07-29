@@ -104,6 +104,8 @@ air_vehicles = [
 	["OPTRE_AV22C_Sparrowhawk",170,150,100],
 	["B_Plane_CAS_01_dynamicLoadout_F",250,350,150],
 	["OPTRE_YSS_1000_A_VTOL",300,500,250],
+    ["OPTRE_bayonet_01",300,150,300],
+    ["OPTRE_bayonetstealth_01",350,150,300],
 	["OPTRE_Pelican_armed",0,30,50],
 	["OPTRE_Pelican_unarmed",0,0,0],
 	["OPTRE_UNSC_hornet",30,30,50],
