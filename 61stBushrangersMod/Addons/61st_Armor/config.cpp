@@ -224,6 +224,11 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class BR_CH252D
+		{
+			model="BR_CH252D";
+			HColour="Black";
+		};	
 		class BR_CH252D_Blu
 		{
 			model="BR_CH252D";
@@ -485,7 +490,7 @@ class CfgWeapons
 		dlc="61st";
 		author="TakenFTG";
 		ace_hearing_protection=1;
-		displayName="[61st] CH252D Helmet (Blue)";
+		displayName="[61st] CH252D Helmet (Black)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -558,7 +563,7 @@ class CfgWeapons
 	};
 	class BR_CH252D_Blu: BR_CH252D
 	{
-		displayName="[61st] CH252D Helmet (Battalion Staff)";
+		displayName="[61st] CH252D Helmet (Blue)";
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
@@ -595,7 +600,7 @@ class CfgWeapons
 		dlc="61st";
 		author="TakenFTG";
 		ace_hearing_protection=1;
-		displayName="[61st] CH252D Helmet";
+		displayName="[61st] CH252D Helmet (Black)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -668,7 +673,7 @@ class CfgWeapons
 	};
 	class BR_CH252D_Blu_dp: BR_CH252D_dp
 	{
-		displayName="[61st] CH252D Helmet (Battalion Staff)";
+		displayName="[61st] CH252D Helmet (Blue)";
 		hiddenSelectionsTextures[]=
 		{
 			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
