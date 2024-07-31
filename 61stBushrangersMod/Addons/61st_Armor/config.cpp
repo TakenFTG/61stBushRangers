@@ -16,7 +16,9 @@ class XtdGearModels
 				changedelay=0;
 				label="Colour";
 				values[]=
-				{"Blue","Reaper","BatS"};
+				{"Black","Blue","Reaper","BatS"};
+				class Black
+				{label="Black";};
 				class Blue
 				{label="Blue";};
 				class Reaper
@@ -222,7 +224,7 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class BR_CH252D
+		class BR_CH252D_Blu
 		{
 			model="BR_CH252D";
 			HColour="Blue";
@@ -554,6 +556,17 @@ class CfgWeapons
 		};
 		allowedFacewear[]={};
 	};
+	class BR_CH252D_Blu: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Battalion Staff)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
 	class BR_CH252D_BatS: BR_CH252D
 	{
 		displayName="[61st] CH252D Helmet (Battalion Staff)";
@@ -653,6 +666,27 @@ class CfgWeapons
 		};
 		allowedFacewear[]={};
 	};
+	class BR_CH252D_Blu_dp: BR_CH252D_dp
+	{
+		displayName="[61st] CH252D Helmet (Battalion Staff)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[]=
+			{
+				"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"optre_unsc_units\army\data\soft_packs_co.paa"
+			};
+		};
+	};
 	class BR_CH252D_BatS_dp: BR_CH252D_dp
 	{
 		displayName="[61st] CH252D Helmet (Battalion Staff)";
@@ -667,7 +701,7 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[]=
 			{
-				"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
+				"61st_Armor\Data\Helmets\V_CH252D_BatS_CO",
 				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"optre_unsc_units\army\data\soft_packs_co.paa"
