@@ -18,13 +18,13 @@ class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class BR_CH252D
+		class BR_H_BAT
 		{
 			options[]=
 			{
 				"HColour"
 			};
-			label="[61st] CH252D";
+			label="[61st] Battlion CH252D";
 			class HColour
 			{
 				alwaysSelectable=1;
@@ -32,15 +32,150 @@ class XtdGearModels
 				changedelay=0;
 				label="Colour";
 				values[]=
-				{"Black","Blue","Reaper","BatS"};
-				class Black
-				{label="Black";};
-				class Blue
-				{label="Blue";};
-				class Reaper
-				{label="Reaper";};
-				class BatS
-				{label="Battalion Staff";};
+				{"CO","XO","RTO","SGT","MED","PLAIN"};
+				class CO
+				{label="";};
+				class XO
+				{label="";};
+				class RTO
+				{label="";};
+				class SGT
+				{label="";};
+				class MED
+				{label=""}
+				class PLAIN
+				{label=""}
+			};
+		};
+		class BR_H_1ST
+		{
+			options[]=
+			{
+				"HColour"
+			};
+			label="[61st] 1-0 CH252D";
+			class HColour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{"CO","XO","RTO","SGT","MED","PLAIN"};
+				class CO
+				{label="";};
+				class XO
+				{label="";};
+				class RTO
+				{label="";};
+				class SGT
+				{label="";};
+				class MED
+				{label=""}
+				class PLAIN
+				{label=""}
+			};
+		};
+		class BR_H_1I1
+		{
+			options[]=
+			{
+				"HColour"
+			};
+			label="[61st] 1-1 CH252D";
+			class HColour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{"LDR","SIC","RTO","MED","PLAIN"};
+				class LDR
+				{label="";};
+				class SIC
+				{label="";};
+				class RTO
+				{label="";};
+				class MED
+				{label=""}
+				class PLAIN
+				{label=""}
+			};
+		};
+		class BR_H_1I2
+		{
+			options[]=
+			{
+				"HColour"
+			};
+			label="[61st] 1-2 CH252D";
+			class HColour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{"LDR","SIC","RTO","MED","PLAIN"};
+				class LDR
+				{label="";};
+				class SIC
+				{label="";};
+				class RTO
+				{label="";};
+				class MED
+				{label=""}
+				class PLAIN
+				{label=""}
+			};
+		};
+		class BR_H_RSV
+		{
+			options[]=
+			{
+				"HColour"
+			};
+			label="[61st] Reservists CH252D";
+			class HColour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{"RTO","MED","PLAIN"};
+				class RTO
+				{label="";};
+				class MED
+				{label=""}
+				class PLAIN
+				{label=""}
+			};
+		};
+		class BR_H_SQD
+		{
+			options[]=
+			{
+				"HColour"
+			};
+			label="[61st] SQUADRON CH252D";
+			class HColour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{"CO","XO","WOFF","PLAIN"};
+				class CO
+				{label="";};
+				class XO
+				{label=""}
+				class WOFF
+				{label=""}
+				class PLAIN
+				{label=""}
 			};
 		};
 	};
@@ -69,259 +204,151 @@ class XtdGearInfos
 			model="BR_CH252D"
 			HColour="BatS";
 		};
+		class BR_H_BAT_CO
+		{
+			model="BR_H_BAT";
+			HColour="CO";
+		}
+		class BR_H_BAT_XO
+		{
+			model="BR_H_BAT";
+			HColour="XO";
+		}
+		class BR_H_BAT_RTO
+		{
+			model="BR_H_BAT";
+			HColour="RTO";
+		}
+		class BR_H_BAT_SGT
+		{
+			model="BR_H_BAT";
+			HColour="SGT";
+		}
+		class BR_H_BAT_MED
+		{
+			model="BR_H_BAT";
+			HColour="MED";
+		}
+		class BR_H_BAT_PLAIN
+		{
+			model="BR_H_BAT";
+			HColour="PLAIN";
+		}
+		class BR_H_1ST_CO
+		{
+			model="BR_H_1ST";
+			HColour="CO";
+		}
+		class BR_H_1ST_XO
+		{
+			model="BR_H_1ST";
+			HColour="XO";
+		}
+		class BR_H_1ST_RTO
+		{
+			model="BR_H_1ST";
+			HColour="RTO";
+		}
+		class BR_H_1ST_SGT
+		{
+			model="BR_H_1ST";
+			HColour="SGT";
+		}
+		class BR_H_1ST_MED
+		{
+			model="BR_H_1ST";
+			HColour="MED";
+		}
+		class BR_H_1ST_PLAIN
+		{
+			model="BR_H_1ST";
+			HColour="PLAIN";
+		}
+		class BR_H_1I1_LDR
+		{
+			model="BR_H_1I1";
+			HColour="LDR";
+		}
+		class BR_H_1I1_2IC
+		{
+			model="BR_H_1I1";
+			HColour="SIC";
+		}
+		class BR_H_1I1_RTO
+		{
+			model="BR_H_1I1";
+			HColour="RTO";
+		}
+		class BR_H_1I1_MED
+		{
+			model="BR_H_1I1";
+			HColour="MED";
+		}
+		class BR_H_1I1_PLAIN
+		{
+			model="BR_H_1I1";
+			HColour="PLAIN";
+		}
+		class BR_H_1I2_LDR
+		{
+			model="BR_H_1I2";
+			HColour="LDR";
+		}
+		class BR_H_1I2_2IC
+		{
+			model="BR_H_1I2";
+			HColour="SIC";
+		}
+		class BR_H_1I2_RTO
+		{
+			model="BR_H_1I2";
+			HColour="RTO";
+		}
+		class BR_H_1I2_MED
+		{
+			model="BR_H_1I2";
+			HColour="MED";
+		}
+		class BR_H_1I2_PLAIN
+		{
+			model="BR_H_1I2";
+			HColour="PLAIN";
+		}
+		class BR_H_RSV_RTO
+		{
+			model="BR_H_RSV";
+			HColour="";
+		}
+		class BR_H_RSV_MED
+		{
+			model="BR_H_RSV";
+			HColour="";
+		}
+		class BR_H_RSV_PLAIN
+		{
+			model="BR_H_RSV";
+			HColour="";
+		}
+		class BR_H_SQD_CO
+		{
+			model="BR_H_SQD";
+			HColour="";
+		}
+		class BR_H_SQD_XO
+		{
+			model="BR_H_SQD";
+			HColour="";
+		}
+		class BR_H_SQD_WOFF
+		{
+			model="BR_H_SQD";
+			HColour="";
+		}
+		class BR_H_SQD_PLAIN
+		{
+			model="BR_H_SQD";
+			HColour="";
+		}
 	};
 };
-class CfgWeapons
-{
-	class HeadgearItem;
-	class OPTRE_UNSC_CH252D_Helmet;
-	class BR_CH252D: OPTRE_UNSC_CH252D_Helmet
-	{
-		dlc="61st";
-		author="TakenFTG";
-		ace_hearing_protection=1;
-		displayName="[61st] CH252D Helmet (Black)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"61st_Armor\Data\Helmets\Materials\V_CH252D.rvmat",
-			"61st_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"
-		};
-		CBRN_protection=1;
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet_dp";
-			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"61st_Armor\Data\Helmets\Materials\V_CH252D.rvmat",
-				""
-			};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor=180;
-					hitpointName="HitFace";
-					passThrough=0.08;
-				};
-				class Head
-				{
-					armor=180;
-					hitPointName="HitHead";
-					passThrough=0.08;
-				};
-				class Neck
-				{
-					armor=180;
-					hitpointName="HitNeck";
-					passThrough=0.08;
-				};
-			};
-		};
-		allowedFacewear[]={};
-	};
-	class BR_CH252D_Blu: BR_CH252D
-	{
-		displayName="[61st] CH252D Helmet (Blue)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-	};
-	class BR_CH252D_BatS: BR_CH252D
-	{
-		displayName="[61st] CH252D Helmet (Battalion Staff)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-	};
-	class BR_CH252D_RPR: BR_CH252D
-	{
-		displayName="[61st] CH252D Helmet (Reaper)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-	};
-	class OPTRE_UNSC_CH252D_Helmet_dp;
-	class BR_CH252D_dp: OPTRE_UNSC_CH252D_Helmet_dp
-	{
-		dlc="61st";
-		author="TakenFTG";
-		ace_hearing_protection=1;
-		displayName="[61st] CH252D Helmet (Black)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"61st_Armor\Data\Helmets\Materials\V_CH252D.rvmat",
-			""
-		};
-		CBRN_protection=1;
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet_dp";
-			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_DEF_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"61st_Armor\Data\Helmets\Materials\V_CH252D.rvmat",
-				""
-			};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor=200;
-					hitpointName="HitFace";
-					passThrough=0.08;
-				};
-				class Head
-				{
-					armor=200;
-					hitPointName="HitHead";
-					passThrough=0.08;
-				};
-				class Neck
-				{
-					armor=200;
-					hitpointName="HitNeck";
-					passThrough=0.08;
-				};
-			};
-		};
-		allowedFacewear[]={};
-	};
-	class BR_CH252D_Blu_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Blue)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-		};
-	};
-	class BR_CH252D_BatS_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Battalion Staff)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_BatS_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_BatS_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-		};
-	};
-	class BR_CH252D_RPR_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Reaper)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-		};
-	};
-};
+#include "CfgWeapons.hpp"
