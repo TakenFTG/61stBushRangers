@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="61st">
-    <Package name="OPTRE_Language_UNSC_Units">
-        <Container name="Uniforms - Army - Display Names">
-            <Key ID="BR_BAT_CO">
+    <Package name="61st_Armor">
+        <Container name="Posistion Names">
+            <Key ID="STR_BR_BAT_CO">
                 <Original>Mills</Original>
                 <English>Mills</English>
             </Key>
-            <Key ID="BR_BAT_XO">
+            <Key ID="STR_BR_BAT_XO">
                 <Original>Mechy</Original>
                 <English>Mechy</English>
             </Key>
-            <Key ID="BR_BAT_RTO">
+            <Key ID="STR_BR_BAT_RTO">
                 <Original>Folvos</Original>
                 <English>Folvos</English>
             </Key>
-            <Key ID="BR_BAT_SGT">
+            <Key ID="STR_BR_BAT_SGT">
                 <Original>Frosty</Original>
                 <English>Frosty</English>
             </Key>
-            <Key ID="BR_BAT_MED">
+            <Key ID="STR_BR_BAT_MED">
                 <Original>Tank</Original>
                 <English>Tank</English>
             </Key>
-            <Key ID="BR_BAT_PLAIN">
+            <Key ID="STR_BR_BAT_PLAIN">
                 <Original>Plain</Original>
                 <English>Plain</English>
             </Key>
-            <Key ID="BR_1ST_CO">
+            <Key ID="STR_BR_1ST_CO">
                 <Original>Ghost</Original>
                 <English>Ghost</English>
             </Key>
-            <Key ID="BR_1ST_XO">
+            <Key ID="STR_BR_1ST_XO">
                 <Original>XO</Original>
                 <English>XO</English>
             </Key>
-            <Key ID="BR_1ST_RTO">
+            <Key ID="STR_BR_1ST_RTO">
                 <Original>Izer</Original>
                 <English>Izer</English>
             </Key>
-            <Key ID="BR_1ST_SGT">
+            <Key ID="STR_BR_1ST_SGT">
                 <Original>SGT</Original>
                 <English>SGT</English>
             </Key>
-            <Key ID="BR_1ST_MED">
+            <Key ID="STR_BR_1ST_MED">
                 <Original>Wolf</Original>
                 <English>Wolf</English>
             </Key>
-            <Key ID="BR_1ST_PLAIN">
+            <Key ID="STR_BR_1ST_PLAIN">
                 <Original>Plain</Original>
                 <English>Plain</English>
             </Key>
-            <Key ID="BR_1I1_LDR">
+            <Key ID="STR_BR_1I1_LDR">
                 <Original>Adam</Original>
                 <English>Adam</English>
             </Key>
-            <Key ID="BR_1I1_2IC">
+            <Key ID="STR_BR_1I1_2IC">
                 <Original>2IC</Original>
                 <English>2IC</English>
             </Key>
-            <Key ID="BR_1I1_RTO">
+            <Key ID="STR_BR_1I1_RTO">
                 <Original>RTO</Original>
                 <English>RTO</English>
             </Key>
-            <Key ID="BR_1I1_MED">
+            <Key ID="STR_BR_1I1_MED">
                 <Original>Medic</Original>
-                <English></English>
+                <English>Medic</English>
             </Key>
-            <Key ID="BR_1I1_PLAIN">
+            <Key ID="STR_BR_1I1_PLAIN">
                 <Original>Plain</Original>
                 <English>Plain</English>
             </Key>
-            <Key ID="BR_2I2_LDR">
+            <Key ID="STR_BR_1I2_LDR">
                 <Original>Donkey</Original>
                 <English>Donkey</English>
             </Key>
-            <Key ID="BR_2I2_2IC">
+            <Key ID="STR_BR_1I2_2IC">
                 <Original>2IC</Original>
                 <English>2IC</English>
             </Key>
-            <Key ID="BR_2I2_RTO">
+            <Key ID="STR_BR_1I2_RTO">
                 <Original>RTO</Original>
                 <English>RTO</English>
             </Key>
-            <Key ID="BR_2I2_MED">
+            <Key ID="STR_BR_1I2_MED">
                 <Original>Medic</Original>
                 <English>Medic</English>
             </Key>
-            <Key ID="BR_2I2_PLAIN">
+            <Key ID="STR_BR_1I2_PLAIN">
                 <Original>Plain</Original>
                 <English>Plain</English>
             </Key>
-            <Key ID="BR_RSV_RTO">
+            <Key ID="STR_BR_RSV_RTO">
                 <Original>RTO</Original>
                 <English>RTO</English>
             </Key>
-            <Key ID="BR_RSV_MED">
+            <Key ID="STR_BR_RSV_MED">
                 <Original>Medic</Original>
                 <English>Medic</English>
             </Key>
-            <Key ID="BR_RSV_PLAIN">
+            <Key ID="STR_BR_RSV_PLAIN">
                 <Original>Plain</Original>
                 <English>Plain</English>
             </Key>
-            <Key ID="BR_SQD_CO">
+            <Key ID="STR_BR_SQD_CO">
                 <Original>Radian</Original>
                 <English>Radian</English>
             </Key>
-            <Key ID="BR_SQD_XO">
+            <Key ID="STR_BR_SQD_XO">
                 <Original>Wittier</Original>
                 <English>Wittier</English>
             </Key>
-            <Key ID="BR_SQD_WOFF">
+            <Key ID="STR_BR_SQD_WOFF">
                 <Original>WOFF</Original>
                 <English>WOFF</English>
             </Key>
-            <Key ID="BR_SQD_PLAIN">
+            <Key ID="STR_BR_SQD_PLAIN">
                 <Original>Plain</Original>
                 <English>Plain</English>
             </Key>
