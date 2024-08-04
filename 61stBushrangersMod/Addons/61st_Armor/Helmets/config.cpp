@@ -34,17 +34,17 @@ class XtdGearModels
 				values[]=
 				{"CO","XO","RTO","SGT","MED","PLAIN"};
 				class CO
-				{label="";};
+				{label="$BR_BAT_CO"};
 				class XO
-				{label="";};
+				{label="$BR_BAT_XO"};
 				class RTO
-				{label="";};
+				{label="$BR_BAT_RTO"};
 				class SGT
-				{label="";};
+				{label="$BR_BAT_SGT"};
 				class MED
-				{label=""}
+				{label="$BR_BAT_MED"};
 				class PLAIN
-				{label=""}
+				{label="$BR_BAT_PLAIN"};
 			};
 		};
 		class BR_H_1ST
@@ -63,17 +63,17 @@ class XtdGearModels
 				values[]=
 				{"CO","XO","RTO","SGT","MED","PLAIN"};
 				class CO
-				{label="";};
+				{label="$BR_1ST_CO"};
 				class XO
-				{label="";};
+				{label="$BR_1ST_XO"};
 				class RTO
-				{label="";};
+				{label="$BR_1ST_RTO"};
 				class SGT
-				{label="";};
+				{label="$BR_1ST_SGT"};
 				class MED
-				{label=""}
+				{label="$BR_1ST_MED"};
 				class PLAIN
-				{label=""}
+				{label="$BR_1ST_PLAIN"};
 			};
 		};
 		class BR_H_1I1
@@ -92,15 +92,15 @@ class XtdGearModels
 				values[]=
 				{"LDR","SIC","RTO","MED","PLAIN"};
 				class LDR
-				{label="";};
+				{label="$BR_1I1_LDR"};
 				class SIC
-				{label="";};
+				{label="$BR_1I1_2IC"};
 				class RTO
-				{label="";};
+				{label="$BR_1I1_RTO"};
 				class MED
-				{label=""}
+				{label="$BR_1I1_MED"};
 				class PLAIN
-				{label=""}
+				{label="$BR_1I1_PLAIN"};
 			};
 		};
 		class BR_H_1I2
@@ -119,15 +119,15 @@ class XtdGearModels
 				values[]=
 				{"LDR","SIC","RTO","MED","PLAIN"};
 				class LDR
-				{label="";};
+				{label="$BR_1I2_LDR"};
 				class SIC
-				{label="";};
+				{label="$BR_1I2_2IC"};
 				class RTO
-				{label="";};
+				{label="$BR_1I2_RTO"};
 				class MED
-				{label=""}
+				{label="$BR_1I2_MED"};
 				class PLAIN
-				{label=""}
+				{label="$BR_1I2_PLAIN"};
 			};
 		};
 		class BR_H_RSV
@@ -146,11 +146,11 @@ class XtdGearModels
 				values[]=
 				{"RTO","MED","PLAIN"};
 				class RTO
-				{label="";};
+				{label="$BR_RSV_RTO";};
 				class MED
-				{label=""}
+				{label="$BR_RSV_MED"}
 				class PLAIN
-				{label=""}
+				{label="$BR_RSV_PLAIN"}
 			};
 		};
 		class BR_H_SQD
@@ -169,13 +169,13 @@ class XtdGearModels
 				values[]=
 				{"CO","XO","WOFF","PLAIN"};
 				class CO
-				{label="";};
+				{label="$BR_SQD_CO";};
 				class XO
-				{label=""}
+				{label="$BR_SQD_XO"}
 				class WOFF
-				{label=""}
+				{label="$BR_SQD_WOFF"}
 				class PLAIN
-				{label=""}
+				{label="$BR_SQD_PLAIN"}
 			};
 		};
 	};
@@ -184,26 +184,6 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class BR_CH252D
-		{
-			model="BR_CH252D";
-			HColour="Black";
-		};	
-		class BR_CH252D_Blu
-		{
-			model="BR_CH252D";
-			HColour="Blue";
-		};	
-		class BR_CH252D_RPR
-		{
-			model="BR_CH252D";
-			HColour="Reaper";
-		};
-		class BR_CH252D_BatS
-		{
-			model="BR_CH252D"
-			HColour="BatS";
-		};
 		class BR_H_BAT_CO
 		{
 			model="BR_H_BAT";
@@ -317,37 +297,37 @@ class XtdGearInfos
 		class BR_H_RSV_RTO
 		{
 			model="BR_H_RSV";
-			HColour="";
+			HColour="RTO";
 		}
 		class BR_H_RSV_MED
 		{
 			model="BR_H_RSV";
-			HColour="";
+			HColour="MED";
 		}
 		class BR_H_RSV_PLAIN
 		{
 			model="BR_H_RSV";
-			HColour="";
+			HColour="PLAIN";
 		}
 		class BR_H_SQD_CO
 		{
 			model="BR_H_SQD";
-			HColour="";
+			HColour="CO";
 		}
 		class BR_H_SQD_XO
 		{
 			model="BR_H_SQD";
-			HColour="";
+			HColour="XO";
 		}
 		class BR_H_SQD_WOFF
 		{
 			model="BR_H_SQD";
-			HColour="";
+			HColour="WOFF";
 		}
 		class BR_H_SQD_PLAIN
 		{
 			model="BR_H_SQD";
-			HColour="";
+			HColour="PLAIN";
 		}
 	};
 };

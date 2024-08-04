@@ -78,7 +78,73 @@ class CfgWeapons
 		};
 		allowedFacewear[]={};
 	};
-	class BR_CH252D_Blu: BR_CH252D
+	class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\Battalion\BR_H_BAT_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_XO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\Battalion\BR_H_BAT_XO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_RTO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\Battalion\BR_H_BAT_RTO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_SGT: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\Battalion\BR_H_BAT_SGT",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_MED: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\Battalion\BR_H_BAT_MED",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_PLAIN: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\Battalion\BR_H_BAT_PLAIN",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_1ST_CO: BR_CH252D
 	{
 		displayName="[61st] CH252D Helmet (Blue)";
 		hiddenSelectionsTextures[]=
@@ -89,23 +155,903 @@ class CfgWeapons
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
 	};
-	class BR_CH252D_BatS: BR_CH252D
+    class BR_H_1ST_XO: BR_CH252D
 	{
-		displayName="[61st] CH252D Helmet (Battalion Staff)";
+		displayName="[61st] CH252D Helmet (Blue)";
 		hiddenSelectionsTextures[]=
 		{
-			"61st_Armor\Data\Helmets\V_CH252D_BATS_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
 			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
 		};
 	};
-	class BR_CH252D_RPR: BR_CH252D
+    class BR_H_1ST_RTO: BR_CH252D
 	{
-		displayName="[61st] CH252D Helmet (Reaper)";
+		displayName="[61st] CH252D Helmet (Blue)";
 		hiddenSelectionsTextures[]=
 		{
-			"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_1ST_SGT: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_1ST_: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_1ST_: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
+			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+    class BR_H_BAT_CO: BR_CH252D
+	{
+		displayName="[61st] CH252D Helmet (Blue)";
+		hiddenSelectionsTextures[]=
+		{
+			"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
 			"61st_Armor\Data\Helmets\V_CH252D_DEF_V_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"optre_unsc_units\army\data\soft_packs_co.paa"
@@ -203,48 +1149,6 @@ class CfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"61st_Armor\Data\Helmets\V_CH252D_Blu_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-		};
-	};
-	class BR_CH252D_BatS_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Battalion Staff)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_BatS_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_BatS_CO",
-				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"optre_unsc_units\army\data\soft_packs_co.paa"
-			};
-		};
-	};
-	class BR_CH252D_RPR_dp: BR_CH252D_dp
-	{
-		displayName="[61st] CH252D Helmet (Reaper)";
-		hiddenSelectionsTextures[]=
-		{
-			"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
-			"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[]=
-			{
-				"61st_Armor\Data\Helmets\V_CH252D_RPR_CO",
 				"61st_Armor\Data\Helmets\V_CH252D_CLR_V_CA",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"optre_unsc_units\army\data\soft_packs_co.paa"
