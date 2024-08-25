@@ -130,6 +130,33 @@ class XtdGearModels
 				{label="$STR_BR_1I2_PLAIN"};
 			};
 		};
+		class BR_H_1I3
+		{
+			options[]=
+			{
+				"HColour"
+			};
+			label="[61st] 1-3 CH252D";
+			class HColour
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Colour";
+				values[]=
+				{"LDR","SIC","RTO","MED","PLAIN"};
+				class LDR
+				{label="$STR_BR_1I3_LDR"};
+				class SIC
+				{label="$STR_BR_1I3_2IC"};
+				class RTO
+				{label="$STR_BR_1I3_RTO"};
+				class MED
+				{label="$STR_BR_1I3_MED"};
+				class PLAIN
+				{label="$STR_BR_1I3_PLAIN"};
+			};
+		};
 		class BR_H_RSV
 		{
 			options[]=
@@ -294,6 +321,31 @@ class XtdGearInfos
 			model="BR_H_1I2";
 			HColour="PLAIN";
 		}
+		class BR_H_1I3_LDR
+		{
+			model="BR_H_1I3";
+			HColour="LDR";
+		}
+		class BR_H_1I3_2IC
+		{
+			model="BR_H_1I3";
+			HColour="SIC";
+		}
+		class BR_H_1I3_RTO
+		{
+			model="BR_H_1I3";
+			HColour="RTO";
+		}
+		class BR_H_1I3_MED
+		{
+			model="BR_H_1I3";
+			HColour="MED";
+		}
+		class BR_H_1I3_PLAIN
+		{
+			model="BR_H_1I3";
+			HColour="PLAIN";
+		}
 		class BR_H_RSV_RTO
 		{
 			model="BR_H_RSV";
@@ -337,6 +389,7 @@ class CfgWeapons {
 #include "1stPlatoon.hpp"
 #include "1I1.hpp"
 #include "1I2.hpp"
+#include "1I3.hpp"
 #include "RSV.hpp"
 #include "SQD.hpp"
 };
