@@ -1,0 +1,9 @@
+version=54;
+name="61st_1st_Platoon_ORBAT";
+author="Grmills";
+category="OPTRE_EditorSubcategory_Frigate_UNSC";
+requiredAddons[]=
+{
+	"OPTRE_UNSC_Units_Army",
+	"A3_Modules_F_Curator_Curator"
+};
