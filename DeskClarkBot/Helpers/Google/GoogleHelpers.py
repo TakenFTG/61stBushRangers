@@ -1,6 +1,7 @@
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from DataClasses.Orbat import Orbat
+from DataClasses.OrbatRow import OrbatRow
 from Helpers.Google.LoadCreds import load_credentials
 import Token
 
@@ -25,17 +26,37 @@ def GetSheet_ONLINE(spreadsheet_id, range_name):
 		return error
   
 def GetSheet_LOCAL():
-	orbat = []
-	file = open("Files/localCopy.orbat", "r")
+	return Orbat(ReadORBATCSV("localCopy", "orbat"))
 
-	for line in file.readlines():
-		orbat.append(line.split(","))
-
-	return Orbat(orbat)
-
+def GetSheet_DELTA():
+	return Orbat(ReadORBATCSV("delta", "orbat"))
 
 def SaveSheet_Local(orbat : Orbat):
-	file = open("Files/localCopy.orbat", "w")
+	return WriteORBAT("localCopy", orbat)
+
+def SaveSheet_DELTA(orbat : Orbat):
+	return WriteORBAT("delta", orbat)
+
+def ReadCSV(fileName : str, extension: str, seperator = ","):
+	orbat = []
+	file = open("Files/" + str(fileName) + "." + str(extension), "r")
+
+	for line in file.readlines():
+		orbat.append(line.strip().split(seperator))
+
+	return orbat
+
+def ReadORBATCSV(fileName : str, extension: str, seperator = ","):
+	orbat = []
+	file = open("Files/" + str(fileName) + "." + str(extension), "r")
+
+	for line in file.readlines():
+		orbat.append(OrbatRow(values = line.strip().split(seperator)))
+
+	return orbat
+
+def WriteORBAT(fileName : str, orbat : Orbat):
+	file = open("Files/" + str(fileName) + ".orbat", "w")
 
 	for mem in orbat:
 		for column in mem:
@@ -45,4 +66,11 @@ def SaveSheet_Local(orbat : Orbat):
 	file.flush()
 	file.close()
 	return True
+
+
+WRITE_TEMPLATE = {
+	"range": "DataSheet!B3:Q500",
+	"majorDimension":"ROWS",
+	"values": [],
+}
 # def SaveSheetDelta_Local():

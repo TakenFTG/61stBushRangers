@@ -1,64 +1,47 @@
 from DataClasses import Squad
+from DataClasses.OrbatRow import OrbatRow
 from DataClasses.Rank import Rank
 import datetime
+class Orbat:
+	def __init__(self, rows : OrbatRow) -> None:
+		self._rows : OrbatRow = rows
 
-# ID = "id"
-# SQUAD = "Squad"
-# RANK = "Rank"
-# USERNAME = "UserName"
-# FULLNAME = "_FullName"
-# JOIN_DATE = "JoinedDate"
-# SLOT_DATE = "SlottedDate"
-# LAST_PROMOTED = "LastPromoted"
-# _TIU = "_TimeInUnit"
-# LMA = "LastMissionActive"
-# _TSA = "_TimeSinceActive"
-# _TSP = "_TimeSincePromotion"
-# MRAR = "MissionsRanAsRank"
-# _WEEKS_SINCE_LMA = "_WeeksSinceLastMissionActive"
-# AWOL = "AbsenceWithoutLeave"
-
-class Orbat:	
-	ID = 0
-	SQUAD = 1
-	RANK = 2
-	USERNAME = 3
-	_FULLNAME = 4
-	JOIN_DATE = 5
-	SLOT_DATE = 6
-	LAST_PROMOTED = 7
-	_TIU = 8
-	LMA = 9
-	_TSA = 10
-	_TSP = 11
-	MRAR = 12
-	_WEEKS_SINCE_LMA = 13
-	AWOL = 14
-
-	def __init__(self, rows : list) -> None:
-		self._rows = rows
-
-	def GetRowByID(self, index : int):
-		return self._rows[index-1]
+	def GetRowByID(self, index : int) -> OrbatRow:
+		for row in self._rows:
+			if(int(row._dict[OrbatRow.ID]) == index):
+				return row
+		
+		return None
 		
 	def GetColumn(self, index : int, column : int):
-		return self._rows[index][column]
+		return self.GetRowByID(index)[column]
+	
+	def GetIndexFromID(self, id : int):
+		for i in range(len(self._rows)):
+			if self._rows[i][OrbatRow.ID] == id:
+				return i
+		
+		return None
+	
+	def SetRow(self, row : OrbatRow):
+		index = self.GetIndexFromID(row[OrbatRow.ID])
+		if(index != None):
+			self._rows[index] = row
 
-def GetRow(id : int, Squad : Squad, Rank : Rank, UserName : str, JoinedDate : datetime, SlottedDate : datetime, LastPromoted : datetime, TimeInUnit : int, LastMissionActive : datetime, TimeSinceActive : int, TimeSincePromotion : int, MissionsRanAsRank : int, WeeksSinceLMA : int, AbsentWithoutLeave : int):
-	return {
-		"id" : id,
-		"Squad" : Squad,
-		"Rank" : Rank,
-		"UserName" : UserName,
-		"_FullName" : Rank + ". " + UserName,
-		"JoinedDate" : JoinedDate,
-		"SlottedDate" : SlottedDate,
-		"LastPromoted" : LastPromoted,
-		"_TimeInUnit" : TimeInUnit,
-		"LastMissionActive" : LastMissionActive,
-		"_TimeSinceActive" : TimeSinceActive,
-		"_TimeSincePromotion" : TimeSincePromotion,
-		"MissionsRanAsRank" : MissionsRanAsRank,
-		"_WeeksSinceLastMissionActive" : WeeksSinceLMA,
-		"AbsenceWithoutLeave" : AbsentWithoutLeave
-	}
+	def SetRowDelta(self, id : int, delta : OrbatRow):
+		index = self.GetIndexFromID(id)
+		if(index == None):
+			pass
+		
+		row : OrbatRow = self._rows[index]
+		delta = row.GetDelta(delta)
+
+		for column in delta._dict.items():
+			if(str(column[1]) != ""):
+				row[column[0]] = column[1]
+
+	def As2DList(self):
+		returner = []
+		for row in self._rows:
+			returner.append(row.GetAsList())
+		return returner
