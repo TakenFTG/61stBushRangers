@@ -2,7 +2,7 @@ import datetime
 from DataClasses import Squad
 from DataClasses.Rank import Rank
 
-class OrbatRow:	
+class DataSheetRow:	
 	ID = "id"
 	SQUAD = "Squad"
 	RANK = "Rank"
@@ -73,10 +73,10 @@ class OrbatRow:
 			message += str(key) + ", "
 		return message
 	
-	def GetDelta(self, other : 'OrbatRow'):
-		delta = OrbatRow()
+	def GetDelta(self, other : 'DataSheetRow'):
+		delta = DataSheetRow()
 		for key in self._dict.keys():
-			if(self._dict[key] != other._dict[key] or key == OrbatRow.ID):
+			if(self._dict[key] != other._dict[key] or key == DataSheetRow.ID):
 				delta._dict[key] = other._dict[key]
 		return delta
 	

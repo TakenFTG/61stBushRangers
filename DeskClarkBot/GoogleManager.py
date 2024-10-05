@@ -1,7 +1,7 @@
 
 from requests import HTTPError
-from DataClasses.Orbat import Orbat
-from DataClasses.OrbatRow import OrbatRow
+from DataClasses.Orbat import DataSheet
+from DataClasses.OrbatRow import DataSheetRow
 from Helpers.Google import GoogleHelpers
 from Helpers.Google.GoogleHelpers import *
 import Token
@@ -27,25 +27,25 @@ class GoogleManager():
 		row = self.orbat.GetRowByID(id)
 
 mapping = GoogleHelpers.ReadCSV("OrbatID-DiscordID", "txt", ":")
-orbat : Orbat = GoogleManager().orbat
-deltaOrbat = Orbat([])
+dataSheet : DataSheet = GoogleManager().orbat
+deltaDataSheet = DataSheet([])
 for row in mapping:
 	if row[0] == "-":
 		continue
-	delta = OrbatRow([row[0],None,None,None,None,None,None,None,None,None,None,None,None,None,None,row[1]])
-	delta = orbat.GetRowByID(int(row[0])).GetDelta(delta)
-	deltaOrbat._rows.append(delta)
+	delta = DataSheetRow([row[0],None,None,None,None,None,None,None,None,None,None,None,None,None,None,row[1]])
+	delta = dataSheet.GetRowByID(int(row[0])).GetDelta(delta)
+	deltaDataSheet._rows.append(delta)
 	# print(delta)
 
-unsortedDeltaOrbat = deltaOrbat
-deltaOrbat = Orbat([])
-for rowIndex in range(len(orbat._rows)):
-	deltaOrbat._rows[rowIndex] = unsortedDeltaOrbat.GetRowByID(orbat._rows[rowIndex]._dict[OrbatRow.ID])
+unsortedDeltaOrbat = deltaDataSheet
+deltaDataSheet = DataSheet([])
+for rowIndex in range(len(dataSheet._rows)):
+	deltaDataSheet._rows[rowIndex] = unsortedDeltaOrbat.GetRowByID(dataSheet._rows[rowIndex]._dict[DataSheetRow.ID])
 
 # print(orbat.GetRowByID(5))
 writePayload = GoogleHelpers.WRITE_TEMPLATE
 
-writePayload["values"] = deltaOrbat.As2DList()
+writePayload["values"] = deltaDataSheet.As2DList()
 
 print(writePayload)
 

@@ -1,14 +1,14 @@
 from DataClasses import Squad
-from DataClasses.OrbatRow import OrbatRow
+from DataClasses.OrbatRow import DataSheetRow
 from DataClasses.Rank import Rank
 import datetime
-class Orbat:
-	def __init__(self, rows : OrbatRow) -> None:
-		self._rows : OrbatRow = rows
+class DataSheet:
+	def __init__(self, rows : DataSheetRow) -> None:
+		self._rows : DataSheetRow = rows
 
-	def GetRowByID(self, index : int) -> OrbatRow:
+	def GetRowByID(self, index : int) -> DataSheetRow:
 		for row in self._rows:
-			if(int(row._dict[OrbatRow.ID]) == index):
+			if(int(row._dict[DataSheetRow.ID]) == index):
 				return row
 		
 		return None
@@ -18,22 +18,22 @@ class Orbat:
 	
 	def GetIndexFromID(self, id : int):
 		for i in range(len(self._rows)):
-			if self._rows[i][OrbatRow.ID] == id:
+			if self._rows[i][DataSheetRow.ID] == id:
 				return i
 		
 		return None
 	
-	def SetRow(self, row : OrbatRow):
-		index = self.GetIndexFromID(row[OrbatRow.ID])
+	def SetRow(self, row : DataSheetRow):
+		index = self.GetIndexFromID(row[DataSheetRow.ID])
 		if(index != None):
 			self._rows[index] = row
 
-	def SetRowDelta(self, id : int, delta : OrbatRow):
+	def SetRowDelta(self, id : int, delta : DataSheetRow):
 		index = self.GetIndexFromID(id)
 		if(index == None):
 			pass
 		
-		row : OrbatRow = self._rows[index]
+		row : DataSheetRow = self._rows[index]
 		delta = row.GetDelta(delta)
 
 		for column in delta._dict.items():
