@@ -11,10 +11,19 @@ url = "https://discord.com/api/v10/applications/" + str(APP_ID) + "/guilds/" + s
 
 # This is an example USER command, with a type of 2
 json = {
-    "name": "updateorbat",
+    "name": "update_discord_roles",
     "type": 1,
 	"guild_id": GUILD_ID,
-	"description": "Initialize the Orbat Update Process to be ran post op"
+	"description": "Update Roles within the unit, Will update all roles if no Orbat ID is provided",
+	"options": [
+		{
+			"name": "orbat_id",
+			"description": "Used to update only a single members roles",
+			"type" : 4,
+			"required" : False,
+			"autocomplete" : False
+		}
+	]
 }
 
 # For authorization, you can use either your bot token

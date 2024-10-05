@@ -3,6 +3,13 @@ from DataClasses.OrbatRow import DataSheetRow
 from DataClasses.Rank import Rank
 import datetime
 class DataSheet:
+
+	def GetFromSheet(rows):
+		lstRows = []
+		for row in rows:
+			lstRows.append(DataSheetRow(row))
+		return DataSheet(lstRows)
+
 	def __init__(self, rows : DataSheetRow) -> None:
 		self._rows : DataSheetRow = rows
 

@@ -14,7 +14,8 @@ bot = commands.Bot(command_prefix="/",allowed_contexts=contexts, intents = inten
 
 cogs = ["cogs.UpdateOrbat",
 		"cogs.MissionSubmission",
-		"cogs.AddToMemberOrbat"]
+		"cogs.AddToMemberOrbat",
+		"cogs.UpdateDiscordRoles"]
 
 @bot.event
 async def on_ready():
