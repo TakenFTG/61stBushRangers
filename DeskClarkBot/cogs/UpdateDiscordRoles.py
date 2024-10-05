@@ -46,17 +46,17 @@ class UpdateDiscordRoles(commands.Cog):
 		pass
 
 	async def UpdateSingleUser(self, ctx : context, row : DataSheetRow, allRoleIDs, errors : list):
-		discordID = row[DataSheetRow._DISCORD_ID]
+		discordID = row._dict[DataSheetRow._DISCORD_ID]
 		if discordID is None:
 			return
 
 		member = ctx.guild.get_member(discordID)
 		if member is None:
-			errors.append(f"Could not find ({row[DataSheetRow.ID]}, {row[DataSheetRow._FULLNAME]}) with id {row[DataSheetRow._DISCORD_ID]}")
+			errors.append(f"Could not find ({row._dict[DataSheetRow.ID]}, {row._dict[DataSheetRow._FULLNAME]}) with id {row._dict[DataSheetRow._DISCORD_ID]}")
 			return
 
-		dataSheetRank : Rank = Rank.GetRankFromString(row[DataSheetRow.RANK])
-		dataSheetSquad : Squad = Squad.GetSquadFromString(row[DataSheetRow.SQUAD]) 
+		dataSheetRank : Rank = Rank.GetRankFromString(row._dict[DataSheetRow.RANK])
+		dataSheetSquad : Squad = Squad.GetSquadFromString(row._dict[DataSheetRow.SQUAD]) 
 
 		# remove old roles
 		for squad in allRoleIDs:
