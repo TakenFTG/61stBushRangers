@@ -2,8 +2,8 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import Context as context
 
-from Helpers.Discord.PrintOrbatID import PrintOrbatID
-from Helpers.Discord.DownloadIDsAndNames import DownloadDiscordIDsAndNames
+from cogs.Helpers.Discord.PrintOrbatID import PrintOrbatID
+from cogs.Helpers.Discord.DownloadIDsAndNames import DownloadDiscordIDsAndNames
 
 class UpdateOrbat(commands.Cog):
 	def __init__(self, bot):

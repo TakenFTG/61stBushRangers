@@ -1,8 +1,8 @@
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
-from DataClasses.Orbat import DataSheet
-from DataClasses.OrbatRow import DataSheetRow
-from Helpers.Google.LoadCreds import load_credentials
+from ...DataClasses.Orbat import DataSheet
+from ...DataClasses.OrbatRow import DataSheetRow
+from .LoadCreds import load_credentials
 import Token
 
 def GetSheet_ONLINE(spreadsheet_id, range_name):

@@ -1,6 +1,5 @@
-import datetime
-from DataClasses import Squad
-from DataClasses.Rank import Rank
+from .Squad import Squad
+from .Rank import Rank
 
 class DataSheetRow:	
 	ID = "id"

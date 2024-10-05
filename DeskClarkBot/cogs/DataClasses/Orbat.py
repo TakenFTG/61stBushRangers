@@ -1,9 +1,7 @@
-from DataClasses import Squad
-from DataClasses.OrbatRow import DataSheetRow
-from DataClasses.Rank import Rank
-import datetime
+from .Squad import Squad
+from .OrbatRow import DataSheetRow
+from .Rank import Rank
 class DataSheet:
-
 	def GetFromSheet(rows):
 		lstRows = []
 		for row in rows:

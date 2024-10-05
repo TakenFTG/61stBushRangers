@@ -1,4 +1,3 @@
-
 class Squad:
 	def GetSquadFromString(value:str):
 		if(value is None):

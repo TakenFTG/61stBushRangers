@@ -1,15 +1,15 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import Context as context
-from ..Helpers.Google.GoogleHelpers import *
-from ..DataClasses.Rank import *
-from ..DataClasses.Squad import *
+from cogs.Helpers.Google.GoogleHelpers import *
+from cogs.DataClasses.Rank import *
+from cogs.DataClasses.Squad import *
 
 class UpdateDiscordRoles(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
 		
-	@commands.command()
+	@commands.hybrid_command(name="update_discord_roles")
 	async def UpdateDiscordRoles(self, ctx : context):
 		sheet = GetSheet_ONLINE(Token.ORBAT_SHEET_ID, WRITE_TEMPLATE["range"])
 		

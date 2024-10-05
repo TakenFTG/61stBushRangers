@@ -1,9 +1,9 @@
 
 from requests import HTTPError
-from DataClasses.Orbat import DataSheet
-from DataClasses.OrbatRow import DataSheetRow
-from Helpers.Google import GoogleHelpers
-from Helpers.Google.GoogleHelpers import *
+from cogs.DataClasses.Orbat import DataSheet
+from cogs.DataClasses.OrbatRow import DataSheetRow
+from cogs.Helpers.Google import GoogleHelpers
+from cogs.Helpers.Google.GoogleHelpers import *
 import Token
 
 class GoogleManager():
