@@ -4,3 +4,4 @@ Token.py
 GoogleAPI.json
 **/__pycache__/*
 */Files/*
+*/.idea/*
