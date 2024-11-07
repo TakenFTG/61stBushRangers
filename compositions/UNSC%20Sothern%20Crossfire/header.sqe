@@ -19,6 +19,8 @@ requiredAddons[]=
 	"OPTRE_BW_WeaponRack",
 	"OPTRE_UNSC_Units_Army",
 	"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F_Multiplayer",
+	"OPTRE_Vehicles_Cryopod",
 	"A3_Structures_F_Enoch_Infrastructure_Railways",
 	"A3_Structures_F_Exp_Walls_Concrete",
 	"ace_fastroping",
