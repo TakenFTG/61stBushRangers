@@ -1,56 +1,67 @@
+params ["_location", "_Object"];
 
-call{_this addAction["Remove Vehicle", {_vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;}]};
+_Object addAction["Remove Vehicle", {
+    params ["_object", "_caller", "_ID", "_location"];
+    _vehicle = nearestObjects [_location, ["Helicopter","Plane","Car","Tank"], 10] select 0; 
+    deleteVehicle _vehicle;
+}, _location];
 
-call{_this addAction ["Pelican",{
-_vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
-sleep 0.2;
-_pos = [(getPosATL HPOS1) # 0, (getPosATL HPOS1) # 1, (getPosATL HPOS1) #2 + 0.5]; 
-_vehicle = createVehicle ["OPTRE_Pelican_armed", _pos,[],0,"CAN_COLLIDE"]; 
-{ _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
-_vehicle setDir (getDir HPOS1); 
-}]}; 
+_Object addAction ["Pelican",{
+    params ["_object", "_caller", "_ID", "_location"];
+    _vehicle = nearestObjects [_location, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
+    sleep 0.2;
+    _pos = [(getPosATL _location) # 0, (getPosATL _location) # 1, (getPosATL _location) #2 + 0.5]; 
+    _vehicle = createVehicle ["OPTRE_Pelican_armed", _pos,[],0,"CAN_COLLIDE"]; 
+    { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
+    _vehicle setDir (getDir _location);
+}, _location];
 
-call{_this addAction ["Hornet",{ 
-_vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
-sleep 0.2;
-_pos = [(getPosATL HPOS1) # 0, (getPosATL HPOS1) # 1, (getPosATL HPOS1) #2 + 0.5]; 
-_vehicle = createVehicle ["OPTRE_UNSC_hornet_CAP", _pos,[],0,"CAN_COLLIDE"]; 
-{ _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
-_vehicle setDir (getDir HPOS1); 
-}]}; 
+_Object addAction ["Hornet",{ 
+    params ["_object", "_caller", "_ID", "_location"];
+    _vehicle = nearestObjects [_location, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
+    sleep 0.2;
+    _pos = [(getPosATL _location) # 0, (getPosATL _location) # 1, (getPosATL _location) #2 + 0.5]; 
+    _vehicle = createVehicle ["OPTRE_UNSC_hornet_CAP", _pos,[],0,"CAN_COLLIDE"]; 
+    { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
+    _vehicle setDir (getDir _location); 
+}, _location]; 
 
-call{_this addAction ["Falcon",{ 
-_vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
-sleep 0.2;
-_pos = [(getPosATL HPOS1) # 0, (getPosATL HPOS1) # 1, (getPosATL HPOS1) #2 + 0.5]; 
-_vehicle = createVehicle ["OPTRE_UNSC_falcon_armed_S", _pos,[],0,"CAN_COLLIDE"]; 
-{ _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
-_vehicle setDir (getDir HPOS1); 
-}]}; 
+_Object addAction ["Falcon",{
+    params ["_object", "_caller", "_ID", "_location"];
+    _vehicle = nearestObjects [_location, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
+    sleep 0.2;
+    _pos = [(getPosATL _location) # 0, (getPosATL _location) # 1, (getPosATL _location) #2 + 0.5]; 
+    _vehicle = createVehicle ["OPTRE_UNSC_falcon_armed_S", _pos,[],0,"CAN_COLLIDE"]; 
+    { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
+    _vehicle setDir (getDir _location); 
+}, _location]; 
 
-call{_this addAction ["Sparrowhawk",{ 
-_vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
-sleep 0.2;
-_pos = [(getPosATL HPOS1) # 0, (getPosATL HPOS1) # 1, (getPosATL HPOS1) #2 + 0.5]; 
-_vehicle = createVehicle ["OPTRE_AV22B_Sparrowhawk", _pos,[],0,"CAN_COLLIDE"]; 
-{ _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
-_vehicle setDir (getDir HPOS1); 
-}]}; 
+_Object addAction ["Sparrowhawk",{
+    params ["_object", "_caller", "_ID", "_location"];
+    _vehicle = nearestObjects [_location, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
+    sleep 0.2;
+    _pos = [(getPosATL _location) # 0, (getPosATL _location) # 1, (getPosATL _location) #2 + 0.5]; 
+    _vehicle = createVehicle ["OPTRE_AV22B_Sparrowhawk", _pos,[],0,"CAN_COLLIDE"]; 
+    { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
+    _vehicle setDir (getDir _location); 
+}, _location]; 
 
-call{_this addAction ["Bayonet",{ 
-_vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
-sleep 0.2;
-_pos = [(getPosATL HPOS1) # 0, (getPosATL HPOS1) # 1, (getPosATL HPOS1) #2 + 0.5]; 
-_vehicle = createVehicle ["OPTRE_bayonet_01", _pos,[],0,"CAN_COLLIDE"]; 
-{ _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
-_vehicle setDir (getDir HPOS1); 
-}]};
+_Object addAction ["Bayonet",{
+    params ["_object", "_caller", "_ID", "_location"]; 
+    _vehicle = nearestObjects [_location, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
+    sleep 0.2;
+    _pos = [(getPosATL _location) # 0, (getPosATL _location) # 1, (getPosATL _location) #2 + 0.5]; 
+    _vehicle = createVehicle ["OPTRE_bayonet_01", _pos,[],0,"CAN_COLLIDE"]; 
+    { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
+    _vehicle setDir (getDir _location); 
+}, _location];
 
-call{_this addAction ["A-84 Gladius",{ 
-_vehicle = nearestObjects [HPOS1, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
-sleep 0.2;
-_pos = [(getPosATL HPOS1) # 0, (getPosATL HPOS1) # 1, (getPosATL HPOS1) #2 + 0.5]; 
-_vehicle = createVehicle ["OPTRE_gladius_01", _pos,[],0,"CAN_COLLIDE"]; 
-{ _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
-_vehicle setDir (getDir HPOS1); 
-}]};
+_Object addAction ["A-84 Gladius",{
+    params ["_object", "_caller", "_ID", "_location"]; 
+    _vehicle = nearestObjects [_location, ["Helicopter","Plane","Car","Tank"], 10] select 0; deleteVehicle _vehicle;
+    sleep 0.2;
+    _pos = [(getPosATL _location) # 0, (getPosATL _location) # 1, (getPosATL _location) #2 + 0.5]; 
+    _vehicle = createVehicle ["OPTRE_gladius_01", _pos,[],0,"CAN_COLLIDE"]; 
+    { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators; 
+    _vehicle setDir (getDir _location); 
+}, _location];
